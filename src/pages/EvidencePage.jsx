@@ -36,14 +36,16 @@ function EvidenceHero() {
 function ValidationLibrary() {
   return (
     <SectionWrapper bg="light">
-      <SectionLabel text="Clinical Validation Library" light />
+      <div className="text-center">
+        <SectionLabel text="Clinical Validation Library" light />
+      </div>
       <h2
-        className="mt-4 font-heading font-semibold text-brand-deep leading-[1.15] tracking-[-0.01em]"
+        className="mt-4 font-heading font-semibold text-brand-deep leading-[1.15] tracking-[-0.01em] text-center"
         style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
       >
         Oncodea — Cancer early detection
       </h2>
-      <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg max-w-3xl">
+      <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg max-w-3xl text-center mx-auto">
         Multimodal biomarker analysis for early-stage cancer detection. Each study is IRB-approved, multi-site validated, and designed for clinical integration.
       </p>
 
@@ -112,14 +114,16 @@ function ValidationLibrary() {
 function BreatheSignals() {
   return (
     <SectionWrapper id="breathe-signals" bg="dark">
-      <SectionLabel text="Breathe Signal Library" />
+      <div className="text-center">
+        <SectionLabel text="Breathe Signal Library" />
+      </div>
       <h2
-        className="mt-4 font-heading font-semibold text-white leading-[1.15] tracking-[-0.01em]"
+        className="mt-4 font-heading font-semibold text-white leading-[1.15] tracking-[-0.01em] text-center"
         style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
       >
         Breath-based screening signals
       </h2>
-      <p className="mt-4 text-brand-lavender font-body font-light leading-relaxed text-lg max-w-3xl">
+      <p className="mt-4 text-brand-lavender font-body font-light leading-relaxed text-lg max-w-3xl text-center mx-auto">
         Real-time volatile organic compound analysis for population-scale screening. Each signal category has published or in-progress validation data.
       </p>
 
