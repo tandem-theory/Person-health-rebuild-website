@@ -11,7 +11,7 @@ import Button from '../components/ui/Button'
 import Accordion from '../components/ui/Accordion'
 
 const productImages = [
-  '/images/mywellnessq.jpg',
+  '/images/mywellnessq-new.png',
   '/images/mywellnessq-labs.png',
   '/images/oncodea.png',
   '/images/breathe.jpeg',

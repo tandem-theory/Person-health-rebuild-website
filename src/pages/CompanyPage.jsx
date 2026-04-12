@@ -1,4 +1,5 @@
-import { Users } from 'lucide-react'
+import { useState } from 'react'
+import { Users, ChevronDown } from 'lucide-react'
 import SectionWrapper from '../components/layout/SectionWrapper'
 import SectionLabel from '../components/ui/SectionLabel'
 import Button from '../components/ui/Button'
@@ -138,13 +139,27 @@ function MissionSection() {
 
 /* ─────────── LEADERSHIP ─────────── */
 function LeadershipSection() {
+  const [expandedBio, setExpandedBio] = useState(null)
+
+  const bios = {
+    'Ping Yeh': 'Ping is a cancer survivor and technology founder whose career spans data infrastructure leadership at Seagate and Dell, and co-founding StemoniX, a pioneer in human brain organoid production. At Person Health, he is building a multimodal platform that transforms early health signals into meaningful action — driven by the belief that disease should never come as a surprise.',
+    'Randy Schiestl': 'Randy is a veteran medtech operator who previously led global R&D at Boston Scientific, bringing complex medical technologies from concept to commercialization. At Person Health, he oversees platform operations, clinical validation, and system deployment — translating advanced diagnostic capabilities, including breath-based sensing, into scalable, real-world healthcare solutions.',
+    'Megan Flynn': 'Megan is a senior marketing executive with over 25 years of experience spanning agency and brand-side leadership across healthcare, medical, and consumer industries. Her expertise bridges business and brand strategy, with deep fluency across media, creative, CRM, loyalty, research, and full-funnel B2B and B2C marketing — building the go-to-market engine behind Person Health\'s platform.',
+    'Michael Weaver': 'Michael brings over 25 years of experience in healthcare commercialization and market expansion, spanning startup and publicly traded companies across ambulatory, acute care, and physician-centric settings. At Person Health, he oversees growth strategy and market positioning — advancing the company\'s mission across health systems and consumer channels.',
+    'Parm Kang': 'Parm is a strategic finance executive combining institutional discipline with startup agility. At Person Health, he leads finance, cap table management, investor reporting, runway planning, insurance, treasury, and institutional finance readiness — building the financial infrastructure to support the company\'s growth from breakthrough innovation to scaled deployment.',
+    'Greg Sherwood': 'Greg is the scientific founder of Person Health\'s breath-based diagnostic technology. A former Senior Fellow at Boston Scientific — the company\'s highest technical distinction — he holds 87 patents in sensing and applied diagnostics. His decade-long focus on volatile organic compound analysis has produced a patented platform capable of detecting disease from a single breath.',
+    'Ali Khammanivong': 'Ali is a molecular scientist and AI expert integrating biology, data science, and machine learning to enable predictive disease detection. With a PhD in Cancer Biology & Bioinformatics from the University of Minnesota and deep expertise in genomics and proteomics, he leads Person Health\'s molecular diagnostics platform for early cancer detection and treatment guidance.',
+    'Dan Que Pham': 'Dan is a biotech operator and co-founder of Oncodea, where she led development of OncodeAi™, a novel AI-based platform for early cancer detection. At Person Health, she drives the integration and advancement of molecular diagnostics — bridging research, clinical validation, and commercialization to bring innovative detection technologies to patients.',
+    'Raia Finc': 'Raia is a systems engineer with over two decades of experience spanning DuPont and Boston Scientific. At Person Health, she leads the electrical, mechanical, and software development of the breath-based diagnostic platform — translating early-stage innovation into production-ready systems designed for rapid, non-invasive health insights at scale.',
+  }
+
   const groups = [
     {
       title: 'Executive Leadership',
       members: [
         { name: 'Thomas Sheehan', role: 'Chairman & Chief Innovation Officer' },
         { name: 'Ping Yeh', role: 'Chief Executive Officer' },
-        { name: 'Parm Kang', role: 'Chief Financial Officer' },
+        { name: 'Parm Kang', role: 'Head of Finance' },
         { name: 'Michael Weaver', role: 'Chief Growth Officer' },
         { name: 'Megan Flynn', role: 'Chief Marketing Officer' },
       ],
@@ -152,10 +167,11 @@ function LeadershipSection() {
     {
       title: 'Science & Platform',
       members: [
-        { name: 'Randy Schiestl', role: 'Global Science & Operations' },
-        { name: 'Ali Khammanivong', role: 'Oncodea Scientific Lead' },
-        { name: 'Greg Sherwood', role: 'Breathe Scientific Lead' },
-        { name: 'Dan Que Pham', role: 'VP Molecular Diagnostics' },
+        { name: 'Randy Schiestl', role: 'COO' },
+        { name: 'Greg Sherwood', role: 'Head of Volatile Diagnostics' },
+        { name: 'Raia Finc', role: 'VP of Volatile Diagnostics' },
+        { name: 'Ali Khammanivong', role: 'Head of Molecular Diagnostics' },
+        { name: 'Dan Que Pham', role: 'VP of Molecular Diagnostics' },
       ],
     },
     {
@@ -186,27 +202,36 @@ function LeadershipSection() {
         <div key={group.title} className="mt-12">
           <h3 className="font-heading font-semibold text-brand-deep text-lg mb-6">{group.title}</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {group.members.map((member) => (
-              <Card key={member.name} variant="light">
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light border border-brand-lavender/30 flex items-center justify-center shrink-0" aria-hidden="true">
-                    <Users className="w-6 h-6 text-brand-primary" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-semibold text-brand-deep text-sm">{member.name}</h4>
-                    <p className="text-xs text-gray-600 font-body font-light mt-0.5">{member.role}</p>
-                  </div>
-                </div>
-              </Card>
-            ))}
+            {group.members.map((member) => {
+              const hasBio = bios[member.name]
+              const isOpen = expandedBio === member.name
+              return (
+                <Card key={member.name} variant="light">
+                  <button
+                    className="w-full text-left flex items-center gap-4"
+                    onClick={() => hasBio && setExpandedBio(isOpen ? null : member.name)}
+                    aria-expanded={isOpen}
+                  >
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light border border-brand-lavender/30 flex items-center justify-center shrink-0" aria-hidden="true">
+                      <Users className="w-6 h-6 text-brand-primary" strokeWidth={1.5} />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-heading font-semibold text-brand-deep text-sm">{member.name}</h4>
+                      <p className="text-xs text-gray-600 font-body font-light mt-0.5">{member.role}</p>
+                    </div>
+                    {hasBio && (
+                      <ChevronDown className={`w-4 h-4 text-brand-primary shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
+                    )}
+                  </button>
+                  {isOpen && hasBio && (
+                    <p className="mt-4 pt-4 border-t border-brand-lavender/20 text-sm text-gray-600 font-body font-light leading-relaxed">{hasBio}</p>
+                  )}
+                </Card>
+              )
+            })}
           </div>
         </div>
       ))}
-
-      <div className="mt-10 border-2 border-dashed border-brand-lavender/30 bg-brand-light p-6 rounded-2xl text-center">
-        <p className="font-heading font-semibold text-brand-deep">Content Pending</p>
-        <p className="text-sm text-gray-600 font-body font-light mt-1">Individual leadership bios will be added here.</p>
-      </div>
 
       <div className="mt-10 text-center">
         <Button href="/contact" variant="ghost">Connect with the team</Button>
