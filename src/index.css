@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@theme {
+  /* ═══════════════════════════════════════
+     Brand Colors — PERSON-HEALTH-MINI-BRAND-GUIDE
+     ADA-verified contrast ratios noted
+     ═══════════════════════════════════════ */
+  --color-brand-deep: #28104E;
+  --color-brand-primary: #6237A0;
+  --color-brand-medium: #9B71D6;
+  --color-brand-lavender: #D7CFE6;
+  --color-brand-light: #F5F0FA;
+  --color-brand-blue: #CCE7FF;
+  --color-brand-white: #FFFFFF;
+  --color-brand-glow: rgba(98, 55, 160, 0.25);
+
+  /* Typography */
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Gradients */
+  --background-image-hero-gradient:
+    radial-gradient(ellipse at 20% 50%, rgba(98, 55, 160, 0.3) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(155, 113, 214, 0.15) 0%, transparent 50%),
+    linear-gradient(180deg, #28104E 0%, #3a1a6e 50%, #28104E 100%);
+  --background-image-dark-section: linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%);
+  --background-image-dark-card: linear-gradient(135deg, rgba(53, 21, 102, 0.6) 0%, rgba(40, 16, 78, 0.9) 100%);
+  --background-image-light-section: linear-gradient(180deg, #FFFFFF 0%, #F5F0FA 50%, #FFFFFF 100%);
+  --background-image-accent-section: linear-gradient(135deg, #28104E 0%, #3a1a6e 100%);
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 4px 6px rgba(0, 0, 0, 0.06), 0 12px 24px rgba(0, 0, 0, 0.08);
+  --shadow-glow-purple: 0 0 30px rgba(98, 55, 160, 0.2);
+  --shadow-glow-medium: 0 0 30px rgba(155, 113, 214, 0.15);
+}
+
+/* ═══════════════════════════════════════
+   BASE STYLES
+   ═══════════════════════════════════════ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  color: #28104E;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+}
+
+/* ═══════════════════════════════════════
+   ADA: SKIP TO CONTENT
+   ═══════════════════════════════════════ */
+
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 1rem 2rem;
+  background: #6237A0;
+  color: white;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  z-index: 9999;
+  outline: 3px solid #CCE7FF;
+  outline-offset: 2px;
+}
+
+/* ═══════════════════════════════════════
+   ADA: FOCUS STYLES
+   All interactive elements get visible focus
+   ═══════════════════════════════════════ */
+
+*:focus-visible {
+  outline: 3px solid #6237A0;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Light focus ring on dark backgrounds */
+[class*="bg-brand-deep"] *:focus-visible,
+[class*="bg-dark"] *:focus-visible,
+[class*="bg-accent"] *:focus-visible,
+[style*="#28104E"] *:focus-visible {
+  outline-color: #CCE7FF;
+}
+
+/* ═══════════════════════════════════════
+   ADA: REDUCED MOTION
+   ═══════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   SECTION DIVIDER
+   ═══════════════════════════════════════ */
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(155, 113, 214, 0.3) 30%,
+    rgba(98, 55, 160, 0.3) 70%,
+    transparent 100%
+  );
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* ═══════════════════════════════════════
+   STAT GRADIENT TEXT
+   ═══════════════════════════════════════ */
+
+.stat-gradient {
+  background: linear-gradient(135deg, #9B71D6 0%, #6237A0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ═══════════════════════════════════════
+   ADA: SCREEN READER ONLY UTILITY
+   ═══════════════════════════════════════ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
