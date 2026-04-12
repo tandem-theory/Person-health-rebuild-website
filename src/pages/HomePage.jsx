@@ -132,7 +132,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 1: THE PROBLEM ─── */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-18 lg:py-24">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-14 lg:py-18">
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             The Problem
@@ -152,7 +152,7 @@ export default function HomePage() {
               { title: 'Symptomatic but delayed', body: 'People wait, minimize, search online, or avoid the system entirely because uncertainty, fear, cost, and friction dominate behavior.', tag: 'Symptoms present. Action stalls.' },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex flex-col">
-                <h3 className="text-lg font-semibold text-brand-deep mb-4 font-heading whitespace-nowrap">{item.title}</h3>
+                <h3 className="text-lg font-semibold text-brand-deep mb-4 font-heading">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed mb-6 font-light font-body flex-1">{item.body}</p>
                 <p className="text-sm font-medium text-brand-primary font-body" aria-label={item.tag}>
                   <span aria-hidden="true">&rarr;</span> {item.tag}
@@ -163,9 +163,6 @@ export default function HomePage() {
 
           {/* Callout */}
           <div className="bg-brand-deep rounded-2xl p-8 lg:p-10 mb-16">
-            <p className="text-white text-2xl lg:text-3xl font-semibold leading-snug mb-4 font-heading">
-              The problem was never lack of data — it&apos;s missed action.
-            </p>
             <p className="text-xl leading-relaxed font-light text-brand-lavender font-body">
               Risk models predict. Operations send reminders. But almost no layer in healthcare is jointly responsible for trust, readiness, follow-through, and learning.
             </p>
@@ -177,14 +174,18 @@ export default function HomePage() {
           </h3>
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
-              { icon: Search, title: 'Screening', body: 'Well populations. Evidence-backed eligibility. Gentle routing and recovery.', color: '#6237A0' },
-              { icon: Target, title: 'Early detection', body: 'Abnormal-signal follow-up. More urgency, more evaluation, more escalation.', color: '#9B71D6' },
-              { icon: UserCheck, title: 'Diagnosis support', body: 'Clinician-reviewed, higher-risk cases. The model informs — it does not replace judgment.', color: '#CCE7FF' },
+              { icon: Search, title: 'Screening', body: 'Well populations. Evidence-backed eligibility. Gentle routing and recovery.' },
+              { icon: Target, title: 'Early detection', body: 'Abnormal-signal follow-up. More urgency, more evaluation, more escalation.' },
+              { icon: UserCheck, title: 'Diagnosis support', body: 'Clinician-reviewed, higher-risk cases. The model informs — it does not replace judgment.' },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border-t-4 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300" style={{ borderTopColor: item.color }}>
-                <item.icon className="w-8 h-8 mb-4" style={{ color: item.color }} aria-hidden="true" />
-                <h4 className="text-lg font-semibold text-brand-deep mb-3 font-heading">{item.title}</h4>
-                <p className="text-gray-600 text-[15px] leading-relaxed font-light font-body">{item.body}</p>
+              <div key={i} className="bg-white rounded-2xl p-6 border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
+                  <item.icon className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-brand-deep mb-2 font-heading">{item.title}</h4>
+                  <p className="text-gray-600 text-[15px] leading-relaxed font-light font-body">{item.body}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -197,7 +198,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 2: THE PLATFORM ─── */}
-      <section className="py-18 lg:py-24" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">
             The Platform
@@ -256,7 +257,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 3: TOMME CALLOUT ─── */}
-      <section className="py-18 lg:py-24" style={{ background: 'linear-gradient(135deg, #28104E 0%, #1a0a35 100%)' }}>
+      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(135deg, #28104E 0%, #1a0a35 100%)' }}>
         <Reveal className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4">
             TOMME
@@ -273,7 +274,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 4: WHY BUYERS CARE ─── */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-18 lg:py-24">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-14 lg:py-18">
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             Why Buyers Care
@@ -294,7 +295,9 @@ export default function HomePage() {
               { icon: Coins, title: 'Expand retained revenue and contribution margin' },
             ].map((item, i) => (
               <div key={i} className="text-center p-6 rounded-2xl bg-white border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
-                <item.icon className="w-7 h-7 text-brand-primary mx-auto mb-4" aria-hidden="true" />
+                <div className="w-12 h-12 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
+                  <item.icon className="w-5 h-5 text-white" />
+                </div>
                 <p className="text-sm font-medium text-brand-deep leading-snug font-body">{item.title}</p>
               </div>
             ))}
@@ -326,7 +329,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 5: TRUST BY DESIGN ─── */}
-      <section className="py-18 lg:py-24" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">
             Trust by Design
@@ -346,7 +349,9 @@ export default function HomePage() {
               { icon: User, title: 'Human control', q: 'When does the case stop and require clinician review?' },
             ].map((item, i) => (
               <div key={i} className="bg-gradient-to-br from-[#351566]/60 to-brand-deep/90 border border-white/10 rounded-2xl p-7 hover:border-brand-medium/30 transition-all duration-300">
-                <item.icon className="w-7 h-7 text-brand-medium mb-5" aria-hidden="true" />
+                <div className="w-14 h-14 rounded-2xl mb-5 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
+                  <item.icon className="w-6 h-6 text-white" />
+                </div>
                 <h3 className="text-base font-semibold text-white mb-3 font-heading">{item.title}</h3>
                 <p className="text-brand-lavender text-sm leading-relaxed font-light font-body">{item.q}</p>
               </div>
@@ -365,7 +370,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 6: EVIDENCE PREVIEW ─── */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-18 lg:py-24">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-14 lg:py-18">
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             Evidence
@@ -417,7 +422,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 7: AUDIENCE ─── */}
-      <section className="py-18 lg:py-24" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">
             Get Started
@@ -456,7 +461,7 @@ export default function HomePage() {
 
 
       {/* ─── FAQ ─── */}
-      <section className="py-18 lg:py-24 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-14 lg:py-18 bg-gradient-to-b from-brand-light to-white">
         <Reveal className="max-w-3xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             Frequently Asked Questions

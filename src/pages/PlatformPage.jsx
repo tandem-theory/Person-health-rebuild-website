@@ -68,7 +68,7 @@ export default function PlatformPage() {
       </section>
 
       {/* PRODUCT LINES */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-18 lg:py-24">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-14 lg:py-18">
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">Product Families</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading text-center">
@@ -120,7 +120,7 @@ export default function PlatformPage() {
       </section>
 
       {/* TOMME DEEP DIVE */}
-      <section id="tomme" className="py-18 lg:py-24" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section id="tomme" className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">TOMME Core</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
@@ -153,7 +153,7 @@ export default function PlatformPage() {
       </section>
 
       {/* SIX-STEP WORKFLOW */}
-      <section className="py-18 lg:py-24" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">Signal-to-Action Workflow</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
@@ -175,7 +175,7 @@ export default function PlatformPage() {
               <div key={i} className="relative text-center py-10 px-6 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.07] transition-all duration-300">
                 <div
                   className="font-heading font-extrabold leading-[0.85] select-none mb-4"
-                  style={{ fontSize: 'clamp(4rem, 6vw, 5.5rem)', color: 'rgba(155,113,214,0.15)', letterSpacing: '-0.04em' }}
+                  style={{ fontSize: 'clamp(4rem, 6vw, 5.5rem)', color: 'rgba(155,113,214,0.3)', letterSpacing: '-0.04em' }}
                   aria-hidden="true"
                 >
                   {step.n}
@@ -198,7 +198,7 @@ export default function PlatformPage() {
       </section>
 
       {/* SIGNAL FABRIC */}
-      <section className="py-18 lg:py-24" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">Multimodal Signal Fabric</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
@@ -238,7 +238,7 @@ export default function PlatformPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-18 lg:py-24 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-14 lg:py-18 bg-gradient-to-b from-brand-light to-white">
         <Reveal className="max-w-3xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4">FAQ</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading">
