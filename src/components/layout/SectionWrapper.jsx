@@ -12,7 +12,7 @@ export default function SectionWrapper({ id, bg = 'white', children, className =
   const { ref, isVisible } = useScrollReveal()
 
   return (
-    <section id={id} className={`py-24 lg:py-32 ${bgMap[bg] || ''} ${className}`}>
+    <section id={id} className={`py-18 lg:py-24 ${bgMap[bg] || ''} ${className}`}>
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 24 }}

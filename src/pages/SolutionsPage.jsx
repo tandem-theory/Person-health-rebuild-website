@@ -106,7 +106,7 @@ export default function SolutionsPage() {
       </section>
 
       {/* ─── AUDIENCE SECTIONS ─── */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-24 lg:py-32">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-18 lg:py-24">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           {audiences.map((audience, i) => (
             <Reveal key={i}>
