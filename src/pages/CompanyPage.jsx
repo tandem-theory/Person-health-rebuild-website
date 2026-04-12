@@ -201,7 +201,7 @@ function LeadershipSection() {
       {groups.map((group) => (
         <div key={group.title} className="mt-12">
           <h3 className="font-heading font-semibold text-brand-deep text-lg mb-6">{group.title}</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
             {group.members.map((member) => {
               const hasBio = bios[member.name]
               const isOpen = expandedBio === member.name
