@@ -152,6 +152,18 @@ function LeadershipSection() {
     'Raia Finc': 'Systems engineer with two decades of experience spanning DuPont and Boston Scientific. At Person Health, she leads electrical, mechanical, and software development of the breath-based diagnostic platform — translating innovation into production-ready systems.',
   }
 
+  const photos = {
+    'Thomas Sheehan': '/images/team/thomas-sheehan.jpg',
+    'Ping Yeh': '/images/team/ping-yeh.jpg',
+    'Parm Kang': '/images/team/parm-kang.jpg',
+    'Michael Weaver': '/images/team/michael-weaver.jpg',
+    'Megan Flynn': '/images/team/megan-flynn.jpg',
+    'Ali Khammanivong': '/images/team/ali-khammanivong.jpg',
+    'Dan Que Pham': '/images/team/dan-que-pham.jpg',
+    'Jennifer Schaumburg': '/images/team/jennifer-schaumburg.jpg',
+    'Aaron Salinas': '/images/team/aaron-salinas.jpg',
+  }
+
   const groups = [
     {
       title: 'Executive Leadership',
@@ -166,7 +178,7 @@ function LeadershipSection() {
     {
       title: 'Science & Platform',
       members: [
-        { name: 'Randy Schiestl', role: 'COO' },
+        { name: 'Randy Schiestl', role: 'Global Science & Operations Lead' },
         { name: 'Greg Sherwood', role: 'Head of Volatile Diagnostics' },
         { name: 'Raia Finc', role: 'VP of Volatile Diagnostics' },
         { name: 'Ali Khammanivong', role: 'Head of Molecular Diagnostics' },
@@ -211,9 +223,17 @@ function LeadershipSection() {
                     onClick={() => hasBio && setExpandedBio(isOpen ? null : member.name)}
                     aria-expanded={isOpen}
                   >
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light border border-brand-lavender/30 flex items-center justify-center shrink-0" aria-hidden="true">
-                      <Users className="w-6 h-6 text-brand-primary" strokeWidth={1.5} />
-                    </div>
+                    {photos[member.name] ? (
+                      <img
+                        src={photos[member.name]}
+                        alt={member.name}
+                        className="w-14 h-14 rounded-full object-cover shrink-0 border border-brand-lavender/30"
+                      />
+                    ) : (
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light border border-brand-lavender/30 flex items-center justify-center shrink-0" aria-hidden="true">
+                        <Users className="w-6 h-6 text-brand-primary" strokeWidth={1.5} />
+                      </div>
+                    )}
                     <div className="flex-1">
                       <h4 className="font-heading font-semibold text-brand-deep text-sm">{member.name}</h4>
                       <p className="text-xs text-gray-600 font-body font-light mt-0.5">{member.role}</p>
