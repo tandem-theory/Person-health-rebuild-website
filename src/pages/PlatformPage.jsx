@@ -79,28 +79,27 @@ export default function PlatformPage() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-10 mb-16 items-start">
-            <div className="space-y-3" role="tablist" aria-label="Product lines">
+            <div className="space-y-3">
               {productLines.map((item, i) => {
                 const isActive = activeProduct === i
                 return (
-                  <div
+                  <button
                     key={i}
-                    role="tab"
-                    tabIndex={0}
-                    aria-selected={isActive}
-                    onMouseEnter={() => setActiveProduct(i)}
-                    onFocus={() => setActiveProduct(i)}
-                    onKeyDown={(e) => {
-                      if (e.key === 'ArrowDown') { e.preventDefault(); setActiveProduct((i + 1) % productLines.length) }
-                      if (e.key === 'ArrowUp') { e.preventDefault(); setActiveProduct((i - 1 + productLines.length) % productLines.length) }
-                    }}
-                    className={`bg-white rounded-2xl p-6 border-l-4 border border-brand-lavender/20 shadow-card transition-all duration-300 cursor-pointer ${isActive ? 'shadow-card-hover -translate-y-0.5' : 'hover:shadow-card-hover'}`}
+                    onClick={() => setActiveProduct(isActive ? -1 : i)}
+                    aria-expanded={isActive}
+                    className={`w-full text-left bg-white rounded-2xl border-l-4 border border-brand-lavender/20 shadow-card transition-all duration-300 cursor-pointer ${isActive ? 'shadow-card-hover' : 'hover:shadow-card-hover'}`}
                     style={{ borderLeftColor: item.color, borderLeftWidth: isActive ? '6px' : '4px' }}
                   >
-                    <h3 className="text-xl font-semibold text-brand-deep mb-1 font-heading">{item.name}</h3>
-                    <p className="text-sm font-medium text-brand-primary mb-3 font-body">{item.role}</p>
-                    <p className="text-gray-600 text-[15px] leading-relaxed font-light font-body">{item.detail}</p>
-                  </div>
+                    <div className="p-6 pb-3">
+                      <h3 className="text-xl font-semibold text-brand-deep mb-1 font-heading">{item.name}</h3>
+                      <p className="text-sm font-medium text-brand-primary font-body">{item.role}</p>
+                    </div>
+                    {isActive && (
+                      <div className="px-6 pb-6">
+                        <p className="text-gray-600 text-[15px] leading-relaxed font-light font-body">{item.detail}</p>
+                      </div>
+                    )}
+                  </button>
                 )
               })}
             </div>
@@ -161,7 +160,7 @@ export default function PlatformPage() {
             Six steps. Zero gaps. The product is accountable for completion, not just recommendation generation.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-5 mb-10">
+          <div className="grid md:grid-cols-3 gap-5 mb-10">
             {[
               { n: '01', title: 'Sense', desc: 'New lab, symptom, claim, message, wearable, or screening-due event.' },
               { n: '02', title: 'Infer', desc: 'Clinical opportunity + trajectory + trust and friction.' },
@@ -170,18 +169,18 @@ export default function PlatformPage() {
               { n: '05', title: 'Complete', desc: 'Booked screening, workup, diagnosis support, or deferred path.' },
               { n: '06', title: 'Learn', desc: 'Response, drop-off, override, and outcome update the model.' },
             ].map((step, i) => (
-              <div key={i} className="relative text-center py-16 px-7 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.07] transition-all duration-300">
+              <div key={i} className="relative text-center py-10 px-6 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.07] transition-all duration-300">
                 <div
-                  className="font-heading font-extrabold leading-[0.85] select-none mb-6"
-                  style={{ fontSize: 'clamp(8rem, 12vw, 11rem)', color: 'rgba(155,113,214,0.15)', letterSpacing: '-0.04em' }}
+                  className="font-heading font-extrabold leading-[0.85] select-none mb-4"
+                  style={{ fontSize: 'clamp(4rem, 6vw, 5.5rem)', color: 'rgba(155,113,214,0.15)', letterSpacing: '-0.04em' }}
                   aria-hidden="true"
                 >
                   {step.n}
                 </div>
-                <span className="inline-flex items-center px-7 py-2 rounded-full border-[1.5px] border-brand-medium/35 text-brand-medium text-xs font-bold uppercase tracking-[0.16em] font-body mb-5">
+                <span className="inline-flex items-center px-6 py-1.5 rounded-full border-[1.5px] border-brand-medium/35 text-brand-medium text-xs font-bold uppercase tracking-[0.16em] font-body mb-4">
                   {step.title}
                 </span>
-                <p className="text-[15px] text-brand-lavender font-light leading-relaxed font-body max-w-[280px] mx-auto">{step.desc}</p>
+                <p className="text-base text-brand-lavender font-light leading-relaxed font-body mx-auto">{step.desc}</p>
               </div>
             ))}
           </div>
