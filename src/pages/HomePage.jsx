@@ -37,23 +37,23 @@ const productLines = [
 function FAQ({ q, a }) {
   const [open, setOpen] = useState(false)
   return (
-    <div className="border-b border-white/10">
+    <div className="border-b border-brand-lavender/30">
       <h3>
         <button
           onClick={() => setOpen(!open)}
           aria-expanded={open}
           className="w-full flex justify-between items-center py-6 text-left"
         >
-          <span className="text-lg font-semibold text-white pr-8 font-heading">{q}</span>
+          <span className="text-lg font-semibold text-brand-deep pr-8 font-heading">{q}</span>
           <ChevronDown
-            className={`w-5 h-5 text-brand-medium shrink-0 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
+            className={`w-5 h-5 text-brand-primary shrink-0 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
             aria-hidden="true"
           />
         </button>
       </h3>
       {open && (
         <div className="pb-6">
-          <p className="text-lg leading-relaxed font-light text-brand-lavender font-body">{a}</p>
+          <p className="text-lg leading-relaxed font-light text-gray-600 font-body">{a}</p>
         </div>
       )}
     </div>
@@ -456,12 +456,12 @@ export default function HomePage() {
 
 
       {/* ─── FAQ ─── */}
-      <section className="py-24 lg:py-32 bg-brand-deep">
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-brand-light to-white">
         <Reveal className="max-w-3xl mx-auto px-6 lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             Frequently Asked Questions
           </p>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading">
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading text-center">
             Common questions
           </h2>
 
