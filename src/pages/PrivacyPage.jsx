@@ -5,9 +5,9 @@ export default function PrivacyPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-28 pb-14 lg:pt-32 lg:pb-16 overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
-        <div className="absolute inset-0 bg-hero-gradient" aria-hidden="true" />
+      <section className="relative pt-28 pb-14 lg:pt-32 lg:pb-16 overflow-hidden" style={{ background: 'linear-gradient(135deg, #28104E 0%, #3a1a6e 40%, #28104E 100%)' }}>
+        <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-deep/50 to-brand-deep" aria-hidden="true" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-8 text-center">
           <SectionLabel text="Legal" />
           <h1
