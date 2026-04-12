@@ -473,7 +473,7 @@ export default function HomePage() {
           <div className="mt-12">
             <FAQ
               q="What is TOMME?"
-              a="TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then selects the safest next step, routes it into a real workflow, and measures whether it completed."
+              a="TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then selects the safest next step, routes it into a real workflow, and measures whether it was completed."
             />
             <FAQ
               q="What is a multimodal health action platform?"

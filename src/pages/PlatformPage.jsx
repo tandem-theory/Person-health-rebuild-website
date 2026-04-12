@@ -23,7 +23,7 @@ const productLines = [
   { name: 'MyWellnessQ Labs', role: 'Immediate demand monetization and buyer-behavior data', detail: '70+ live tests, print-kit fulfillment, and complete ordering-to-results workflow. Every ordered test is a buyer-behavior datapoint that feeds back into the platform.', color: '#9B71D6' },
   { name: 'Oncodea / MMyeloma', role: 'First owned specialty margin', detail: 'Molecular fingerprinting detects cancer before symptoms from a simple blood draw. First wedge: multiple myeloma via Mayo Clinic collaboration. VERITY clinical trial active.', color: '#D7CFE6' },
   { name: 'Breathe', role: 'Acute-care workflow value and site economics', detail: 'Non-invasive breath screening via graphene nanosensor arrays. Results in under one minute. Pilot-first deployment with site economics, then broader rollout.', color: '#9B71D6' },
-  { name: 'TOMME', role: 'Shared decision, routing, and learning layer across all of it', detail: 'Shared decision, routing, and learning layer across all product lines. Not a feature — the governed engine that makes every product line compound.', color: '#6237A0' },
+  { name: 'TOMME', role: 'Shared decision, routing, and learning layer across all of it', detail: 'TOMME connects every product line through one governed intelligence layer. Not a feature — the engine that makes the entire platform compound.', color: '#6237A0' },
 ]
 
 function Reveal({ children, className = '' }) {
@@ -163,7 +163,7 @@ export default function PlatformPage() {
             How one case moves through the OS
           </h2>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-2xl mb-16 text-center mx-auto">
-            Six steps. Zero gaps. The product is accountable for completion, not just recommendation generation.
+            Six steps. Zero gaps. The platform is accountable for completion, not just recommendation generation.
           </p>
 
           <div className="grid md:grid-cols-3 gap-5 mb-10">
@@ -254,7 +254,7 @@ export default function PlatformPage() {
               items={[
                 {
                   question: 'What is TOMME?',
-                  answer: 'TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then selects the safest next step, routes it into a real workflow, and measures whether it completed.',
+                  answer: 'TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then selects the safest next step, routes it into a real workflow, and measures whether it was completed.',
                 },
                 {
                   question: 'What is a multimodal health action platform?',

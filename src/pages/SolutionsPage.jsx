@@ -27,8 +27,8 @@ const audiences = [
     subtitle: 'Workflow economics and pilot path',
     body: 'One patient. Multiple signals. One unified decision layer.',
     sections: [
-      { title: 'Trusted capability', desc: 'Higher testing, earlier confirmed need, longer retention, better economics.' },
-      { title: 'What becomes possible', desc: 'More complete first-line screening, conditions surface before crises, patients stay in ecosystem, lower avoidable cost.' },
+      { title: 'Trusted capability', desc: 'Higher testing volumes, earlier confirmed need, longer patient retention, and better economics.' },
+      { title: 'What becomes possible', desc: 'More complete first-line screening, conditions that surface before crises, patients who stay in the ecosystem, and lower avoidable cost.' },
       { title: 'What the platform measures', desc: 'Completion rates, retention metrics, leak reduction, margin expansion.' },
     ],
     closing: 'Not a new test. It is a clinical workflow accelerator.',

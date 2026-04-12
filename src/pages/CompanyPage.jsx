@@ -7,7 +7,6 @@ import Card from '../components/ui/Card'
 import CalloutBlock from '../components/ui/CalloutBlock'
 import NumberedStack from '../components/ui/NumberedStack'
 import Accordion from '../components/ui/Accordion'
-import { images } from '../data/images'
 
 /* ─────────── HERO ─────────── */
 function CompanyHero() {
@@ -51,7 +50,7 @@ function AboutSection() {
             Person Health is a multimodal health action platform that connects screening, early detection, and clinician-reviewed diagnosis support into one governed workflow. The platform does not just detect — it completes.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
-            Every signal that enters Person Health is scored, routed to the appropriate care lane, reviewed by a clinician, and tracked to closure. Nothing is lost between finding and action.
+            Every signal that enters Person Health is scored, routed to the appropriate care lane, reviewed by a clinician, and tracked to closure. Nothing is lost between detection and action.
           </p>
         </div>
         <div className="rounded-2xl overflow-hidden shadow-card-hover">
@@ -114,7 +113,7 @@ function OriginsSection() {
       </div>
 
       <p className="mt-10 text-brand-lavender/80 font-body font-light italic text-base max-w-3xl">
-        These are enabling lineage — not co-equal brands. Person Health is the platform. Everything else feeds into it.
+        These represent enabling lineage — not co-equal brands. Person Health is the platform. Everything else feeds into it.
       </p>
 
       <div className="mt-10 text-center">
@@ -149,7 +148,7 @@ function LeadershipSection() {
     'Parm Kang': 'Strategic finance executive combining institutional discipline with startup agility. At Person Health, he leads finance, investor reporting, runway planning, and institutional readiness — building the financial infrastructure to support growth from innovation to scaled deployment.',
     'Greg Sherwood': 'Scientific founder of Person Health\'s breath-based diagnostic technology and former Senior Fellow at Boston Scientific. He holds 87 patents in sensing and applied diagnostics, producing a patented platform capable of detecting disease from a single breath.',
     'Ali Khammanivong': 'Molecular scientist and AI expert with a PhD in Cancer Biology & Bioinformatics from the University of Minnesota. At Person Health, he leads the molecular diagnostics platform for early cancer detection, integrating genomics, proteomics, and machine learning.',
-    'Dan Que Pham': 'Biotech operator and co-founder of Oncodea, where she led development of OncodeAi, an AI-based platform for early cancer detection. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
+    'Dan Que Pham': 'Biotech operator and co-founder of Oncodea, where she led development of Oncodea, an AI-based platform for early cancer detection. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
     'Raia Finc': 'Systems engineer with two decades of experience spanning DuPont and Boston Scientific. At Person Health, she leads electrical, mechanical, and software development of the breath-based diagnostic platform — translating innovation into production-ready systems.',
   }
 

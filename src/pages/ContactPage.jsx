@@ -55,7 +55,7 @@ export default function ContactPage() {
             Start the conversation.
           </h1>
           <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl mx-auto">
-            Whether you run a health system, practice medicine, invest in healthcare, or want to integrate — we have a specific conversation ready for you.
+            Whether you run a health system, practice medicine, invest in healthcare, or want to explore a partnership — we have a specific conversation ready for you.
           </p>
         </div>
       </section>
