@@ -15,8 +15,9 @@ import Accordion from '../components/ui/Accordion'
 function EvidenceHero() {
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
       <div className="absolute inset-0 bg-hero-gradient" aria-hidden="true" />
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-8">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-8 text-center">
         <SectionLabel text="Evidence" />
         <h1
           className="mt-4 font-heading font-bold text-white leading-[1.05] tracking-[-0.02em]"
@@ -24,7 +25,7 @@ function EvidenceHero() {
         >
           Built on clinical evidence,<br />not promises.
         </h1>
-        <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl">
+        <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl mx-auto">
           Every Person Health product is validated through peer-reviewed research, IRB-approved trials, and real-world pilot data. This page is the proof.
         </p>
       </div>

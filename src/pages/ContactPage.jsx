@@ -44,8 +44,9 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
         <div className="absolute inset-0 bg-hero-gradient" aria-hidden="true" />
-        <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-8">
+        <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-8 text-center">
           <SectionLabel text="Contact" />
           <h1
             className="mt-4 font-heading font-bold text-white leading-[1.05] tracking-[-0.02em]"
@@ -53,7 +54,7 @@ export default function ContactPage() {
           >
             Start the conversation.
           </h1>
-          <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl">
+          <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl mx-auto">
             Whether you run a health system, practice medicine, invest in healthcare, or want to integrate — we have a specific conversation ready for you.
           </p>
         </div>

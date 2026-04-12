@@ -12,8 +12,9 @@ import { images } from '../data/images'
 function CompanyHero() {
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
       <div className="absolute inset-0 bg-hero-gradient" aria-hidden="true" />
-      <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-8">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-8 text-center">
         <SectionLabel text="Company" />
         <h1
           className="mt-4 font-heading font-bold text-white leading-[1.05] tracking-[-0.02em]"
@@ -21,7 +22,7 @@ function CompanyHero() {
         >
           Healthcare organized<br />around people.
         </h1>
-        <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl">
+        <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl mx-auto">
           Person Health exists because the gap between finding a health signal and acting on it should not exist. We build the governed infrastructure to close it.
         </p>
       </div>

@@ -48,7 +48,7 @@ export default function PlatformPage() {
       {/* HERO */}
       <section
         className="relative pt-32 pb-24 overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #28104E 0%, #3a1a6e 40%, #28104E 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #28104E 0%, #4a1d8a 40%, #28104E 100%)' }}
       >
         <div
           className="absolute inset-0 opacity-10"

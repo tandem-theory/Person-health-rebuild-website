@@ -151,9 +151,9 @@ export default function HomePage() {
               { title: 'Abnormal but lost to follow-up', body: 'Results arrive, but nothing reliably converts them into scheduling, escalation, or clinician-reviewed recovery.', tag: 'Detection happens. Completion doesn\u2019t.' },
               { title: 'Symptomatic but delayed', body: 'People wait, minimize, search online, or avoid the system entirely because uncertainty, fear, cost, and friction dominate behavior.', tag: 'Symptoms present. Action stalls.' },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
-                <h3 className="text-xl font-semibold text-brand-deep mb-4 font-heading">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6 font-light font-body">{item.body}</p>
+              <div key={i} className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                <h3 className="text-lg font-semibold text-brand-deep mb-4 font-heading whitespace-nowrap">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed mb-6 font-light font-body flex-1">{item.body}</p>
                 <p className="text-sm font-medium text-brand-primary font-body" aria-label={item.tag}>
                   <span aria-hidden="true">&rarr;</span> {item.tag}
                 </p>
@@ -162,11 +162,11 @@ export default function HomePage() {
           </div>
 
           {/* Callout */}
-          <div className="bg-brand-deep rounded-2xl p-10 lg:p-14 mb-16">
-            <p className="text-white text-xl lg:text-2xl font-semibold leading-snug mb-4 font-heading">
-              The problem was never lack of data — it's missed action.
+          <div className="bg-brand-deep rounded-2xl p-8 lg:p-10 mb-16">
+            <p className="text-white text-2xl lg:text-3xl font-semibold leading-snug mb-4 font-heading">
+              The problem was never lack of data — it&apos;s missed action.
             </p>
-            <p className="text-lg leading-relaxed font-light text-brand-lavender font-body">
+            <p className="text-xl leading-relaxed font-light text-brand-lavender font-body">
               Risk models predict. Operations send reminders. But almost no layer in healthcare is jointly responsible for trust, readiness, follow-through, and learning.
             </p>
           </div>
