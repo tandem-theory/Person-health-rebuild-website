@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import {
   Wind, Droplets, Dna, Building2,
-  FileBarChart, MessageSquare, Smartphone, Watch
+  FileBarChart, MessageSquare, Smartphone, Watch,
+  RefreshCw, ShieldCheck, ScanEye, Zap
 } from 'lucide-react'
 import { images } from '../data/images'
 import { useScrollReveal } from '../hooks/useScrollReveal'
@@ -135,13 +136,15 @@ export default function PlatformPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: 'Closes the loop', icon: '↻', desc: 'Most systems recommend. TOMME tracks whether the action was taken, completed, or abandoned — and adjusts.' },
-              { title: 'Governed by design', icon: '⛨', desc: 'Safety gates, human-review thresholds, and transparency are built into the architecture, not added later.' },
-              { title: 'Reads behavior', icon: '◎', desc: 'Models readiness, trust, and friction alongside clinical signals — because detection without activation is waste.' },
-              { title: 'Gets smarter', icon: '⚡', desc: 'Every completed action, every override, every drop-off improves the next recommendation.' },
+              { title: 'Closes the loop', Icon: RefreshCw, desc: 'Most systems recommend. TOMME tracks whether the action was taken, completed, or abandoned — and adjusts.' },
+              { title: 'Governed by design', Icon: ShieldCheck, desc: 'Safety gates, human-review thresholds, and transparency are built into the architecture, not added later.' },
+              { title: 'Reads behavior', Icon: ScanEye, desc: 'Models readiness, trust, and friction alongside clinical signals — because detection without activation is waste.' },
+              { title: 'Gets smarter', Icon: Zap, desc: 'Every completed action, every override, every drop-off improves the next recommendation.' },
             ].map((item, i) => (
               <div key={i} className="bg-dark-card backdrop-blur-xl border border-brand-lavender/10 rounded-2xl p-6 hover:border-brand-medium/30 transition-all duration-300 flex items-start gap-5">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-deep/10 border border-brand-medium/20 flex items-center justify-center shrink-0 text-2xl text-brand-medium" aria-hidden="true">{item.icon}</div>
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
+                  <item.Icon className="w-6 h-6 text-white" strokeWidth={1.5} />
+                </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3 font-heading">{item.title}</h3>
                   <p className="text-brand-lavender text-sm leading-relaxed font-light font-body">{item.desc}</p>
