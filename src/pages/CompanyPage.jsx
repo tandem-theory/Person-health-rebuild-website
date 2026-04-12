@@ -3,7 +3,6 @@ import { Users, ChevronDown } from 'lucide-react'
 import SectionWrapper from '../components/layout/SectionWrapper'
 import SectionLabel from '../components/ui/SectionLabel'
 import Button from '../components/ui/Button'
-import Card from '../components/ui/Card'
 import CalloutBlock from '../components/ui/CalloutBlock'
 import NumberedStack from '../components/ui/NumberedStack'
 import Accordion from '../components/ui/Accordion'
@@ -112,8 +111,8 @@ function OriginsSection() {
         ]} />
       </div>
 
-      <p className="mt-10 text-brand-lavender/80 font-body font-light italic text-base max-w-3xl">
-        These represent enabling lineage — not co-equal brands. Person Health is the platform. Everything else feeds into it.
+      <p className="mt-10 text-brand-lavender/80 font-body font-light italic text-[17px] max-w-3xl">
+        These represent enabling lineage — not co-equal brands. Person Health is the platform. Everything else feeds&nbsp;into&nbsp;it.
       </p>
 
       <div className="mt-10 text-center">
@@ -150,6 +149,9 @@ function LeadershipSection() {
     'Ali Khammanivong': 'Molecular scientist and AI expert with a PhD in Cancer Biology & Bioinformatics from the University of Minnesota. At Person Health, he leads the molecular diagnostics platform for early cancer detection, integrating genomics, proteomics, and machine learning.',
     'Dan Que Pham': 'Biotech operator and co-founder of Oncodea, where she led development of Oncodea, an AI-based platform for early cancer detection. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
     'Raia Finc': 'Systems engineer with two decades of experience spanning DuPont and Boston Scientific. At Person Health, she leads electrical, mechanical, and software development of the breath-based diagnostic platform — translating innovation into production-ready systems.',
+    'Thomas Sheehan': 'Visionary healthcare innovator and scientific founder driving Person Health\'s core technology strategy. As Chairman and Chief Innovation Officer, he leads the company\'s intellectual property portfolio and technology roadmap.',
+    'Jennifer Schaumburg': 'Compliance leader ensuring Person Health meets all regulatory, privacy, and operational standards across its governed health platform.',
+    'Aaron Salinas': 'Security leader responsible for protecting Person Health\'s platform infrastructure, patient data, and operational systems.',
   }
 
   const photos = {
@@ -211,44 +213,66 @@ function LeadershipSection() {
 
       {groups.map((group) => (
         <div key={group.title} className="mt-12">
-          <h3 className="font-heading font-semibold text-brand-deep text-lg mb-6">{group.title}</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start">
+          <h3 className="font-heading font-semibold text-brand-deep text-lg mb-6 text-center">{group.title}</h3>
+          <div className={`grid grid-cols-2 sm:grid-cols-3 ${group.members.length <= 3 ? 'lg:grid-cols-3 max-w-2xl' : 'lg:grid-cols-5 max-w-4xl'} gap-6 mx-auto`}>
             {group.members.map((member) => {
               const hasBio = bios[member.name]
               const isOpen = expandedBio === member.name
+              const hasPhoto = photos[member.name]
               return (
-                <Card key={member.name} variant="light">
-                  <button
-                    className="w-full text-left flex items-center gap-4"
-                    onClick={() => hasBio && setExpandedBio(isOpen ? null : member.name)}
-                    aria-expanded={isOpen}
-                  >
-                    {photos[member.name] ? (
-                      <img
-                        src={photos[member.name]}
-                        alt={member.name}
-                        className="w-14 h-14 rounded-full object-cover shrink-0 border border-brand-lavender/30"
-                      />
-                    ) : (
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light border border-brand-lavender/30 flex items-center justify-center shrink-0" aria-hidden="true">
-                        <Users className="w-6 h-6 text-brand-primary" strokeWidth={1.5} />
-                      </div>
-                    )}
-                    <div className="flex-1">
-                      <h4 className="font-heading font-semibold text-brand-deep text-sm">{member.name}</h4>
-                      <p className="text-xs text-gray-600 font-body font-light mt-0.5">{member.role}</p>
+                <button
+                  key={member.name}
+                  className="text-center group cursor-pointer"
+                  onClick={() => hasBio && setExpandedBio(isOpen ? null : member.name)}
+                  aria-expanded={isOpen}
+                >
+                  {hasPhoto ? (
+                    <img
+                      src={photos[member.name]}
+                      alt={member.name}
+                      className="w-28 h-28 lg:w-32 lg:h-32 rounded-full object-cover mx-auto border-3 border-brand-lavender/30 group-hover:border-brand-primary/50 transition-all duration-300 grayscale-0"
+                    />
+                  ) : (
+                    <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light border-3 border-brand-lavender/30 flex items-center justify-center mx-auto" aria-hidden="true">
+                      <Users className="w-10 h-10 text-brand-primary/40" strokeWidth={1.5} />
                     </div>
-                    {hasBio && (
-                      <ChevronDown className={`w-4 h-4 text-brand-primary shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
-                    )}
-                  </button>
-                  {isOpen && hasBio && (
-                    <p className="mt-4 pt-4 border-t border-brand-lavender/20 text-sm text-gray-600 font-body font-light leading-relaxed">{hasBio}</p>
                   )}
-                </Card>
+                  <h4 className="font-heading font-semibold text-brand-deep text-sm mt-3">{member.name}</h4>
+                  <p className="text-xs text-gray-500 font-body font-light mt-0.5 leading-snug">{member.role}</p>
+                </button>
               )
             })}
           </div>
+          {/* Expanded bio - renders below the grid for the selected person */}
+          {group.members.some((m) => expandedBio === m.name) && (
+            <div className="mt-6 bg-brand-deep rounded-2xl p-6 lg:p-8 max-w-3xl mx-auto">
+              <div className="flex items-start gap-4">
+                {photos[expandedBio] && (
+                  <img
+                    src={photos[expandedBio]}
+                    alt={expandedBio}
+                    className="w-16 h-16 rounded-full object-cover shrink-0 border-2 border-brand-medium/30"
+                  />
+                )}
+                <div className="flex-1">
+                  <h4 className="font-heading font-semibold text-white text-base">{expandedBio}</h4>
+                  <p className="text-xs text-brand-lavender font-body font-light mt-0.5">
+                    {group.members.find((m) => m.name === expandedBio)?.role}
+                  </p>
+                  <p className="mt-3 text-sm text-brand-lavender/90 font-body font-light leading-relaxed">
+                    {bios[expandedBio]}
+                  </p>
+                </div>
+                <button
+                  onClick={() => setExpandedBio(null)}
+                  className="text-brand-lavender/60 hover:text-white shrink-0 transition-colors"
+                  aria-label="Close bio"
+                >
+                  <ChevronDown className="w-5 h-5 rotate-180" />
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       ))}
 

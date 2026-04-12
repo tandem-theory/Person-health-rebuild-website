@@ -60,7 +60,7 @@ export default function PlatformPage() {
         <Reveal className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4">The Platform</p>
           <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white leading-[1.05] tracking-tight mb-6 font-heading">
-            One platform. One engine.<br />Multiple ways to enter.
+            One platform. One engine.<br />Multiple ways to&nbsp;enter.
           </h1>
           <p className="text-lg text-brand-lavender font-light max-w-2xl leading-relaxed font-body">
             Person Health organizes screening, early detection, and clinician-reviewed diagnosis support into a single governed workflow. Every product line feeds the same completion engine — TOMME.

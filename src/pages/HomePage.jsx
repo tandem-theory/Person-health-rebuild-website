@@ -15,7 +15,7 @@ import Button from '../components/ui/Button'
    ═══════════════════════════════════════ */
 
 const productImages = [
-  '/images/mywellnessq.jpg',
+  '/images/mywellnessq-new.png',
   '/images/mywellnessq-labs.png',
   '/images/oncodea.png',
   '/images/breathe.jpeg',
@@ -138,23 +138,23 @@ export default function HomePage() {
             The Problem
           </p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading text-center">
-            The problem is not lack of data. It is missed action.
+            Healthcare generates signals every day.<br className="hidden lg:inline" /> The gap is what happens next.
           </h2>
           <p className="text-lg leading-relaxed font-light text-gray-600 font-body max-w-2xl mb-16 text-center mx-auto">
             Eligible people do not screen. Abnormal results do not close. Symptomatic people delay care.
           </p>
 
           {/* Three problem cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               { title: 'Eligible but inactive', body: 'Screening is due, but outreach is generic, distrust is high, and the next step feels heavier than the risk.', tag: 'Eligibility exists. Activation doesn\u2019t.' },
-              { title: 'Abnormal but lost to follow-up', body: 'Results arrive, but nothing reliably converts them into scheduling, escalation, or clinician-reviewed recovery.', tag: 'Detection happens. Completion doesn\u2019t.' },
-              { title: 'Symptomatic but delayed', body: 'People wait, minimize, search online, or avoid the system entirely because uncertainty, fear, cost, and friction dominate behavior.', tag: 'Symptoms present. Action stalls.' },
+              { title: 'Abnormal but lost\u00A0to\u00A0follow-up', body: 'Results arrive, but nothing reliably converts them into scheduling, escalation, or clinician-reviewed recovery.', tag: 'Detection happens. Completion doesn\u2019t.' },
+              { title: 'Symptomatic but\u00A0delayed', body: 'People wait, minimize, search online, or avoid the system entirely because uncertainty, fear, cost, and friction dominate behavior.', tag: 'Symptoms present. Action stalls.' },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex flex-col">
-                <h3 className="text-base font-semibold text-brand-deep mb-4 font-heading min-h-[3rem] flex items-center">{item.title}</h3>
+                <h3 className="text-base font-semibold text-brand-deep mb-4 font-heading whitespace-nowrap">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed mb-6 font-light font-body flex-1">{item.body}</p>
-                <p className="text-sm font-medium text-brand-primary font-body" aria-label={item.tag}>
+                <p className="text-sm font-medium text-brand-primary font-body whitespace-nowrap" aria-label={item.tag}>
                   <span aria-hidden="true">&rarr;</span> {item.tag}
                 </p>
               </div>
@@ -162,7 +162,7 @@ export default function HomePage() {
           </div>
 
           {/* Callout */}
-          <div className="bg-brand-deep rounded-2xl p-8 lg:p-10 mb-16">
+          <div className="bg-brand-deep rounded-2xl p-8 lg:p-10 mb-12">
             <p className="text-xl leading-relaxed font-light text-brand-lavender font-body">
               Risk models predict. Operations send reminders. But almost no layer in healthcare is jointly responsible for trust, readiness, follow-through, and learning.
             </p>
@@ -204,7 +204,7 @@ export default function HomePage() {
             The Platform
           </p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
-            One platform. One engine.<br />Multiple ways to enter.
+            One platform. One engine.<br />Multiple ways to&nbsp;enter.
           </h2>
           <p className="text-lg leading-relaxed font-light text-brand-lavender font-body max-w-2xl mb-16 text-center mx-auto">
             MyWellnessQ stays the front door. Every product line shares one data layer, one intelligence engine, and one workflow surface.
