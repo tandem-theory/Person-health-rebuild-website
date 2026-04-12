@@ -179,10 +179,12 @@ function Methodology() {
           { icon: Shield, title: 'Governance KPIs', items: ['Audit trail completeness', 'Threshold compliance rate', 'Clinician override rate', 'Signal closure rate'] },
         ].map((col) => (
           <Card key={col.title} variant="light">
-            <div className="w-12 h-12 p-2.5 rounded-2xl bg-gradient-to-br from-brand-primary/10 to-brand-light border border-brand-lavender/30 flex items-center justify-center mb-4" aria-hidden="true">
-              <col.icon className="w-full h-full text-brand-primary" strokeWidth={1.5} />
+            <div className="flex items-start gap-4 mb-4">
+              <div className="w-14 h-14 p-3 rounded-2xl bg-gradient-to-br from-brand-primary to-brand-deep flex items-center justify-center shrink-0" aria-hidden="true">
+                <col.icon className="w-full h-full text-white" strokeWidth={1.5} />
+              </div>
+              <h3 className="font-heading font-semibold text-brand-deep mt-3">{col.title}</h3>
             </div>
-            <h3 className="font-heading font-semibold text-brand-deep">{col.title}</h3>
             <ul className="mt-3 space-y-2">
               {col.items.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-gray-600 font-body font-light">

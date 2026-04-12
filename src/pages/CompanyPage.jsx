@@ -55,7 +55,8 @@ function AboutSection() {
         </div>
         <div className="rounded-2xl overflow-hidden shadow-card-hover">
           <img
-            src={images.sections.data}
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+            style={{ filter: 'hue-rotate(240deg) saturate(1.3)' }}
             alt="Data visualization representing multimodal health signals"
             className="w-full h-96 object-cover"
           />

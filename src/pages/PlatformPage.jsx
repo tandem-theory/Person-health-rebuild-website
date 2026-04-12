@@ -120,29 +120,32 @@ export default function PlatformPage() {
       </section>
 
       {/* TOMME DEEP DIVE */}
-      <section id="tomme" className="py-18 lg:py-24 bg-gradient-to-b from-white via-brand-light to-white">
+      <section id="tomme" className="py-18 lg:py-24" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">TOMME Core</p>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">TOMME Core</p>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
             TOMME — The engine behind all of it
           </h2>
-          <p className="text-lg text-gray-600 font-light leading-relaxed font-body max-w-3xl mb-6 text-center mx-auto">
+          <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-6 text-center mx-auto">
             TOMME is the governed intelligence core inside Person Health. It unifies clinical trajectory, behavior state, trust, and intervention response inside one model — so buyers experience one system, not disconnected tools.
           </p>
-          <p className="text-lg text-gray-600 font-light leading-relaxed font-body max-w-3xl mb-16 text-center mx-auto">
+          <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-16 text-center mx-auto">
             The engine does not generate recommendations and walk away — it selects the safest next step, routes it into a real workflow, tracks completion, and learns from the outcome.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: 'Closes the loop', desc: 'Most systems recommend. TOMME tracks whether the action was taken, completed, or abandoned — and adjusts.' },
-              { title: 'Governed by design', desc: 'Safety gates, human-review thresholds, and transparency are built into the architecture, not added later.' },
-              { title: 'Reads behavior', desc: 'Models readiness, trust, and friction alongside clinical signals — because detection without activation is waste.' },
-              { title: 'Gets smarter', desc: 'Every completed action, every override, every drop-off improves the next recommendation.' },
+              { title: 'Closes the loop', icon: '↻', desc: 'Most systems recommend. TOMME tracks whether the action was taken, completed, or abandoned — and adjusts.' },
+              { title: 'Governed by design', icon: '⛨', desc: 'Safety gates, human-review thresholds, and transparency are built into the architecture, not added later.' },
+              { title: 'Reads behavior', icon: '◎', desc: 'Models readiness, trust, and friction alongside clinical signals — because detection without activation is waste.' },
+              { title: 'Gets smarter', icon: '⚡', desc: 'Every completed action, every override, every drop-off improves the next recommendation.' },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300">
-                <h3 className="text-lg font-semibold text-brand-deep mb-3 font-heading">{item.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed font-light font-body">{item.desc}</p>
+              <div key={i} className="bg-dark-card backdrop-blur-xl border border-brand-lavender/10 rounded-2xl p-6 hover:border-brand-medium/30 transition-all duration-300 flex items-start gap-5">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-deep/10 border border-brand-medium/20 flex items-center justify-center shrink-0 text-2xl text-brand-medium" aria-hidden="true">{item.icon}</div>
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-3 font-heading">{item.title}</h3>
+                  <p className="text-brand-lavender text-sm leading-relaxed font-light font-body">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>

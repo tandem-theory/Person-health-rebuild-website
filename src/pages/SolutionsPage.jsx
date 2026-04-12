@@ -108,48 +108,52 @@ export default function SolutionsPage() {
       </section>
 
       {/* ─── AUDIENCE SECTIONS ─── */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-18 lg:py-24">
-        <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          {audiences.map((audience, i) => (
-            <Reveal key={i}>
-              <div className="grid md:grid-cols-2 gap-12 items-start mb-24">
-                <div>
-                  <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
-                    style={{ background: 'linear-gradient(135deg, rgba(98,55,160,0.1), #F5F0FA)', border: '1px solid rgba(215,207,230,0.3)' }}
-                    aria-hidden="true"
-                  >
-                    <audience.icon className="w-6 h-6 text-brand-primary" />
-                  </div>
-                  <h2 className="text-[clamp(1.75rem,3vw,2.25rem)] font-semibold text-brand-deep leading-[1.15] mb-2 font-heading">
-                    {audience.title}
-                  </h2>
-                  <p className="text-[15px] font-medium text-brand-primary mb-4 font-body">{audience.subtitle}</p>
-                  <p className="text-lg text-gray-600 font-light leading-relaxed font-body">{audience.body}</p>
-                </div>
-                <div>
-                  {audience.sections.map((s, j) => (
-                    <div key={j} className="border-l-[3px] border-brand-primary/30 pl-5 mb-5">
-                      <h4 className="text-base font-semibold text-brand-deep mb-1 font-heading">{s.title}</h4>
-                      <p className="text-[15px] text-gray-600 font-light leading-relaxed font-body">{s.desc}</p>
+      <div>
+        {audiences.map((audience, i) => {
+          const isDark = i % 2 === 1
+          return (
+            <section key={i} className={`py-18 lg:py-24 ${isDark ? 'bg-brand-light' : 'bg-white'}`}>
+              <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
+                <div className="grid md:grid-cols-2 gap-12 items-start">
+                  <div className="flex items-start gap-5">
+                    <div
+                      className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0"
+                      style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }}
+                      aria-hidden="true"
+                    >
+                      <audience.icon className="w-7 h-7 text-white" />
                     </div>
-                  ))}
-                  {audience.closing && (
-                    <p className="text-sm text-brand-primary italic font-body">{audience.closing}</p>
-                  )}
+                    <div>
+                      <h2 className="text-[clamp(1.75rem,3vw,2.25rem)] font-semibold text-brand-deep leading-[1.15] mb-2 font-heading">
+                        {audience.title}
+                      </h2>
+                      <p className="text-[15px] font-medium text-brand-primary mb-4 font-body">{audience.subtitle}</p>
+                      <p className="text-lg text-gray-600 font-light leading-relaxed font-body">{audience.body}</p>
+                    </div>
+                  </div>
+                  <div>
+                    {audience.sections.map((s, j) => (
+                      <div key={j} className="border-l-[3px] border-brand-primary/30 pl-5 mb-5">
+                        <h4 className="text-base font-semibold text-brand-deep mb-1 font-heading">{s.title}</h4>
+                        <p className="text-[15px] text-gray-600 font-light leading-relaxed font-body">{s.desc}</p>
+                      </div>
+                    ))}
+                    {audience.closing && (
+                      <p className="text-sm text-brand-primary italic font-body">{audience.closing}</p>
+                    )}
+                  </div>
                 </div>
-              </div>
-              {i < audiences.length - 1 && (
-                <hr className="border-t border-brand-lavender/40 mb-24" />
-              )}
-            </Reveal>
-          ))}
+              </Reveal>
+            </section>
+          )
+        })}
 
-          <div className="text-center">
+        <section className="py-18 lg:py-24 bg-white">
+          <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
             <Button href="/contact">Request partnership discussion</Button>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   )
 }
