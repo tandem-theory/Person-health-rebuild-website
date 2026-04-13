@@ -147,13 +147,13 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               { title: 'Eligible but inactive', body: 'Screening is due, but outreach is generic, distrust is high, and the next step feels heavier than the risk.', tag: 'Eligibility exists. Activation doesn\u2019t.' },
-              { title: 'Abnormal but lost\u00A0to\u00A0follow-up', body: 'Results arrive, but nothing reliably converts them into scheduling, escalation, or clinician-reviewed recovery.', tag: 'Detection happens. Completion doesn\u2019t.' },
-              { title: 'Symptomatic but\u00A0delayed', body: 'People wait, minimize, search online, or avoid the system entirely because uncertainty, fear, cost, and friction dominate behavior.', tag: 'Symptoms present. Action stalls.' },
+              { title: 'Abnormal but lost to follow-up', body: 'Results arrive, but nothing reliably converts them into scheduling, escalation, or clinician-reviewed recovery.', tag: 'Detection happens. Completion doesn\u2019t.' },
+              { title: 'Symptomatic but delayed', body: 'People wait, minimize, search online, or avoid the system entirely because uncertainty, fear, cost, and friction dominate behavior.', tag: 'Symptoms present. Action stalls.' },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex flex-col">
-                <h3 className="text-base font-semibold text-brand-deep mb-4 font-heading whitespace-nowrap">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6 font-light font-body flex-1">{item.body}</p>
-                <p className="text-sm font-medium text-brand-primary font-body whitespace-nowrap" aria-label={item.tag}>
+              <div key={i} className="bg-white rounded-2xl p-6 lg:p-8 border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                <h3 className="text-base font-semibold text-brand-deep mb-4 font-heading min-h-[2.5rem]">{item.title}</h3>
+                <p className="text-gray-600 text-[15px] leading-relaxed mb-6 font-light font-body flex-1">{item.body}</p>
+                <p className="text-sm font-medium text-brand-primary font-body min-h-[2.5rem]" aria-label={item.tag}>
                   <span aria-hidden="true">&rarr;</span> {item.tag}
                 </p>
               </div>
