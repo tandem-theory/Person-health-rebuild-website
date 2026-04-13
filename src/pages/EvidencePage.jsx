@@ -113,7 +113,7 @@ function BreatheSignals() {
   return (
     <SectionWrapper id="breathe-signals" bg="dark">
       <div className="text-center">
-        <SectionLabel text="Breathe Signal Library" />
+        <SectionLabel text="Vocxi Breathe Signal Library" />
       </div>
       <h2
         className="mt-4 font-heading font-semibold text-white leading-[1.15] tracking-[-0.01em] text-center"
@@ -133,7 +133,7 @@ function BreatheSignals() {
       </div>
 
       <p className="mt-10 text-center text-brand-lavender/80 font-body font-light italic text-base max-w-3xl mx-auto">
-        All Breathe signal products undergo the same evidence governance as Oncodea products — peer-reviewed validation, threshold-bound scoring, and clinician-reviewed outputs.
+        All Vocxi Breathe signal products undergo the same evidence governance as Oncodea products — peer-reviewed validation, threshold-bound scoring, and clinician-reviewed outputs.
       </p>
 
       {/* Stat badges */}
@@ -230,7 +230,7 @@ function EvidenceFAQ() {
           items={[
             {
               question: 'Are Person Health products FDA-cleared?',
-              answer: 'Person Health products are in various stages of clinical validation and regulatory engagement. Oncodea panels are validated through IRB-approved, multi-site clinical trials. Breathe signal products are progressing through validation stages with published and in-progress data. Regulatory status is disclosed on a per-product basis — contact us for current status on specific products.',
+              answer: 'Person Health products are in various stages of clinical validation and regulatory engagement. Oncodea panels are validated through IRB-approved, multi-site clinical trials. Vocxi Breathe signal products are progressing through validation stages with published and in-progress data. Regulatory status is disclosed on a per-product basis — contact us for current status on specific products.',
             },
             {
               question: 'How is the evidence governed?',

@@ -48,7 +48,7 @@ function AboutSection() {
             Health systems generate signals every day — screening flags, lab anomalies, risk scores, behavioral indicators. But the distance between finding a signal and completing the right next step is where healthcare fails most people.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
-            Person Health is a multimodal health action platform that connects screening, early detection, and clinician-reviewed diagnosis support into one governed workflow. The platform does not just detect — it completes.
+            Person Health is a multimodal health action platform that connects screening, early detection, and self directed-clinician guided diagnosis support into one governed workflow. The platform does not just detect — it completes.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
             Every signal that enters Person Health is scored, routed to the appropriate care lane, reviewed by a clinician, and tracked to closure. Nothing is lost between detection and action.
@@ -93,7 +93,7 @@ function OriginsSection() {
             color: '#6237A0',
           },
           {
-            title: 'Breathe — Respiratory signal science',
+            title: 'Vocxi Breathe — Respiratory signal science',
             description: 'Real-time breath VOC analysis brought population-scale, non-invasive screening into the platform. Breathe expanded Person Health\'s signal types beyond blood-based biomarkers.',
             color: '#9B71D6',
           },
@@ -359,7 +359,7 @@ function CompanyFAQ() {
           items={[
             {
               question: 'How is Person Health organized as a platform?',
-              answer: 'Person Health is a single platform with multiple product lines — MyWellnessQ, MyWellnessQ Labs, Oncodea / MMyeloma, and Breathe — all sharing one governed intelligence engine (TOMME). Buyers experience one system, one trust architecture, and one completion workflow, regardless of which entry point they use.',
+              answer: 'Person Health is a single platform with multiple product lines — MyWellnessQ, MyWellnessQ Labs, Oncodea / MMyeloma, and Vocxi Breathe — all sharing one governed intelligence engine (TOMME). Buyers experience one system, one trust architecture, and one completion workflow, regardless of which entry point they use.',
             },
             {
               question: 'Is Person Health hiring?',

@@ -26,7 +26,7 @@ const productLines = [
   { name: 'MyWellnessQ', desc: 'Patient/member front door', color: '#6237A0' },
   { name: 'MyWellnessQ Labs', desc: 'Immediate demand monetization and buyer-behavior data', color: '#9B71D6' },
   { name: 'Oncodea / MMyeloma', desc: 'First owned specialty margin', color: '#D7CFE6' },
-  { name: 'Breathe', desc: 'Acute-care workflow value and site economics', color: '#9B71D6' },
+  { name: 'Vocxi Breathe', desc: 'Acute-care workflow value and site economics', color: '#9B71D6' },
   { name: 'TOMME', desc: 'Shared decision, routing, and learning layer across all of it', color: '#6237A0' },
 ]
 
@@ -114,7 +114,7 @@ export default function HomePage() {
             Earlier signals.<br />Safer next steps.
           </h1>
           <p className="max-w-3xl mx-auto mb-10 text-xl leading-relaxed font-light text-brand-lavender font-body">
-            Person Health is the multimodal health action platform for screening, early detection, and clinician-reviewed diagnosis support. Powered by TOMME, our governed intelligence engine, we turn breath, blood, labs, symptoms, claims, EHR, and behavior into the safest next step — and help get it completed.
+            Person Health is the multimodal health action platform for screening, early detection, and self directed-clinician guided diagnosis support. Powered by TOMME, our governed intelligence engine, we turn breath, blood, labs, symptoms, claims, EHR, and behavior into the safest next step — and help get it completed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button href="/platform#tomme">See how TOMME works</Button>

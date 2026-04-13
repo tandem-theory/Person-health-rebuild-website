@@ -22,7 +22,7 @@ const productLines = [
   { name: 'MyWellnessQ', role: 'Patient/member front door', detail: 'Consumer, clinician, and sponsor engagement. Ordering, results, guidance, and longitudinal conversion — all in one place. Every interaction becomes a trackable member journey.', color: '#6237A0' },
   { name: 'MyWellnessQ Labs', role: 'Immediate demand monetization and buyer-behavior data', detail: '70+ live tests, print-kit fulfillment, and complete ordering-to-results workflow. Every ordered test is a buyer-behavior datapoint that feeds back into the platform.', color: '#9B71D6' },
   { name: 'Oncodea / MMyeloma', role: 'First owned specialty margin', detail: 'Molecular fingerprinting detects cancer before symptoms from a simple blood draw. First wedge: multiple myeloma via Mayo Clinic collaboration. VERITY clinical trial active.', color: '#D7CFE6' },
-  { name: 'Breathe', role: 'Acute-care workflow value and site economics', detail: 'Non-invasive breath screening via graphene nanosensor arrays. Results in under one minute. Pilot-first deployment with site economics, then broader rollout.', color: '#9B71D6' },
+  { name: 'Vocxi Breathe', role: 'Acute-care workflow value and site economics', detail: 'Non-invasive breath screening via graphene nanosensor arrays. Results in under one minute. Pilot-first deployment with site economics, then broader rollout.', color: '#9B71D6' },
   { name: 'TOMME', role: 'Shared decision, routing, and learning layer across all of it', detail: 'TOMME connects every product line through one governed intelligence layer. Not a feature — the engine that makes the entire platform compound.', color: '#6237A0' },
 ]
 
@@ -63,7 +63,7 @@ export default function PlatformPage() {
             One platform. One engine.<br />Multiple ways to&nbsp;enter.
           </h1>
           <p className="text-lg text-brand-lavender font-light max-w-2xl leading-relaxed font-body">
-            Person Health organizes screening, early detection, and clinician-reviewed diagnosis support into a single governed workflow. Every product line feeds the same completion engine — TOMME.
+            Person Health organizes screening, early detection, and self directed-clinician guided diagnosis support into a single governed workflow. Every product line feeds the same completion engine — TOMME.
           </p>
         </Reveal>
       </section>
@@ -169,9 +169,9 @@ export default function PlatformPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
             {[
               { n: '01', title: 'Sense', desc: 'New lab, symptom, claim, message, wearable, or screening-due event.' },
-              { n: '02', title: 'Infer', desc: 'Clinical opportunity + trajectory + trust and friction.' },
-              { n: '03', title: 'Decide', desc: 'Next best action subject to safety, evidence, consent, and fairness.' },
-              { n: '04', title: 'Route', desc: 'Patient CTA, navigator task, clinician review, or urgent escalation.' },
+              { n: '02', title: 'Understand', desc: 'AI reads all signals together to build a picture of your health trajectory.' },
+              { n: '03', title: 'Decide', desc: 'TOMME identifies the single safest next step — not a score, an action.' },
+              { n: '04', title: 'Guide', desc: 'Routes to the right person: the patient, a care navigator, or the doctor.' },
               { n: '05', title: 'Complete', desc: 'Booked screening, workup, diagnosis support, or deferred path.' },
               { n: '06', title: 'Learn', desc: 'Response, drop-off, override, and outcome update the model.' },
             ].map((step, i) => (

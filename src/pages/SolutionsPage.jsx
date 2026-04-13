@@ -56,8 +56,8 @@ const audiences = [
     body: 'One integrated platform. Compounding intelligence. Multiple monetization layers.',
     sections: [
       { title: 'Revenue infrastructure', desc: '2+ tests at launch · 100K+ tests/month capacity · 2 lab facilities · cost + 10% wholesale pricing.' },
-      { title: 'What we book', desc: 'Incremental D2C and B2B2B revenue · MyWellnessQ programs and workflow fees · Owned-product revenue as Oncodea and Breathe go live.' },
-      { title: 'Commercialization ladder', desc: 'MyWellnessQ front door → Paid programs + workflow fees → Oncodea specialty margin → Longitudinal data moat → Breathe site economics.' },
+      { title: 'What we book', desc: 'Incremental D2C and B2B2B revenue · MyWellnessQ programs and workflow fees · Owned-product revenue as Oncodea and Vocxi Breathe go live.' },
+      { title: 'Commercialization ladder', desc: 'MyWellnessQ front door → Paid programs + workflow fees → Oncodea specialty margin → Longitudinal data moat → Vocxi Breathe site economics.' },
     ],
     closing: 'Legacy partner-lab revenue is real proof the infrastructure exists — but it is not consolidated into Person Health revenue.',
   },
