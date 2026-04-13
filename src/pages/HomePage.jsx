@@ -437,11 +437,11 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-5 gap-4 mb-12">
             {[
-              { title: 'Health Systems', desc: 'Workflow economics and pilot path', to: '/solutions' },
-              { title: 'Clinicians', desc: 'Rationale, review, and follow-through', to: '/solutions' },
-              { title: 'Investors', desc: 'Commercialization ladder and compounding', to: '/solutions' },
-              { title: 'Patients', desc: 'Clarity, confidence, and next steps', to: '/solutions' },
-              { title: 'Partners', desc: 'Platform, evidence, and co-development', to: '/solutions' },
+              { title: 'Health Systems', desc: 'Workflow economics and pilot path', to: '/solutions#health-systems' },
+              { title: 'Clinicians', desc: 'Rationale, review, and follow-through', to: '/solutions#clinicians' },
+              { title: 'Investors', desc: 'Commercialization ladder and compounding', to: '/solutions#investors' },
+              { title: 'Patients', desc: 'Clarity, confidence, and next steps', to: '/solutions#patients' },
+              { title: 'Partners', desc: 'Platform, evidence, and co-development', to: '/solutions#partners' },
             ].map((item, i) => (
               <Link
                 key={i}

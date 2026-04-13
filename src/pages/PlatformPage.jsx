@@ -235,7 +235,7 @@ export default function PlatformPage() {
           </div>
 
           <div className="text-center">
-            <Button href="/evidence">Explore the evidence library</Button>
+            <Button href="/evidence">Explore our evidence</Button>
           </div>
         </Reveal>
       </section>

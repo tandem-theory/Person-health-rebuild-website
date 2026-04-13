@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import HomePage from './pages/HomePage'
@@ -9,6 +10,24 @@ import CompanyPage from './pages/CompanyPage'
 import ContactPage from './pages/ContactPage'
 import PrivacyPage from './pages/PrivacyPage'
 
+function ScrollToHashOrTop() {
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    if (hash) {
+      // Wait for page to render, then scroll to the element
+      setTimeout(() => {
+        const el = document.querySelector(hash)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname, hash])
+  return null
+}
+
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -17,6 +36,7 @@ export default function App() {
         Skip to main content
       </a>
 
+      <ScrollToHashOrTop />
       <Navbar />
 
       <main id="main-content" className="flex-1" role="main">

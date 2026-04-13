@@ -22,6 +22,7 @@ function Reveal({ children, className = '' }) {
 
 const audiences = [
   {
+    id: 'health-systems',
     icon: Building,
     title: 'Health Systems',
     subtitle: 'Workflow economics and pilot path',
@@ -34,6 +35,7 @@ const audiences = [
     closing: 'Not a new test. It is a clinical workflow accelerator.',
   },
   {
+    id: 'clinicians',
     icon: Stethoscope,
     title: 'Clinicians',
     subtitle: 'Rationale, review, and follow-through',
@@ -47,6 +49,7 @@ const audiences = [
     closing: 'Every recommendation shows its rationale. You decide. That boundary is non-negotiable.',
   },
   {
+    id: 'investors',
     icon: BarChart3,
     title: 'Investors',
     subtitle: 'Commercialization ladder and compounding',
@@ -59,6 +62,7 @@ const audiences = [
     closing: 'Legacy partner-lab revenue is real proof the infrastructure exists — but it is not consolidated into Person Health revenue.',
   },
   {
+    id: 'patients',
     icon: Users,
     title: 'Patients + Members',
     subtitle: 'Clarity, confidence, and next steps',
@@ -71,6 +75,7 @@ const audiences = [
     closing: 'Every recommendation is backed by clinical evidence and reviewed by a real clinician before it reaches you.',
   },
   {
+    id: 'partners',
     icon: Handshake,
     title: 'Partners',
     subtitle: 'Platform, evidence, and co-development',
@@ -112,7 +117,7 @@ export default function SolutionsPage() {
         {audiences.map((audience, i) => {
           const isDark = i % 2 === 1
           return (
-            <section key={i} className={`py-14 lg:py-18 ${isDark ? 'bg-brand-light' : 'bg-white'}`}>
+            <section key={i} id={audience.id} className={`py-14 lg:py-18 ${isDark ? 'bg-brand-light' : 'bg-white'}`}>
               <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                   <div className="flex items-start gap-5">
