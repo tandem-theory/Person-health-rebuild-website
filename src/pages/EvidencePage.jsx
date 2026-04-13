@@ -208,28 +208,11 @@ function Methodology() {
   )
 }
 
-/* ─────────── STUDY PAGES PLACEHOLDER ─────────── */
-function StudyPlaceholder() {
+/* ─────────── EVIDENCE CTA ─────────── */
+function EvidenceCTA() {
   return (
     <SectionWrapper bg="dark">
       <div className="text-center">
-        <SectionLabel text="Study Detail Pages" />
-        <h2
-          className="mt-4 font-heading font-semibold text-white leading-[1.15]"
-          style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)' }}
-        >
-          Individual study pages
-        </h2>
-      </div>
-
-      <div className="mt-10 border-2 border-dashed border-brand-medium/30 bg-brand-primary/5 p-8 rounded-2xl text-center">
-        <p className="font-heading font-semibold text-white">Content Pending</p>
-        <p className="text-sm text-brand-lavender font-body font-light mt-2">
-          Each study will have expandable sections with: intended use, study population, current status, known limitations, key metrics, and participating institutions.
-        </p>
-      </div>
-
-      <div className="mt-10 text-center">
         <Button href="/contact">Request evidence materials</Button>
       </div>
     </SectionWrapper>
@@ -281,7 +264,7 @@ export default function EvidencePage() {
       <ValidationLibrary />
       <BreatheSignals />
       <Methodology />
-      <StudyPlaceholder />
+      <EvidenceCTA />
       <EvidenceFAQ />
     </>
   )

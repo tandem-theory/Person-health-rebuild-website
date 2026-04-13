@@ -64,9 +64,6 @@ function AboutSection() {
         </div>
       </div>
 
-      <div className="mt-12 text-center">
-        <Button href="#origins" variant="ghost">Read our origins</Button>
-      </div>
     </SectionWrapper>
   )
 }
