@@ -185,9 +185,9 @@ function LeadershipSection() {
       ],
     },
     {
-      title: 'Compliance',
+      title: 'Trust and Controls',
       members: [
-        { name: 'Jennifer Schaumburg', role: 'Compliance Lead' },
+        { name: 'Jennifer Schaumburg', role: 'Head of Governance & Compliance' },
       ],
     },
   ]
