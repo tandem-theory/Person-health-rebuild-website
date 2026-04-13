@@ -209,7 +209,7 @@ function LeadershipSection() {
       {groups.map((group) => (
         <div key={group.title} className="mt-12">
           <h3 className="font-heading font-semibold text-brand-deep text-lg mb-6 text-center">{group.title}</h3>
-          <div className={`grid grid-cols-2 sm:grid-cols-3 ${group.members.length <= 3 ? 'lg:grid-cols-3 max-w-2xl' : 'lg:grid-cols-5 max-w-4xl'} gap-6 mx-auto`}>
+          <div className={`grid ${group.members.length === 1 ? 'grid-cols-1 max-w-xs' : group.members.length <= 3 ? 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 max-w-2xl' : 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 max-w-4xl'} gap-6 mx-auto`}>
             {group.members.map((member) => {
               const hasBio = bios[member.name]
               const isOpen = expandedBio === member.name
