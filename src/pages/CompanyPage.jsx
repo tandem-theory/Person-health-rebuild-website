@@ -167,7 +167,7 @@ function LeadershipSection() {
       members: [
         { name: 'Thomas Sheehan', role: 'Chairman & Chief Innovation Officer' },
         { name: 'Ping Yeh', role: 'Chief Executive Officer' },
-        { name: 'Parm Kang', role: 'Head of Finance' },
+        { name: 'Parm Kang', role: 'Chief Financial Officer' },
         { name: 'Michael Weaver', role: 'Chief Growth Officer' },
         { name: 'Megan Flynn', role: 'Chief Marketing Officer' },
       ],
@@ -175,7 +175,7 @@ function LeadershipSection() {
     {
       title: 'Science & Platform',
       members: [
-        { name: 'Randy Schiestl', role: 'Global Science & Operations Lead' },
+        { name: 'Randy Schiestl', role: 'Global Science & Operations' },
         { name: 'Greg Sherwood', role: 'Head of Volatile Diagnostics' },
         { name: 'Raia Finc', role: 'VP of Volatile Diagnostics' },
         { name: 'Ali Khammanivong', role: 'Head of Molecular Diagnostics' },
