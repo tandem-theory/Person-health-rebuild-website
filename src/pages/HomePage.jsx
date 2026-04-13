@@ -416,7 +416,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Button href="/evidence" variant="ghost">Explore the evidence library</Button>
+            <Button href="/evidence" variant="ghost">Explore the evidence</Button>
           </div>
         </Reveal>
       </section>
