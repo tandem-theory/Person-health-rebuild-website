@@ -145,7 +145,7 @@ function LeadershipSection() {
     'Dan Que Pham': 'Biotech operator and co-founder of Oncodea, where she led development of Oncodea, an AI-based platform for early cancer detection. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
     'Raia Finc': 'Systems engineer with two decades of experience spanning DuPont and Boston Scientific. At Person Health, she leads electrical, mechanical, and software development of the breath-based diagnostic platform — translating innovation into production-ready systems.',
     'Thomas Sheehan': 'Visionary healthcare innovator and scientific founder driving Person Health\'s core technology strategy. As Chairman and Chief Innovation Officer, he leads the company\'s intellectual property portfolio and technology roadmap.',
-    'Jennifer Schaumburg': 'Compliance leader ensuring Person Health meets all regulatory, privacy, and operational standards across its governed health platform.',
+    'Jennifer Schaumburg': 'Leads the systems that ensure Person Health operates with clear accountability, traceable execution, and controls that perform across regulated environments.',
     'Aaron Salinas': 'Security leader responsible for protecting Person Health\'s platform infrastructure, patient data, and operational systems.',
   }
 
@@ -155,10 +155,12 @@ function LeadershipSection() {
     'Parm Kang': '/images/team/parm-kang.jpg',
     'Michael Weaver': '/images/team/michael-weaver.jpg',
     'Megan Flynn': '/images/team/megan-flynn.jpg',
+    'Randy Schiestl': '/images/team/randy-schiestl.jpg',
+    'Greg Sherwood': '/images/team/greg-sherwood.jpg',
+    'Raia Finc': '/images/team/raia-finc.jpg',
     'Ali Khammanivong': '/images/team/ali-khammanivong.jpg',
     'Dan Que Pham': '/images/team/dan-que-pham.jpg',
     'Jennifer Schaumburg': '/images/team/jennifer-schaumburg.jpg',
-    'Aaron Salinas': '/images/team/aaron-salinas.jpg',
   }
 
   const groups = [
@@ -183,10 +185,9 @@ function LeadershipSection() {
       ],
     },
     {
-      title: 'Compliance & Security',
+      title: 'Compliance',
       members: [
         { name: 'Jennifer Schaumburg', role: 'Compliance Lead' },
-        { name: 'Aaron Salinas', role: 'Security Lead' },
       ],
     },
   ]
