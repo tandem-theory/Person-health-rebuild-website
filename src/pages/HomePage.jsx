@@ -144,7 +144,7 @@ export default function HomePage() {
           </p>
 
           {/* Three problem cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-6 mb-12">
             {[
               { title: 'Eligible but inactive', body: 'Screening is due, but outreach is generic, distrust is high, and the next step feels heavier than the risk.', tag: 'Eligibility exists. Activation doesn\u2019t.' },
               { title: 'Abnormal but lost to follow-up', body: 'Results arrive, but nothing reliably converts them into scheduling, escalation, or clinician-reviewed recovery.', tag: 'Detection happens. Completion doesn\u2019t.' },
