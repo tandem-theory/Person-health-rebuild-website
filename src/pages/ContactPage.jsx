@@ -43,7 +43,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden" style={{ background: 'linear-gradient(135deg, #28104E 0%, #3a1a6e 40%, #28104E 100%)' }}>
+      <section className="relative pt-28 pb-14 lg:pt-32 lg:pb-16 overflow-hidden" style={{ background: 'linear-gradient(135deg, #28104E 0%, #3a1a6e 40%, #28104E 100%)' }}>
         <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-deep/50 to-brand-deep" aria-hidden="true" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-8 text-center">
@@ -78,28 +78,6 @@ export default function ContactPage() {
             </div>
           ) : (
             <>
-              {/* Tabs */}
-              <fieldset>
-                <legend className="sr-only">Select your audience type</legend>
-                <div className="flex flex-wrap gap-2 mb-10" role="tablist" aria-label="Audience type">
-                  {tabs.map((tab) => (
-                    <button
-                      key={tab.key}
-                      onClick={() => setActiveTab(tab.key)}
-                      role="tab"
-                      aria-selected={activeTab === tab.key}
-                      className={`px-5 py-2.5 rounded-xl text-sm font-heading font-semibold transition-all duration-200 ${
-                        activeTab === tab.key
-                          ? 'bg-gradient-to-r from-brand-primary to-brand-deep text-white shadow-lg shadow-brand-primary/25'
-                          : 'bg-white border border-brand-lavender/30 text-brand-deep hover:border-brand-primary/30'
-                      }`}
-                    >
-                      {tab.label}
-                    </button>
-                  ))}
-                </div>
-              </fieldset>
-
               {/* Form */}
               <form onSubmit={handleSubmit} className="space-y-6" noValidate>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
