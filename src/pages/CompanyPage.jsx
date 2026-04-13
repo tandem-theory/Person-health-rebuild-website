@@ -155,7 +155,6 @@ function LeadershipSection() {
     'Parm Kang': '/images/team/parm-kang.jpg',
     'Michael Weaver': '/images/team/michael-weaver.jpg',
     'Megan Flynn': '/images/team/megan-flynn.jpg',
-    'Randy Schiestl': '/images/team/randy-schiestl.jpg',
     'Greg Sherwood': '/images/team/greg-sherwood.jpg',
     'Raia Finc': '/images/team/raia-finc.jpg',
     'Ali Khammanivong': '/images/team/ali-khammanivong.jpg',
