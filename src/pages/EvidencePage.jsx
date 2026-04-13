@@ -104,9 +104,6 @@ function ValidationLibrary() {
         </Card>
       </div>
 
-      <div className="mt-12 text-center">
-        <Button href="#breathe-signals" variant="ghost">See Breathe signal evidence</Button>
-      </div>
     </SectionWrapper>
   )
 }
@@ -147,9 +144,6 @@ function BreatheSignals() {
         <StatBadge value="CLIA" label="Certified lab ops" />
       </div>
 
-      <div className="mt-12 text-center">
-        <Button href="#methodology">See governance methodology</Button>
-      </div>
     </SectionWrapper>
   )
 }

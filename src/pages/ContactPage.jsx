@@ -204,9 +204,8 @@ export default function ContactPage() {
           <p className="mt-4 text-brand-lavender font-body font-light leading-relaxed text-lg max-w-2xl mx-auto">
             Learn more about the platform, the evidence, and the team before starting a conversation.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="mt-8 text-center">
             <Button href="/platform#tomme">See how TOMME works</Button>
-            <Button href="/evidence" variant="secondary">Explore the evidence library</Button>
           </div>
         </div>
       </SectionWrapper>

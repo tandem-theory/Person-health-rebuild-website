@@ -11,20 +11,24 @@ import ContactPage from './pages/ContactPage'
 import PrivacyPage from './pages/PrivacyPage'
 
 function ScrollToHashOrTop() {
-  const { pathname, hash } = useLocation()
+  const { pathname, hash, key } = useLocation()
   useEffect(() => {
     if (hash) {
       // Wait for page to render, then scroll to the element
-      setTimeout(() => {
+      const tryScroll = () => {
         const el = document.querySelector(hash)
         if (el) {
           el.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
-      }, 100)
+      }
+      // Try immediately and after a delay (for page transitions)
+      tryScroll()
+      setTimeout(tryScroll, 150)
+      setTimeout(tryScroll, 400)
     } else {
-      window.scrollTo(0, 0)
+      window.scrollTo({ top: 0, behavior: 'instant' })
     }
-  }, [pathname, hash])
+  }, [pathname, hash, key])
   return null
 }
 
