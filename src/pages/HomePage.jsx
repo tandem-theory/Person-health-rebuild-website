@@ -118,7 +118,6 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button href="/platform#tomme">See how TOMME works</Button>
-            <Button href="/contact" variant="secondary">Request partnership discussion</Button>
           </div>
           <div className="flex justify-center gap-8 text-sm text-brand-lavender/80 font-body">
             <span>Multimodal evidence</span>
@@ -453,9 +452,6 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center">
-            <Button href="/contact">Request partnership discussion</Button>
-          </div>
         </Reveal>
       </section>
 
@@ -493,9 +489,6 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="text-center mt-12">
-            <Button href="/contact">Request partnership discussion</Button>
-          </div>
         </Reveal>
       </section>
     </>

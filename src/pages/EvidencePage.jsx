@@ -201,9 +201,6 @@ function Methodology() {
         Every metric is tracked per product line, per care lane, and per deployment site — giving health systems and partners the granularity they need to prove value.
       </p>
 
-      <div className="mt-10 text-center">
-        <Button href="/contact">Request partnership discussion</Button>
-      </div>
     </SectionWrapper>
   )
 }
@@ -248,9 +245,6 @@ function EvidenceFAQ() {
           ]}
         />
 
-        <div className="mt-12 text-center">
-          <Button href="/contact">Request partnership discussion</Button>
-        </div>
       </div>
     </SectionWrapper>
   )

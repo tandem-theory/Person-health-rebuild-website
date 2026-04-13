@@ -148,11 +148,6 @@ export default function SolutionsPage() {
           )
         })}
 
-        <section className="py-14 lg:py-18 bg-white">
-          <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
-            <Button href="/contact">Request partnership discussion</Button>
-          </div>
-        </section>
       </div>
     </>
   )
