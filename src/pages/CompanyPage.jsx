@@ -56,9 +56,8 @@ function AboutSection() {
         </div>
         <div className="rounded-2xl overflow-hidden shadow-card-hover">
           <img
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
-            style={{ filter: 'hue-rotate(260deg) saturate(1.6) brightness(0.9)' }}
-            alt="Data visualization representing multimodal health signals"
+            src="/images/mwq-dashboard.png"
+            alt="MyWellnessQ platform dashboard"
             className="w-full h-96 object-cover"
           />
         </div>
