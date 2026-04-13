@@ -285,7 +285,7 @@ export default function HomePage() {
             Person Health is designed to improve measurable workflow outcomes — not just generate more insights.
           </p>
 
-          <div className="grid md:grid-cols-5 gap-5 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-16">
             {[
               { icon: TrendingUp, title: 'Increase screening completion' },
               { icon: RefreshCw, title: 'Recover abnormal-result follow-up' },
@@ -293,9 +293,9 @@ export default function HomePage() {
               { icon: Shield, title: 'Lower leakage and avoidable escalation' },
               { icon: Coins, title: 'Expand retained revenue and contribution margin' },
             ].map((item, i) => (
-              <div key={i} className="text-center p-6 rounded-2xl bg-white border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
-                <div className="w-12 h-12 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
-                  <item.icon className="w-5 h-5 text-white" />
+              <div key={i} className="flex items-center gap-3 p-4 md:flex-col md:text-center md:p-6 rounded-2xl bg-white border border-brand-lavender/30 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl shrink-0 md:mx-auto flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
+                  <item.icon className="w-4 h-4 md:w-5 md:h-5 text-white" />
                 </div>
                 <p className="text-sm font-medium text-brand-deep leading-snug font-body">{item.title}</p>
               </div>
@@ -340,19 +340,21 @@ export default function HomePage() {
             Every clinically meaningful next step should show provenance, uncertainty, and the conditions for human review.
           </p>
 
-          <div className="grid md:grid-cols-4 gap-5 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mb-16">
             {[
               { icon: FileText, title: 'Source attributes', q: 'What is this model? Who owns it? What population is it for?' },
               { icon: Database, title: 'Provenance + recency', q: 'What data triggered this? How current? What is missing?' },
               { icon: Scale, title: 'Uncertainty + fairness', q: 'How sure is the system? Which subgroups need monitoring?' },
               { icon: User, title: 'Human control', q: 'When does the case stop and require clinician review?' },
             ].map((item, i) => (
-              <div key={i} className="bg-gradient-to-br from-[#351566]/60 to-brand-deep/90 border border-white/10 rounded-2xl p-7 hover:border-brand-medium/30 transition-all duration-300">
-                <div className="w-14 h-14 rounded-2xl mb-5 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
-                  <item.icon className="w-6 h-6 text-white" />
+              <div key={i} className="bg-gradient-to-br from-[#351566]/60 to-brand-deep/90 border border-white/10 rounded-2xl p-5 md:p-7 hover:border-brand-medium/30 transition-all duration-300 flex items-start gap-4 md:flex-col">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
+                  <item.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
-                <h3 className="text-base font-semibold text-white mb-3 font-heading">{item.title}</h3>
-                <p className="text-brand-lavender text-sm leading-relaxed font-light font-body">{item.q}</p>
+                <div>
+                  <h3 className="text-base font-semibold text-white mb-2 md:mb-3 font-heading">{item.title}</h3>
+                  <p className="text-brand-lavender text-sm leading-relaxed font-light font-body">{item.q}</p>
+                </div>
               </div>
             ))}
           </div>
