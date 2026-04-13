@@ -132,7 +132,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 1: THE PROBLEM ─── */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-14 lg:py-18">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-10 lg:py-14">
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             The Problem
@@ -198,7 +198,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 2: THE PLATFORM ─── */}
-      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">
             The Platform
@@ -257,7 +257,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 3: TOMME CALLOUT ─── */}
-      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(135deg, #28104E 0%, #1a0a35 100%)' }}>
+      <section className="py-10 lg:py-14" style={{ background: 'linear-gradient(135deg, #28104E 0%, #1a0a35 100%)' }}>
         <Reveal className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4">
             TOMME
@@ -274,7 +274,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 4: WHY BUYERS CARE ─── */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-14 lg:py-18">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-10 lg:py-14">
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             Why Buyers Care
@@ -329,7 +329,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 5: TRUST BY DESIGN ─── */}
-      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">
             Trust by Design
@@ -370,7 +370,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 6: EVIDENCE PREVIEW ─── */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-14 lg:py-18">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-10 lg:py-14">
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             Evidence
@@ -422,7 +422,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 7: AUDIENCE ─── */}
-      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">
             Get Started
@@ -461,7 +461,7 @@ export default function HomePage() {
 
 
       {/* ─── FAQ ─── */}
-      <section className="py-14 lg:py-18 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-10 lg:py-14 bg-gradient-to-b from-brand-light to-white">
         <Reveal className="max-w-3xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">
             Frequently Asked Questions

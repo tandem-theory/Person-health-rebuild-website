@@ -69,7 +69,7 @@ export default function PlatformPage() {
       </section>
 
       {/* PRODUCT LINES */}
-      <section className="bg-gradient-to-b from-white via-brand-light to-white py-14 lg:py-18">
+      <section className="bg-gradient-to-b from-white via-brand-light to-white py-10 lg:py-14">
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">Product Families</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading text-center">
@@ -121,7 +121,7 @@ export default function PlatformPage() {
       </section>
 
       {/* TOMME DEEP DIVE */}
-      <section id="tomme" className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section id="tomme" className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">TOMME Core</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
@@ -156,7 +156,7 @@ export default function PlatformPage() {
       </section>
 
       {/* SIX-STEP WORKFLOW */}
-      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">Signal-to-Action Workflow</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
@@ -166,7 +166,7 @@ export default function PlatformPage() {
             Six steps. Zero gaps. The platform is accountable for completion, not just recommendation generation.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-5 mb-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
             {[
               { n: '01', title: 'Sense', desc: 'New lab, symptom, claim, message, wearable, or screening-due event.' },
               { n: '02', title: 'Infer', desc: 'Clinical opportunity + trajectory + trust and friction.' },
@@ -175,18 +175,18 @@ export default function PlatformPage() {
               { n: '05', title: 'Complete', desc: 'Booked screening, workup, diagnosis support, or deferred path.' },
               { n: '06', title: 'Learn', desc: 'Response, drop-off, override, and outcome update the model.' },
             ].map((step, i) => (
-              <div key={i} className="relative text-center py-10 px-6 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.07] transition-all duration-300">
+              <div key={i} className="relative text-center py-6 px-5 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.07] transition-all duration-300">
                 <div
-                  className="font-heading font-extrabold leading-[0.85] select-none mb-4"
-                  style={{ fontSize: 'clamp(4rem, 6vw, 5.5rem)', color: 'rgba(155,113,214,0.3)', letterSpacing: '-0.04em' }}
+                  className="font-heading font-extrabold leading-[0.85] select-none mb-3"
+                  style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', color: 'rgba(155,113,214,0.3)', letterSpacing: '-0.04em' }}
                   aria-hidden="true"
                 >
                   {step.n}
                 </div>
-                <span className="inline-flex items-center px-6 py-1.5 rounded-full border-[1.5px] border-brand-medium/35 text-brand-medium text-xs font-bold uppercase tracking-[0.16em] font-body mb-4">
+                <span className="inline-flex items-center px-5 py-1 rounded-full border-[1.5px] border-brand-medium/35 text-brand-medium text-xs font-bold uppercase tracking-[0.16em] font-body mb-3">
                   {step.title}
                 </span>
-                <p className="text-base text-brand-lavender font-light leading-relaxed font-body mx-auto">{step.desc}</p>
+                <p className="text-[15px] text-brand-lavender font-light leading-relaxed font-body mx-auto">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -201,7 +201,7 @@ export default function PlatformPage() {
       </section>
 
       {/* SIGNAL FABRIC */}
-      <section className="py-14 lg:py-18" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
+      <section className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">Multimodal Signal Fabric</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
@@ -241,7 +241,7 @@ export default function PlatformPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-14 lg:py-18 bg-gradient-to-b from-brand-light to-white">
+      <section className="py-10 lg:py-14 bg-gradient-to-b from-brand-light to-white">
         <Reveal className="max-w-3xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4">FAQ</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading">

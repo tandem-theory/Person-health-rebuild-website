@@ -54,8 +54,8 @@ function ValidationLibrary() {
         {/* Breast CED */}
         <Card variant="light">
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-14 h-14 p-3 rounded-2xl bg-gradient-to-br from-brand-primary/10 to-brand-light border border-brand-lavender/30 flex items-center justify-center shrink-0" aria-hidden="true">
-              <Dna className="w-full h-full text-brand-primary" strokeWidth={1.5} />
+            <div className="w-14 h-14 p-3 rounded-2xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
+              <Dna className="w-full h-full text-white" strokeWidth={1.5} />
             </div>
             <div>
               <h3 className="font-heading font-semibold text-brand-deep text-lg">Breast Cancer Early Detection</h3>
@@ -80,8 +80,8 @@ function ValidationLibrary() {
         {/* Multiple Myeloma */}
         <Card variant="light">
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-14 h-14 p-3 rounded-2xl bg-gradient-to-br from-brand-primary/10 to-brand-light border border-brand-lavender/30 flex items-center justify-center shrink-0" aria-hidden="true">
-              <FlaskConical className="w-full h-full text-brand-primary" strokeWidth={1.5} />
+            <div className="w-14 h-14 p-3 rounded-2xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
+              <FlaskConical className="w-full h-full text-white" strokeWidth={1.5} />
             </div>
             <div>
               <h3 className="font-heading font-semibold text-brand-deep text-lg">Multiple Myeloma Screening</h3>

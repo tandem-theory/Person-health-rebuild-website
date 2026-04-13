@@ -33,16 +33,18 @@ function CompanyHero() {
 function AboutSection() {
   return (
     <SectionWrapper bg="light">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="text-center mb-12">
+        <SectionLabel text="About" light />
+        <h2
+          className="mt-4 font-heading font-semibold text-brand-deep leading-[1.15] tracking-[-0.01em]"
+          style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
+        >
+          The space between signal and action
+        </h2>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div>
-          <SectionLabel text="About" light />
-          <h2
-            className="mt-4 font-heading font-semibold text-brand-deep leading-[1.15] tracking-[-0.01em]"
-            style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
-          >
-            The space between signal and action
-          </h2>
-          <p className="mt-6 text-gray-600 font-body font-light leading-relaxed text-lg">
+          <p className="text-gray-600 font-body font-light leading-relaxed text-lg">
             Health systems generate signals every day — screening flags, lab anomalies, risk scores, behavioral indicators. But the distance between finding a signal and completing the right next step is where healthcare fails most people.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
@@ -55,7 +57,7 @@ function AboutSection() {
         <div className="rounded-2xl overflow-hidden shadow-card-hover">
           <img
             src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
-            style={{ filter: 'hue-rotate(240deg) saturate(1.3)' }}
+            style={{ filter: 'hue-rotate(260deg) saturate(1.6) brightness(0.9)' }}
             alt="Data visualization representing multimodal health signals"
             className="w-full h-96 object-cover"
           />
@@ -111,13 +113,9 @@ function OriginsSection() {
         ]} />
       </div>
 
-      <p className="mt-10 text-brand-lavender/80 font-body font-light italic text-[17px] max-w-3xl">
+      <p className="mt-8 text-brand-lavender/80 font-body font-light italic text-[17px] max-w-3xl">
         These represent enabling lineage — not co-equal brands. Person Health is the platform. Everything else feeds&nbsp;into&nbsp;it.
       </p>
-
-      <div className="mt-10 text-center">
-        <Button href="/platform#tomme" variant="secondary">See how TOMME works</Button>
-      </div>
     </SectionWrapper>
   )
 }
@@ -230,10 +228,10 @@ function LeadershipSection() {
                     <img
                       src={photos[member.name]}
                       alt={member.name}
-                      className="w-28 h-28 lg:w-32 lg:h-32 rounded-full object-cover mx-auto border-3 border-brand-lavender/30 group-hover:border-brand-primary/50 transition-all duration-300 grayscale-0"
+                      className="w-28 h-28 lg:w-32 lg:h-32 rounded-full object-cover mx-auto ring-[3px] ring-brand-primary/60 group-hover:ring-brand-primary/70 transition-all duration-300"
                     />
                   ) : (
-                    <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light border-3 border-brand-lavender/30 flex items-center justify-center mx-auto" aria-hidden="true">
+                    <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light ring-[3px] ring-brand-primary/60 flex items-center justify-center mx-auto" aria-hidden="true">
                       <Users className="w-10 h-10 text-brand-primary/40" strokeWidth={1.5} />
                     </div>
                   )}
