@@ -217,23 +217,25 @@ function LeadershipSection() {
               return (
                 <button
                   key={member.name}
-                  className="text-center group cursor-pointer"
+                  className="text-center group cursor-pointer flex flex-col items-center"
                   onClick={() => hasBio && setExpandedBio(isOpen ? null : member.name)}
                   aria-expanded={isOpen}
                 >
-                  {hasPhoto ? (
-                    <img
-                      src={photos[member.name]}
-                      alt={member.name}
-                      className="w-28 h-28 lg:w-32 lg:h-32 rounded-full object-cover mx-auto ring-[3px] ring-brand-primary/60 group-hover:ring-brand-primary/70 transition-all duration-300"
-                    />
-                  ) : (
-                    <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light ring-[3px] ring-brand-primary/60 flex items-center justify-center mx-auto" aria-hidden="true">
-                      <Users className="w-10 h-10 text-brand-primary/40" strokeWidth={1.5} />
-                    </div>
-                  )}
-                  <h4 className="font-heading font-semibold text-brand-deep text-sm mt-3">{member.name}</h4>
-                  <p className="text-xs text-gray-500 font-body font-light mt-0.5 leading-snug">{member.role}</p>
+                  <div className="w-28 h-28 lg:w-32 lg:h-32 shrink-0">
+                    {hasPhoto ? (
+                      <img
+                        src={photos[member.name]}
+                        alt={member.name}
+                        className="w-full h-full rounded-full object-cover ring-[3px] ring-brand-primary/60 group-hover:ring-brand-primary/70 transition-all duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-full rounded-full bg-gradient-to-br from-brand-primary/20 to-brand-light ring-[3px] ring-brand-primary/60 flex items-center justify-center" aria-hidden="true">
+                        <Users className="w-10 h-10 text-brand-primary/40" strokeWidth={1.5} />
+                      </div>
+                    )}
+                  </div>
+                  <h4 className="font-heading font-semibold text-brand-deep text-sm mt-3 min-h-[2.5rem] flex items-start justify-center">{member.name}</h4>
+                  <p className="text-xs text-gray-500 font-body font-light leading-snug">{member.role}</p>
                 </button>
               )
             })}
