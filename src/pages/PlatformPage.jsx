@@ -178,7 +178,7 @@ export default function PlatformPage() {
               <div key={i} className="relative text-center py-6 px-5 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:bg-white/[0.07] transition-all duration-300">
                 <div
                   className="font-heading font-extrabold leading-[0.85] select-none mb-3"
-                  style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', color: 'rgba(155,113,214,0.12)', letterSpacing: '-0.04em' }}
+                  style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', color: 'rgba(185,155,230,0.45)', letterSpacing: '-0.04em' }}
                   aria-hidden="true"
                 >
                   {step.n}
