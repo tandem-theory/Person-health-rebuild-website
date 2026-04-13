@@ -94,7 +94,7 @@ export default function SolutionsPage() {
         className="relative pt-32 pb-20 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #28104E 0%, #3a1a6e 40%, #28104E 100%)' }}
       >
-        <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
+        <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1920&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} aria-hidden="true" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(40,16,78,0.5), rgba(40,16,78,0.85))' }} aria-hidden="true" />
         <Reveal className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4">Solutions</p>

@@ -18,8 +18,8 @@ export const images = {
     tech: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1920&q=80',
     // Sunrise over landscape — new beginnings, vision
     sunrise: 'https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=1920&q=80',
-    // Abstract light connections — networked platform
-    connections: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80',
+    // Abstract purple neural network — networked platform
+    connections: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1920&q=80',
   },
   sections: {
     // Doctor reviewing data on tablet — modern healthcare
