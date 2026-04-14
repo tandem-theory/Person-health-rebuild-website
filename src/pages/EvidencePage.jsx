@@ -47,7 +47,7 @@ function ValidationLibrary() {
         Oncodea — Cancer early detection
       </h2>
       <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg max-w-3xl text-center mx-auto">
-        Multimodal biomarker analysis for early-stage cancer detection. Each study is IRB-approved, multi-site validated, and designed for clinical integration.
+        Multimodal biomarker analysis designed to support early-stage cancer signal identification. Each study is IRB-approved, multi-site validated, and designed for clinical integration.
       </p>
 
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -63,7 +63,7 @@ function ValidationLibrary() {
             </div>
           </div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-sm">
-            Multimodal biomarker panel combining cfDNA methylation patterns, circulating protein markers, and clinical risk factors for early-stage breast cancer detection. Designed for average-risk and elevated-risk populations.
+            Multimodal biomarker panel combining cfDNA methylation patterns, circulating protein markers, and clinical risk factors — designed to support early-stage breast cancer screening. Under development for average-risk and elevated-risk populations.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="bg-brand-light rounded-lg p-3 text-center">
@@ -89,7 +89,7 @@ function ValidationLibrary() {
             </div>
           </div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-sm">
-            Blood-based screening protocol for early multiple myeloma detection, designed for integration into routine lab workflows at population scale. Targets the asymptomatic window where intervention is most effective.
+            Blood-based screening protocol under development for early multiple myeloma signal identification, with a pathway designed for integration into routine lab workflows. Designed to reach the asymptomatic window — where earlier action may improve outcomes.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="bg-brand-light rounded-lg p-3 text-center">
@@ -126,9 +126,9 @@ function BreatheSignals() {
       </p>
 
       <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <IconCard icon={Wind} title="Lung Cancer Triage" description="Breath VOC profiles for lung cancer screening triage — identifying high-risk individuals for expedited imaging follow-up." />
-        <IconCard icon={Activity} title="Sepsis Early Warning" description="Real-time breath biomarkers for early sepsis detection in clinical settings — targeting the critical window before systemic deterioration." />
-        <IconCard icon={Heart} title="Ovarian Cancer Markers" description="VOC signature analysis for ovarian cancer screening — addressing one of the hardest-to-detect cancers at its earliest stage." />
+        <IconCard icon={Wind} title="Lung Cancer Triage" description="Breath VOC profiles designed to support lung cancer screening triage — flagging elevated-risk individuals for potential imaging follow-up." />
+        <IconCard icon={Activity} title="Sepsis Early Warning" description="Real-time breath biomarkers under investigation for early sepsis signal identification in clinical settings — targeting the critical window before systemic deterioration." />
+        <IconCard icon={Heart} title="Ovarian Cancer Markers" description="VOC signature analysis under development for ovarian cancer screening support — addressing one of the hardest-to-detect cancers at earlier stages." />
         <IconCard icon={Microscope} title="Toxicology Panels" description="Breath-based toxicology screening for environmental and occupational exposure assessment at population scale." />
       </div>
 
@@ -158,7 +158,7 @@ function Methodology() {
           className="mt-4 font-heading font-semibold text-brand-deep leading-[1.15] tracking-[-0.01em]"
           style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
         >
-          How we measure what matters
+          How Person Health measures what matters
         </h2>
         <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg max-w-3xl mx-auto">
           Person Health tracks four KPI categories across every product line — ensuring clinical, behavioral, economic, and governance outcomes are measured from day one.
@@ -234,7 +234,7 @@ function EvidenceFAQ() {
             },
             {
               question: 'How is the evidence governed?',
-              answer: 'Every clinical claim made by the platform must be traceable to a specific evidence source — peer-reviewed publication, IRB-approved trial data, or validated pilot outcome. Recommendations operate within pre-defined clinical thresholds, and all scoring models are auditable. No AI-generated recommendation reaches a patient without clinician review.',
+              answer: 'Every clinical claim made by the platform must be traceable to a specific evidence source — peer-reviewed publication, IRB-approved trial data, or validated pilot outcome. Recommendations operate within pre-defined clinical thresholds, and all scoring models are auditable. AI-generated recommendations are routed through clinician review before reaching a patient.',
             },
           ]}
         />

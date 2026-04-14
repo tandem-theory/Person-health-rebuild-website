@@ -28,7 +28,7 @@ const audiences = [
     subtitle: 'Workflow economics and pilot path',
     body: 'One patient. Multiple signals. One unified decision layer.',
     sections: [
-      { title: 'Trusted capability', desc: 'Higher testing volumes, earlier confirmed need, longer patient retention, and better economics.' },
+      { title: 'Trusted capability', desc: 'The platform is designed to drive higher testing volumes, earlier confirmed need, longer patient retention, and improved economics.' },
       { title: 'What becomes possible', desc: 'More complete first-line screening, conditions that surface before crises, patients who stay in the ecosystem, and lower avoidable cost.' },
       { title: 'What the platform measures', desc: 'Completion rates, retention metrics, leak reduction, margin expansion.' },
     ],
@@ -56,7 +56,7 @@ const audiences = [
     body: 'One integrated platform. Compounding intelligence. Multiple monetization layers.',
     sections: [
       { title: 'Revenue infrastructure', desc: '2+ tests at launch · 100K+ tests/month capacity · 2 lab facilities · cost + 10% wholesale pricing.' },
-      { title: 'What we book', desc: 'Incremental DTC and B2B2B revenue · MyWellnessQ programs and workflow fees · Owned-product revenue as Oncodea and Vocxi Breathe go live.' },
+      { title: 'What Person Health books', desc: 'Projected DTC and B2B2B revenue streams · MyWellnessQ programs and workflow fees · Owned-product revenue anticipated as Oncodea and Vocxi Breathe reach market.' },
       { title: 'Commercialization ladder', desc: 'MyWellnessQ front door → Paid programs + workflow fees → Oncodea specialty margin → Longitudinal data moat → Vocxi Breathe site economics.' },
     ],
     closing: 'Legacy partner-lab revenue is real proof the infrastructure exists — but it is not consolidated into Person Health revenue.',
@@ -69,10 +69,10 @@ const audiences = [
     body: 'Clearer access, less confusion, better odds of acting early.',
     sections: [
       { title: 'Why am I seeing this?', desc: 'Every recommendation shows what triggered it, what data was used, and why it matters — in plain language.' },
-      { title: 'What does it mean?', desc: 'Context is provided alongside every finding — what is normal, what needs follow-up, and what the evidence says.' },
-      { title: 'What happens next?', desc: 'Your clinician reviews the recommendation and decides on the next step. You are never left without a clear path forward.' },
+      { title: 'What does it mean?', desc: 'Context is provided alongside findings — including reference ranges, follow-up considerations, and relevant evidence.' },
+      { title: 'What happens next?', desc: 'Your clinician reviews the recommendation and decides on the next step. The platform is designed to ensure a clear path forward is always available.' },
     ],
-    closing: 'Every recommendation is backed by clinical evidence and reviewed by a real clinician before it reaches you.',
+    closing: 'Recommendations are grounded in clinical evidence and reviewed by a clinician before reaching the end user.',
   },
   {
     id: 'partners',
@@ -82,7 +82,7 @@ const audiences = [
     body: 'The platform creates value across the care and financing ecosystem.',
     sections: [
       { title: 'Providers + health systems', desc: 'More completed screening, less leakage, better quality performance.' },
-      { title: 'Health plans + insurers', desc: 'Earlier risk identification, lower avoidable medical cost.' },
+      { title: 'Health plans + insurers', desc: 'Designed to support earlier risk identification and reduce avoidable medical cost.' },
       { title: 'Self-insured employers', desc: 'Lower trend, reduced absence and friction.' },
       { title: 'Banks + care financing', desc: 'Consent-based payment design for diagnostics and prevention.' },
       { title: 'Underwriters + actuaries', desc: 'Aggregated portfolio modeling and risk segmentation under ethical guardrails.' },

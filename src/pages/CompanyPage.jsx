@@ -22,7 +22,7 @@ function CompanyHero() {
           Healthcare organized<br />around people.
         </h1>
         <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl mx-auto">
-          Person Health exists because the gap between finding a health signal and acting on it should not exist. We build the governed infrastructure to close it.
+          Person Health exists because the gap between finding a health signal and acting on it should not exist. Person Health is the governed infrastructure built to close it.
         </p>
       </div>
     </section>
@@ -48,10 +48,10 @@ function AboutSection() {
             Health systems generate signals every day — screening flags, lab anomalies, risk scores, behavioral indicators. But the distance between finding a signal and completing the right next step is where healthcare fails most people.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
-            Person Health is a multimodal health action platform that connects screening, early detection, and self directed-clinician guided diagnosis support into one governed workflow. The platform does not just detect — it completes.
+            Person Health is a multimodal health action platform that connects screening, early detection, and clinician-guided decision support into one governed workflow. The platform does not just detect — it completes.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
-            Every signal that enters Person Health is scored, routed to the appropriate care lane, reviewed by a clinician, and tracked to closure. Nothing is lost between detection and action.
+            Every signal that enters Person Health is scored, routed to the appropriate care lane, reviewed by a clinician, and tracked to closure. The platform is designed so that no signal falls through the cracks.
           </p>
         </div>
         <div className="rounded-2xl overflow-hidden shadow-card-hover">
@@ -122,7 +122,7 @@ function MissionSection() {
     <div id="mission">
       <CalloutBlock
         headline="Earlier signals. Safer next steps."
-        body="Our mission is to close the gap between health signal and health action — for every person, every time, with nothing lost in between."
+        body="The Person Health mission is to close the gap between health signal and health action — for every person who enters the platform, with continuity built into every step."
         italic="The operational design goal: the smallest safe next step, governed by evidence, reviewed by clinicians, and tracked to completion."
       />
     </div>
@@ -139,7 +139,7 @@ function LeadershipSection() {
     'Megan Flynn': 'Senior marketing executive with 25+ years spanning agency and brand-side leadership across healthcare, medical, and consumer industries. At Person Health, she bridges business strategy with go-to-market execution across media, creative, CRM, and full-funnel B2B and B2C marketing.',
     'Michael Weaver': 'Healthcare commercialization leader with 25+ years spanning startup and publicly traded companies across ambulatory, acute care, and physician-centric settings. At Person Health, he oversees growth strategy and market positioning across health systems and consumer channels.',
     'Parm Kang': 'Strategic finance executive combining institutional discipline with startup agility. At Person Health, he leads finance, investor reporting, runway planning, and institutional readiness — building the financial infrastructure to support growth from innovation to scaled deployment.',
-    'Greg Sherwood': 'Scientific founder of Person Health\'s breath-based diagnostic technology and former Senior Fellow at Boston Scientific. He holds 87 patents in sensing and applied diagnostics, producing a patented platform capable of detecting disease from a single breath.',
+    'Greg Sherwood': 'Scientific founder of Person Health\'s breath-based diagnostic technology and former Senior Fellow at Boston Scientific. He holds 87 patents in sensing and applied diagnostics, producing a patented platform designed to identify disease-associated biomarkers from a single breath.',
     'Ali Khammanivong': 'Molecular scientist and AI expert with a PhD in Cancer Biology & Bioinformatics from the University of Minnesota. At Person Health, he leads the molecular diagnostics platform for early cancer detection, integrating genomics, proteomics, and machine learning.',
     'Dan Que Pham': 'Biotech operator and co-founder of Oncodea, where she led development of Oncodea, an AI-based platform for early cancer detection. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
     'Raia Finc': 'Systems engineer with two decades of experience spanning DuPont and Boston Scientific. At Person Health, she leads electrical, mechanical, and software development of the breath-based diagnostic platform — translating innovation into production-ready systems.',
@@ -311,7 +311,7 @@ function LessonsSection() {
           },
           {
             title: 'Clinicians must remain in the loop',
-            description: 'No AI-generated recommendation should reach a patient without clinician review. The platform recommends. Clinicians decide. That boundary is non-negotiable.',
+            description: 'AI-generated recommendations are routed through clinician review before reaching a patient. The platform recommends. Clinicians decide. That boundary is non-negotiable.',
             color: '#CCE7FF',
           },
           {
