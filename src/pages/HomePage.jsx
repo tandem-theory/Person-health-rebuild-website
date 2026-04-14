@@ -114,7 +114,7 @@ export default function HomePage() {
             Earlier signals.<br />Safer next steps.
           </h1>
           <p className="max-w-3xl mx-auto mb-10 text-xl leading-relaxed font-light text-brand-lavender font-body">
-            Person Health is the multimodal health action platform for screening, early detection, and self directed-clinician guided diagnosis support. Powered by TOMME, our governed intelligence engine, we turn breath, blood, labs, symptoms, claims, EHR, and behavior into the safest next step — and help get it completed.
+            Person Health is the multimodal health action platform for screening, early detection, and clinician-guided decision support. Powered by TOMME — the governed intelligence engine — Person Health turns breath, blood, labs, symptoms, claims, EHR, and behavior into a safer, clearer next step — and supports follow-through to completion.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button href="/platform#tomme">See how TOMME works</Button>
@@ -305,7 +305,7 @@ export default function HomePage() {
           {/* Effect cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
-              { label: 'Patient effect', body: 'Fear drops. Clarity rises. The next step feels safer, smaller, and more worth doing.' },
+              { label: 'Patient effect', body: 'Fear drops. Clarity rises. The next step is designed to feel safer, smaller, and more worth doing.' },
               { label: 'Healthcare effect', body: 'More completed screenings, faster abnormal-result recovery, better continuity.' },
               { label: 'Economic effect', body: 'Higher retention, more paid engagement, better unit economics, lower avoidable cost.' },
             ].map((item, i) => (
@@ -388,14 +388,14 @@ export default function HomePage() {
               <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Breast CED | Baylor Scott & White / VERITY</p>
               <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">94.5% / 96%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
-                Sensitivity / specificity. AUC 0.99 across 437 blinded subjects. 94% Stage 0–I detection.
+                In study data: sensitivity / specificity. AUC 0.99 across 437 blinded subjects. 94% Stage 0–I detection.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card">
               <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Multiple Myeloma | Mayo Clinic</p>
               <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">91% / 92%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
-                Sensitivity / specificity. AUC 0.987 for MGUS vs. SMM. Under 48-hour turnaround. COGS below $20.
+                In study data: sensitivity / specificity. AUC 0.987 for MGUS vs. SMM. Under 48-hour turnaround target. COGS target below $20.
               </p>
             </div>
           </div>
@@ -471,7 +471,7 @@ export default function HomePage() {
           <div className="mt-12">
             <FAQ
               q="What is TOMME?"
-              a="TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then selects the safest next step, routes it into a real workflow, and measures whether it was completed."
+              a="TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then surfaces a recommended next step, routes it into a real workflow, and measures whether it was completed."
             />
             <FAQ
               q="What is a multimodal health action platform?"
@@ -479,11 +479,11 @@ export default function HomePage() {
             />
             <FAQ
               q="How do you increase screening completion?"
-              a="Person Health models each person's readiness, trust, friction, and channel preference — then delivers the smallest safe next step through the right channel at the right time. The platform measures completion, not just eligibility."
+              a="Person Health models each person's readiness, trust, friction, and channel preference — then delivers a recommended next step through the right channel at the right time. The platform measures completion, not just eligibility."
             />
             <FAQ
               q="How do you reduce loss to follow-up after abnormal results?"
-              a="Person Health treats every abnormal finding as an open case that requires completion — not just a notification. The platform routes follow-up into navigator queues, clinician inboxes, or patient CTAs and tracks closure."
+              a="Person Health treats abnormal findings as open cases that are tracked toward completion — not just notifications. The platform routes follow-up into navigator queues, clinician inboxes, or patient CTAs and tracks closure."
             />
             <FAQ
               q="What is governed clinical AI in screening and diagnosis support?"

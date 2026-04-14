@@ -20,9 +20,9 @@ const productImages = [
 
 const productLines = [
   { name: 'MyWellnessQ', role: 'Patient/member front door', detail: 'Consumer, clinician, and sponsor engagement. Ordering, results, guidance, and longitudinal conversion — all in one place. Every interaction becomes a trackable member journey.', color: '#6237A0' },
-  { name: 'MyWellnessQ Labs', role: 'Immediate demand monetization and buyer-behavior data', detail: '70+ live tests, print-kit fulfillment, and complete ordering-to-results workflow. Every ordered test is a buyer-behavior datapoint that feeds back into the platform.', color: '#9B71D6' },
-  { name: 'Oncodea / MMyeloma', role: 'First owned specialty margin', detail: 'Molecular fingerprinting detects cancer before symptoms from a simple blood draw. First wedge: multiple myeloma via Mayo Clinic collaboration. VERITY clinical trial active.', color: '#D7CFE6' },
-  { name: 'Vocxi Breathe', role: 'Acute-care workflow value and site economics', detail: 'Non-invasive breath screening via graphene nanosensor arrays. Results in under one minute. Pilot-first deployment with site economics, then broader rollout.', color: '#9B71D6' },
+  { name: 'MyWellnessQ Labs', role: 'Immediate demand monetization and buyer-behavior data', detail: '70+ available tests, print-kit fulfillment, and end-to-end ordering-to-results workflow. Every ordered test is a buyer-behavior datapoint that feeds back into the platform.', color: '#9B71D6' },
+  { name: 'Oncodea / MMyeloma', role: 'First owned specialty margin', detail: 'Molecular fingerprinting is designed to identify cancer-associated signals before symptoms appear — from a simple blood draw. First wedge: multiple myeloma via Mayo Clinic collaboration. VERITY clinical trial in progress.', color: '#D7CFE6' },
+  { name: 'Vocxi Breathe', role: 'Acute-care workflow value and site economics', detail: 'Non-invasive breath screening via graphene nanosensor arrays. Results typically delivered in under one minute. Pilot-first deployment with site economics, then broader rollout.', color: '#9B71D6' },
   { name: 'TOMME', role: 'Shared decision, routing, and learning layer across all of it', detail: 'TOMME connects every product line through one governed intelligence layer. Not a feature — the engine that makes the entire platform compound.', color: '#6237A0' },
 ]
 
@@ -63,7 +63,7 @@ export default function PlatformPage() {
             One platform. One engine.<br />Multiple ways to&nbsp;enter.
           </h1>
           <p className="text-lg text-brand-lavender font-light max-w-2xl leading-relaxed font-body">
-            Person Health organizes screening, early detection, and self directed-clinician guided diagnosis support into a single governed workflow. Every product line feeds the same completion engine — TOMME.
+            Person Health organizes screening, early detection, and clinician-guided decision support into a single governed workflow. Every product line feeds the same completion engine — TOMME.
           </p>
         </Reveal>
       </section>
@@ -128,10 +128,10 @@ export default function PlatformPage() {
             TOMME — The engine behind all of it
           </h2>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-6 text-center mx-auto">
-            TOMME is the governed intelligence core inside Person Health. It unifies clinical trajectory, behavior state, trust, and intervention response inside one model — so buyers experience one system, not disconnected tools.
+            TOMME is the governed intelligence core inside Person Health. It is designed to unify clinical trajectory, behavior state, trust, and intervention response inside one model — so buyers experience one system, not disconnected tools.
           </p>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-16 text-center mx-auto">
-            The engine does not generate recommendations and walk away — it selects the safest next step, routes it into a real workflow, tracks completion, and learns from the outcome.
+            The engine does not generate recommendations and walk away — it surfaces a recommended next step, routes it into a real workflow, tracks completion, and refines based on outcomes.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -163,14 +163,14 @@ export default function PlatformPage() {
             How one case moves through the OS
           </h2>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-2xl mb-16 text-center mx-auto">
-            Six steps. Zero gaps. The platform is accountable for completion, not just recommendation generation.
+            Six steps. No gap left unaddressed. The platform is accountable for completion, not just recommendation generation.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
             {[
               { n: '01', title: 'Sense', desc: 'New lab, symptom, claim, message, wearable, or screening-due event.' },
               { n: '02', title: 'Understand', desc: 'AI reads all signals together to build a picture of your health trajectory.' },
-              { n: '03', title: 'Decide', desc: 'TOMME identifies the single safest next step — not a score, an action.' },
+              { n: '03', title: 'Decide', desc: 'TOMME surfaces the highest-priority recommended action — not a score, a step forward.' },
               { n: '04', title: 'Guide', desc: 'Routes to the right person: the patient, a care navigator, or the doctor.' },
               { n: '05', title: 'Complete', desc: 'Booked screening, workup, diagnosis support, or deferred path.' },
               { n: '06', title: 'Learn', desc: 'Response, drop-off, override, and outcome update the model.' },
@@ -192,7 +192,7 @@ export default function PlatformPage() {
           </div>
 
           <p className="text-center text-brand-lavender/70 text-sm italic mb-10 font-body">
-            The output is not another static risk score. It is a governed action system for getting the right person to the safest next step earlier.
+            The output is not another static risk score. It is a governed action system for getting the right person to a safer next step earlier.
           </p>
           <div className="text-center">
             <Button href="/contact?audience=platform">Request a platform walkthrough</Button>
@@ -254,7 +254,7 @@ export default function PlatformPage() {
               items={[
                 {
                   question: 'What is TOMME?',
-                  answer: 'TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then selects the safest next step, routes it into a real workflow, and measures whether it was completed.',
+                  answer: 'TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then surfaces a recommended next step, routes it into a real workflow, and measures whether it was completed.',
                 },
                 {
                   question: 'What is a multimodal health action platform?',
