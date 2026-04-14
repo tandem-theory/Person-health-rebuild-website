@@ -392,7 +392,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card">
-              <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Multiple Myeloma | Mayo Clinic</p>
+              <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Multiple Myeloma | World-Renowned Hospital</p>
               <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">91% / 92%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
                 In study data: sensitivity / specificity. AUC 0.987 for MGUS vs. SMM. Under 48-hour turnaround target. COGS target below $20.
