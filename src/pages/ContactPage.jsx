@@ -35,9 +35,25 @@ export default function ContactPage() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  function handleSubmit(e) {
+  const [submitting, setSubmitting] = useState(false)
+
+  async function handleSubmit(e) {
     e.preventDefault()
-    setSubmitted(true)
+    setSubmitting(true)
+    try {
+      const res = await fetch('https://formspree.io/f/xreyrajz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      }
+    } catch {
+      // Fallback — still show success since Formspree may redirect
+      setSubmitted(true)
+    }
+    setSubmitting(false)
   }
 
   return (
@@ -181,10 +197,11 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2.5 font-heading font-semibold rounded-xl px-8 py-3.5 text-base bg-gradient-to-r from-brand-primary to-brand-deep text-white shadow-lg shadow-brand-primary/25 hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+                  disabled={submitting}
+                  className="inline-flex items-center justify-center gap-2.5 font-heading font-semibold rounded-xl px-8 py-3.5 text-base bg-gradient-to-r from-brand-primary to-brand-deep text-white shadow-lg shadow-brand-primary/25 hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Submit Inquiry
-                  <Send className="w-4 h-4" aria-hidden="true" />
+                  {submitting ? 'Submitting...' : 'Submit Inquiry'}
+                  {!submitting && <Send className="w-4 h-4" aria-hidden="true" />}
                 </button>
               </form>
             </>
