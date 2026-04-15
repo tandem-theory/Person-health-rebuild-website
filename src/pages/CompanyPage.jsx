@@ -177,9 +177,9 @@ function LeadershipSection() {
       title: 'Science & Platform',
       members: [
         { name: 'Randy Schiestl', role: 'Global Science & Operations' },
-        { name: 'Greg Sherwood', role: 'Head of Volatile Diagnostics' },
+        { name: 'Greg Sherwood', role: 'Breath Scientific Lead' },
         { name: 'Raia Finc', role: 'VP of Volatile Diagnostics' },
-        { name: 'Ali Khammanivong', role: 'Head of Molecular Diagnostics' },
+        { name: 'Ali Khammanivong', role: 'Oncodea Scientific Lead' },
         { name: 'Dan Que Pham', role: 'VP of Molecular Diagnostics' },
       ],
     },

@@ -385,7 +385,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card">
-              <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Breast CED | Baylor Scott & White / VERITY</p>
+              <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Breast CED | Institutional Validation Study</p>
               <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">94.5% / 96%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
                 In study data: sensitivity / specificity. AUC 0.99 across 437 blinded subjects. 94% Stage 0–I detection.
@@ -393,9 +393,9 @@ export default function HomePage() {
             </div>
             <div className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card">
               <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Multiple Myeloma | World-Renowned Hospital</p>
-              <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">91% / 92%</p>
+              <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">90%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
-                In study data: sensitivity / specificity. AUC 0.987 for MGUS vs. SMM. Under 48-hour turnaround target. COGS target below $20.
+                In study data: finds 90% of progressing blood cancer cases. Blinded accuracy confirmed by independent review.
               </p>
             </div>
           </div>
