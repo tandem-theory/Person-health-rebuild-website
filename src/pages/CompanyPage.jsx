@@ -87,13 +87,13 @@ function OriginsSection() {
       <div className="mt-12">
         <NumberedStack items={[
           {
-            title: 'Oncodea — Cancer early detection science',
-            description: 'The clinical and scientific foundation. Oncodea developed multimodal biomarker panels for cancer early detection — cfDNA methylation, protein markers, and clinical risk models. This became the first product family inside Person Health.',
+            title: 'Oncodea — Cancer signal science',
+            description: 'The clinical and scientific foundation. Oncodea developed multimodal biomarker panels designed to support cancer signal identification — combining cfDNA methylation, protein markers, and clinical risk models. This became the first product family inside Person Health.',
             color: '#6237A0',
           },
           {
             title: 'Vocxi Breathe — Respiratory signal science',
-            description: 'Real-time breath VOC analysis brought population-scale, non-invasive screening into the platform. Breathe expanded Person Health\'s signal types beyond blood-based biomarkers.',
+            description: 'Real-time breath VOC analysis brought non-invasive signal analysis into the platform. Vocxi Breathe expanded Person Health\'s signal types beyond blood-based biomarkers.',
             color: '#9B71D6',
           },
           {
@@ -140,8 +140,8 @@ function LeadershipSection() {
     'Michael Weaver': 'Healthcare commercialization leader with 25+ years spanning startup and publicly traded companies across ambulatory, acute care, and physician-centric settings. At Person Health, he oversees growth strategy and market positioning across health systems and consumer channels.',
     'Parm Kang': 'Strategic finance executive combining institutional discipline with startup agility. At Person Health, he leads finance, investor reporting, runway planning, and institutional readiness — building the financial infrastructure to support growth from innovation to scaled deployment.',
     'Greg Sherwood': 'Scientific founder of Person Health\'s breath-based diagnostic technology and former Senior Fellow at Boston Scientific. He holds 87 patents in sensing and applied diagnostics, producing a patented platform designed to identify disease-associated biomarkers from a single breath.',
-    'Ali Khammanivong': 'Molecular scientist and AI expert with a PhD in Cancer Biology & Bioinformatics from the University of Minnesota. At Person Health, he leads the molecular diagnostics platform for early cancer detection, integrating genomics, proteomics, and machine learning.',
-    'Dan Que Pham': 'Biotech operator and co-founder of Oncodea, where she led development of Oncodea, an AI-based platform for early cancer detection. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
+    'Ali Khammanivong': 'Molecular scientist and AI expert with a PhD in Cancer Biology & Bioinformatics from the University of Minnesota. At Person Health, he leads the molecular diagnostics platform for cancer-associated signal research, integrating genomics, proteomics, and machine learning.',
+    'Dan Que Pham': 'Biotech operator and co-founder of Oncodea, where she led development of an AI-based platform for cancer signal analysis. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
     'Raia Finc': 'Systems engineer with two decades of experience spanning DuPont and Boston Scientific. At Person Health, she leads electrical, mechanical, and software development of the breath-based diagnostic platform — translating innovation into production-ready systems.',
     'Thomas Sheehan': 'Visionary healthcare innovator and scientific founder driving Person Health\'s core technology strategy. As Chairman and Chief Innovation Officer, he leads the company\'s intellectual property portfolio and technology roadmap.',
     'Jennifer Schaumburg': 'Leads the systems that ensure Person Health operates with clear accountability, traceable execution, and controls that perform across regulated environments.',

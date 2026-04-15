@@ -44,10 +44,10 @@ function ValidationLibrary() {
         className="mt-4 font-heading font-semibold text-brand-deep leading-[1.15] tracking-[-0.01em] text-center"
         style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
       >
-        Oncodea — Cancer early detection
+        Oncodea — Cancer Signal Research
       </h2>
       <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg max-w-3xl text-center mx-auto">
-        Multimodal biomarker analysis designed to support early-stage cancer signal identification. Each study is IRB-approved, multi-site validated, and designed for clinical integration.
+        Multimodal biomarker analysis designed to support early-stage cancer signal identification. Each study is IRB-approved and multi-site validated.
       </p>
 
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -63,7 +63,7 @@ function ValidationLibrary() {
             </div>
           </div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-sm">
-            Multimodal biomarker panel combining cfDNA methylation patterns, circulating protein markers, and clinical risk factors — designed to support early-stage breast cancer screening. Under development for average-risk and elevated-risk populations.
+            Multimodal biomarker panel combining cfDNA methylation patterns, circulating protein markers, and clinical risk factors — designed to support early-stage breast cancer signal analysis. Under development for average-risk and elevated-risk populations.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="bg-brand-light rounded-lg p-3 text-center">
@@ -89,7 +89,7 @@ function ValidationLibrary() {
             </div>
           </div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-sm">
-            Blood-based screening protocol under development for early multiple myeloma signal identification, with a pathway designed for integration into routine lab workflows. Designed to reach the asymptomatic window — where earlier action may improve outcomes.
+            Blood-based analysis protocol under development for multiple myeloma-associated signal identification, with a pathway designed for integration into routine lab workflows. Focused on the pre-symptomatic window — where earlier identification may support better clinical decisions.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="bg-brand-light rounded-lg p-3 text-center">
@@ -126,10 +126,10 @@ function BreatheSignals() {
       </p>
 
       <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <IconCard icon={Wind} title="Lung Cancer Triage" description="Breath VOC profiles designed to support lung cancer screening triage — flagging elevated-risk individuals for potential imaging follow-up." />
-        <IconCard icon={Activity} title="Sepsis Early Warning" description="Real-time breath biomarkers under investigation for early sepsis signal identification in clinical settings — targeting the critical window before systemic deterioration." />
-        <IconCard icon={Heart} title="Ovarian Cancer Markers" description="VOC signature analysis under development for ovarian cancer screening support — addressing one of the hardest-to-detect cancers at earlier stages." />
-        <IconCard icon={Microscope} title="Toxicology Panels" description="Breath-based toxicology screening for environmental and occupational exposure assessment at population scale." />
+        <IconCard icon={Wind} title="Lung Cancer Triage" description="Breath VOC profiles under study for lung cancer triage support — identifying signal patterns associated with elevated risk." />
+        <IconCard icon={Activity} title="Sepsis Early Warning" description="Real-time breath biomarkers under investigation for sepsis-associated signal identification in clinical settings." />
+        <IconCard icon={Heart} title="Ovarian Cancer Markers" description="VOC signature analysis under development for ovarian cancer signal research — exploring identification in one of the hardest-to-detect cancer types." />
+        <IconCard icon={Microscope} title="Toxicology Panels" description="Breath-based toxicology analysis under development for environmental and occupational exposure assessment." />
       </div>
 
       <p className="mt-10 text-center text-brand-lavender/80 font-body font-light italic text-base max-w-3xl mx-auto">
@@ -230,7 +230,7 @@ function EvidenceFAQ() {
           items={[
             {
               question: 'Are Person Health products FDA-cleared?',
-              answer: 'Person Health products are in various stages of clinical validation and regulatory engagement. Oncodea panels are validated through IRB-approved, multi-site clinical trials. Vocxi Breathe signal products are progressing through validation stages with published and in-progress data. Regulatory status is disclosed on a per-product basis — contact us for current status on specific products.',
+              answer: 'Person Health products are in various stages of clinical validation and regulatory engagement. Oncodea panels are being validated through IRB-approved, multi-site studies. Vocxi Breathe signal products are progressing through validation stages with published and in-progress data. Regulatory status is disclosed on a per-product basis — contact us for current status on specific products.',
             },
             {
               question: 'How is the evidence governed?',
