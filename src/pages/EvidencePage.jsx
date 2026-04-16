@@ -140,7 +140,7 @@ function BreatheSignals() {
       <div className="mt-14 flex flex-wrap items-center justify-center gap-12 lg:gap-20" role="list" aria-label="Key statistics">
         <StatBadge value="40+" label="Patents granted" />
         <StatBadge value="3,000+" label="Biomarkers" />
-        <StatBadge value="<1 min" label="Breath test time" />
+        <StatBadge value="1 min" label="Breath test time" />
         <StatBadge value="20+" label="Identified use cases" />
       </div>
 
