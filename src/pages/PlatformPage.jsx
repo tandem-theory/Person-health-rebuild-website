@@ -213,7 +213,7 @@ export default function PlatformPage() {
 
           <div className="grid md:grid-cols-2 gap-4 mb-12">
             {[
-              { icon: Wind, label: 'Breath + remote sensing', desc: 'Breathomics, pulmonary signals, home sensors' },
+              { icon: Wind, label: 'Breath + remote sensing', desc: 'Breathomics, rapid, anywhere' },
               { icon: Droplets, label: 'Blood + biomarkers', desc: 'Routine labs, biomarker trends, abnormal results' },
               { icon: Dna, label: 'Genetics + epigenetics', desc: 'Polygenic risk, variants, epigenetic aging' },
               { icon: Building2, label: 'EHR + labs + vitals', desc: 'Diagnoses, meds, referrals, scheduling' },
