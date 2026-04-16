@@ -63,7 +63,7 @@ function ValidationLibrary() {
             </div>
           </div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-sm">
-            Multimodal biomarker panel combining cfDNA methylation patterns, circulating protein markers, and clinical risk factors — designed to support early-stage breast cancer signal analysis. Under development for average-risk and elevated-risk populations.
+            Multimodal molecular sensing platform combining advanced blood-based molecular analysis, AI-driven pattern recognition, and proprietary cancer signal enhancement. Designed to support early-stage breast cancer signal analysis. Under development for average-risk and elevated-risk populations.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="bg-brand-light rounded-lg p-3 text-center">
