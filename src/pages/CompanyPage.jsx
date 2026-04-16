@@ -88,7 +88,7 @@ function OriginsSection() {
         <NumberedStack items={[
           {
             title: 'Oncodea — Cancer signal science',
-            description: 'The clinical and scientific foundation. Oncodea developed multimodal biomarker panels designed to support cancer signal identification — combining cfDNA methylation, protein markers, and clinical risk models. This became the first product family inside Person Health.',
+            description: 'The clinical and scientific foundation. Oncodea developed multimodal biomarker panels designed to support cancer signal identification — combining advanced blood-based molecular analysis, AI-driven pattern recognition, proprietary cancer signal enhancement, and clinical risk models. This became the first product family inside Person Health.',
             color: '#6237A0',
           },
           {
