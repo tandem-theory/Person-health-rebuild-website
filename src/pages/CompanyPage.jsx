@@ -316,7 +316,7 @@ function LessonsSection() {
           },
           {
             title: 'Multimodal beats single-modal',
-            description: 'No single biomarker or signal type captures the full picture. Combining genomic, proteomic, volatile compound, imaging, and behavioral data produces better clinical decisions.',
+            description: 'No single biomarker or signal type captures the full picture. Combining genomic, proteomic, volatilomic, imaging, and behavioral data produces better clinical decisions.',
             color: '#D7CFE6',
           },
           {
