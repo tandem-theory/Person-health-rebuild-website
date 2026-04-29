@@ -406,7 +406,7 @@ export default function HomePage() {
             {[
               { num: '70+', label: 'tests in catalog' },
               { num: '3,000+', label: 'biomarkers' },
-              { num: '77%', label: 'gross margin' },
+              { num: '60 sec', label: 'breath sample' },
             ].map((s, i) => (
               <div key={i} className="text-center" role="listitem">
                 <p className="text-4xl font-bold mb-1 stat-gradient font-heading" aria-hidden="true">{s.num}</p>

@@ -19,7 +19,7 @@ const productImages = [
 ]
 
 const productLines = [
-  { name: 'MyWellnessQ', role: 'The consumer front door (live today)', detail: 'DTC cash-pay testing platform. 70+ tests available, 3,000+ biomarkers measured, $349 average per test, 77% gross margin Year 1. Where the relationship starts and the data begins.', color: '#6237A0' },
+  { name: 'MyWellnessQ', role: 'The consumer front door (live today)', detail: 'DTC cash-pay testing platform. 70+ tests available, 3,000+ biomarkers measured. Where the relationship starts and the data begins.', color: '#6237A0' },
   { name: 'MyClinicQ', role: 'Clinician-ordered specialty tests', detail: 'Provider portal lane. Recurring orders, certified lab fulfillment, structured billing workflows, and longitudinal care. The clinician-facing extension of the Person Health platform.', color: '#9B71D6' },
   { name: 'MyBloodQ', role: 'Blood-based early detection (Person Health IP)', detail: 'Validated cancer detection from a simple blood draw. 94.5% sensitivity and 96% specificity on breast cancer (437-patient blinded study at a top-10 US hospital system). 90% sensitivity and 92% specificity on multiple myeloma (independent validation underway). 10–20× lower cost than the average competitor test.', color: '#D7CFE6' },
   { name: 'MyBreathQ', role: 'Breath-based early detection (Person Health IP)', detail: 'Non-invasive breath analysis. Statistically significant disease signals across lung, sepsis, and COVID (P-value <0.05). 60-second sample at home or point of care. Ovarian, colorectal, and TBI in pipeline with DoD interest.', color: '#9B71D6' },

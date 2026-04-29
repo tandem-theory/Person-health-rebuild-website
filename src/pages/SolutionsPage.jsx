@@ -55,11 +55,11 @@ const audiences = [
     subtitle: 'Commercialization ladder and compounding',
     body: 'One integrated platform. Compounding intelligence. Multiple monetization layers.',
     sections: [
-      { title: 'Three revenue streams, all growing together', desc: 'DTC ($349 avg, 77% gross margin) · Clinician-ordered specialty tests ($499) · Specialty diagnostics MyBloodQ ($499–$999, highest GM, owned IP).' },
-      { title: 'Financial trajectory', desc: 'Year 1: $14.3M · Year 2: $45.1M · Year 3: $91.8M · Year 5: $205M+. Conservative base case built from real unit economics.' },
-      { title: 'Commercialization ladder', desc: 'MyWellnessQ Front Door (live today) → Provider Ordering → MyBloodQ point-of-care detection → MyBreathQ population-scale detection. Each stage compounds the next.' },
+      { title: 'Revenue infrastructure', desc: '70+ tests live · 3,000+ biomarkers measured · multi-lab fulfillment · cash-pay direct to patient.' },
+      { title: 'What Person Health books', desc: 'DTC and B2B2B revenue streams · MyWellnessQ programs and workflow fees · Owned-product revenue across MyBloodQ, MyBreathQ, MyGeneticsQ, and MyClinicQ.' },
+      { title: 'Commercialization ladder', desc: 'MyWellnessQ Front Door → Provider Ordering → MyBloodQ point-of-care detection → Longitudinal data moat → MyBreathQ population-scale detection.' },
     ],
-    closing: 'We own the test economics, not just referrals. The moat is detection IP + action loop + outcome data — all owned.',
+    closing: 'The moat is detection IP + action loop + outcome data — all owned.',
   },
   {
     id: 'patients',
