@@ -19,11 +19,12 @@ const productImages = [
 ]
 
 const productLines = [
-  { name: 'MyWellnessQ', role: 'Patient/member front door', detail: 'Consumer, clinician, and sponsor engagement. Ordering, results, guidance, and longitudinal conversion — all in one place. Every interaction becomes a trackable member journey.', color: '#6237A0' },
-  { name: 'MyWellnessQ Labs', role: 'Immediate demand monetization and buyer-behavior data', detail: '70+ available tests, print-kit fulfillment, and end-to-end ordering-to-results workflow. Every ordered test is a buyer-behavior datapoint that feeds back into the platform.', color: '#9B71D6' },
-  { name: 'Oncodea / MMyeloma', role: 'First owned specialty margin', detail: 'Blood-based AI analysis designed to identify early signs of breast cancer and multiple myeloma — from a simple blood draw. VERITY validation study in progress with institutional partners.', color: '#D7CFE6' },
-  { name: 'Vocxi Breathe', role: 'Acute-care workflow value and site economics', detail: 'Non-invasive breath analysis via graphene nanosensor arrays. Results typically delivered in under one minute. Pilot-first deployment with site economics, then broader rollout.', color: '#9B71D6' },
-  { name: 'TOMME', role: 'Shared decision, routing, and learning layer across all of it', detail: 'TOMME connects every product line through one governed intelligence layer. Not a feature — the engine that makes the entire platform compound.', color: '#6237A0' },
+  { name: 'MyWellnessQ', role: 'The consumer front door (live today)', detail: 'DTC cash-pay testing platform. 70+ tests available, 3,000+ biomarkers measured, $349 average per test, 77% gross margin Year 1. Where the relationship starts and the data begins.', color: '#6237A0' },
+  { name: 'MyClinicQ', role: 'Clinician-ordered specialty tests', detail: 'Provider portal lane. Recurring orders, certified lab fulfillment, structured billing workflows, and longitudinal care. The clinician-facing extension of the Person Health platform.', color: '#9B71D6' },
+  { name: 'MyBloodQ', role: 'Blood-based early detection (Person Health IP)', detail: 'Validated cancer detection from a simple blood draw. 94.5% sensitivity and 96% specificity on breast cancer (437-patient blinded study at a top-10 US hospital system). 90% sensitivity and 92% specificity on multiple myeloma (independent validation underway). 10–20× lower cost than the average competitor test.', color: '#D7CFE6' },
+  { name: 'MyBreathQ', role: 'Breath-based early detection (Person Health IP)', detail: 'Non-invasive breath analysis. Statistically significant disease signals across lung, sepsis, and COVID (P-value <0.05). 60-second sample at home or point of care. Ovarian, colorectal, and TBI in pipeline with DoD interest.', color: '#9B71D6' },
+  { name: 'MyGeneticsQ', role: 'Baseline genetic, hormonal, and metabolic panels', detail: 'Germline risk, pharmacogenomics, hormonal and metabolic baseline. The foundation context that makes every breath, blood, and clinical signal more actionable.', color: '#CCE7FF' },
+  { name: 'TOMME', role: 'The behavior engine', detail: 'Translate. Orient. Motivate. Monitor. Evaluate. TOMME turns early detection into a completed next step — and proves the outcome. Not a chatbot — the action loop and behavior data engine no one else has.', color: '#6237A0' },
 ]
 
 function Reveal({ children, className = '' }) {
@@ -60,10 +61,10 @@ export default function PlatformPage() {
         <Reveal className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4">The Platform</p>
           <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white leading-[1.05] tracking-tight mb-6 font-heading">
-            One platform. One engine.<br />Multiple ways to&nbsp;enter.
+            The early-detection<br />action platform.
           </h1>
           <p className="text-lg text-brand-lavender font-light max-w-2xl leading-relaxed font-body">
-            Person Health organizes screening, early detection, and clinician-guided decision support into a single governed workflow. Every product line feeds the same completion engine — TOMME.
+            Multimodal early detection — breath, blood, labs, genetics, and behavior — feeds TOMME, the behavior engine that closes the gap between signal and outcome. Detection finds the risk. Behavior change closes the gap.
           </p>
         </Reveal>
       </section>
@@ -73,10 +74,10 @@ export default function PlatformPage() {
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">Product Families</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading text-center">
-            Five product lines. One completion engine.
+            Six product modules. One pathway. One behavior engine.
           </h2>
           <p className="text-lg leading-relaxed font-light text-gray-600 font-body max-w-2xl mb-16 text-center mx-auto">
-            Each line serves a different entry point, buyer, and signal type — but all share the same governed infrastructure for ingestion, scoring, routing, action, and closure.
+            Each module serves a different entry point, buyer, and modality — but all feed one pathway: the early signal, the action loop, and the validated outcome.
           </p>
 
           <div className="grid md:grid-cols-2 gap-10 mb-16 items-start">
@@ -123,15 +124,15 @@ export default function PlatformPage() {
       {/* TOMME DEEP DIVE */}
       <section id="tomme" className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">TOMME Core</p>
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">TOMME</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
-            TOMME — The engine behind all of it
+            TOMME — The behavior engine that turns early detection into measurable action
           </h2>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-6 text-center mx-auto">
-            TOMME is the governed intelligence core inside Person Health. It is designed to unify clinical trajectory, behavior state, trust, and intervention response inside one model — so buyers experience one system, not disconnected tools.
+            Translate. Orient. Motivate. Monitor. Evaluate. TOMME is the action loop inside Person Health — the engine that turns multimodal early signals into a completed next step, routed to the right person, tracked to closure, and proven against outcomes.
           </p>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-16 text-center mx-auto">
-            The engine does not generate recommendations and walk away — it surfaces a recommended next step, routes it into a real workflow, tracks completion, and refines based on outcomes.
+            Data → Understand → Act → Track → Validate → Learn. The loop keeps going until the outcome is known.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -254,11 +255,11 @@ export default function PlatformPage() {
               items={[
                 {
                   question: 'What is TOMME?',
-                  answer: 'TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then surfaces a recommended next step, routes it into a real workflow, and measures whether it was completed.',
+                  answer: 'TOMME is the behavior engine inside Person Health. It fuses breath, blood, genetics, clinical context, and behavior into a single state picture — then surfaces a recommended next step, routes it into a real workflow, and measures whether it was completed. Translate. Orient. Motivate. Monitor. Evaluate.',
                 },
                 {
-                  question: 'What is a multimodal health action platform?',
-                  answer: 'A multimodal health action platform combines multiple diagnostic and behavioral signal types into one decision layer. The platform is accountable for action, not just insight. It routes recommendations into real workflows and tracks whether the action was completed.',
+                  question: 'What is the early-detection action platform?',
+                  answer: 'An early-detection action platform combines multiple modalities of early signal — breath, blood, genetics, clinical context, and behavior — and turns each signal into a completed action, not just an insight. Person Health owns the full data pathway: the early signal, the action loop, and the validated outcome.',
                 },
               ]}
             />

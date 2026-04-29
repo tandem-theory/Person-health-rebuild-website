@@ -44,10 +44,10 @@ function ValidationLibrary() {
         className="mt-4 font-heading font-semibold text-brand-deep leading-[1.15] tracking-[-0.01em] text-center"
         style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
       >
-        Oncodea — Cancer Signal Research
+        MyBloodQ — Validated Cancer Detection
       </h2>
       <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg max-w-3xl text-center mx-auto">
-        Multimodal biomarker analysis designed to support early-stage cancer signal identification. Each study is IRB-approved and multi-site validated.
+        Blood-based AI cancer detection from a simple blood draw. Independently validated through IRB-approved, multi-site clinical studies. 10–20× lower cost than the average competitor test.
       </p>
 
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -59,20 +59,20 @@ function ValidationLibrary() {
             </div>
             <div>
               <h3 className="font-heading font-semibold text-brand-deep text-lg">Breast Cancer Early Detection</h3>
-              <p className="text-brand-primary text-sm font-body font-medium">Oncodea CED Panel</p>
+              <p className="text-brand-primary text-sm font-body font-medium">MyBloodQ — Breast Cancer</p>
             </div>
           </div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-sm">
-            Multimodal molecular sensing platform combining advanced blood-based molecular analysis, AI-driven pattern recognition, and proprietary cancer signal enhancement. Designed to support early-stage breast cancer signal detection. Under development for average-risk and elevated-risk populations.
+            Blood-based AI analysis. Finds 94.5% of cancer cases at the earliest stages and correctly clears 96% of healthy people. 437-patient blinded study at a top-10 US hospital system. Works even when mammograms struggle — including in women with dense breast tissue. 10–20× lower cost than the average competitor test.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="bg-brand-light rounded-lg p-3 text-center">
-              <div className="text-lg font-heading font-bold stat-gradient">Multi-site</div>
-              <div className="text-xs text-gray-600 font-body mt-0.5">Validation design</div>
+              <div className="text-lg font-heading font-bold stat-gradient">94.5%</div>
+              <div className="text-xs text-gray-600 font-body mt-0.5">Sensitivity</div>
             </div>
             <div className="bg-brand-light rounded-lg p-3 text-center">
-              <div className="text-lg font-heading font-bold stat-gradient">IRB-approved</div>
-              <div className="text-xs text-gray-600 font-body mt-0.5">Study status</div>
+              <div className="text-lg font-heading font-bold stat-gradient">96%</div>
+              <div className="text-xs text-gray-600 font-body mt-0.5">Specificity</div>
             </div>
           </div>
         </Card>
@@ -85,20 +85,20 @@ function ValidationLibrary() {
             </div>
             <div>
               <h3 className="font-heading font-semibold text-brand-deep text-lg">Multiple Myeloma Screening</h3>
-              <p className="text-brand-primary text-sm font-body font-medium">Oncodea MM Panel</p>
+              <p className="text-brand-primary text-sm font-body font-medium">MyBloodQ — Multiple Myeloma</p>
             </div>
           </div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-sm">
-            Blood-based analysis protocol under development for multiple myeloma-associated signal identification, with a pathway designed for integration into routine lab workflows. Focused on the pre-symptomatic window — where earlier identification may support better clinical decisions.
+            Finds 90% of progressing blood cancer cases within two years and correctly clears 92% of people without it. 90% blinded accuracy confirmed by independent review. Independent validation underway at a world-renowned medical center. Multiple myeloma is often diagnosed only after severe bone damage — earlier detection means more treatable disease.
           </p>
           <div className="mt-4 grid grid-cols-2 gap-3">
             <div className="bg-brand-light rounded-lg p-3 text-center">
-              <div className="text-lg font-heading font-bold stat-gradient">Blood-based</div>
-              <div className="text-xs text-gray-600 font-body mt-0.5">Sample type</div>
+              <div className="text-lg font-heading font-bold stat-gradient">90%</div>
+              <div className="text-xs text-gray-600 font-body mt-0.5">Sensitivity</div>
             </div>
             <div className="bg-brand-light rounded-lg p-3 text-center">
-              <div className="text-lg font-heading font-bold stat-gradient">Population</div>
-              <div className="text-xs text-gray-600 font-body mt-0.5">Scale target</div>
+              <div className="text-lg font-heading font-bold stat-gradient">92%</div>
+              <div className="text-xs text-gray-600 font-body mt-0.5">Specificity</div>
             </div>
           </div>
         </Card>
@@ -113,35 +113,35 @@ function BreatheSignals() {
   return (
     <SectionWrapper id="breathe-signals" bg="dark">
       <div className="text-center">
-        <SectionLabel text="Vocxi Breathe Signal Library" />
+        <SectionLabel text="MyBreathQ — Validated Breath Detection" />
       </div>
       <h2
         className="mt-4 font-heading font-semibold text-white leading-[1.15] tracking-[-0.01em] text-center"
         style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
       >
-        Breath-based screening signals
+        Breath-based early detection
       </h2>
       <p className="mt-4 text-brand-lavender font-body font-light leading-relaxed text-lg max-w-3xl text-center mx-auto">
-        Real-time volatile organic compound analysis for population-scale screening. Each signal category has published or in-progress validation data.
+        Non-invasive breath analysis. No needles, no radiation. 60-second sample at home or point of care. Statistically significant disease signals across multiple indications (P-value &lt;0.05).
       </p>
 
       <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <IconCard icon={Wind} title="Lung Cancer Triage" description="Breath VOC profiles under study for lung cancer triage support — identifying signal patterns associated with elevated risk." />
-        <IconCard icon={Activity} title="Sepsis Early Warning" description="Real-time breath biomarkers under investigation for sepsis-associated signal identification in clinical settings." />
-        <IconCard icon={Heart} title="Ovarian Cancer Markers" description="VOC signature analysis under development for ovarian cancer signal research — exploring identification in one of the hardest-to-detect cancer types." />
-        <IconCard icon={Microscope} title="Toxicology Panels" description="Breath-based toxicology analysis under development for environmental and occupational exposure assessment." />
+        <IconCard icon={Wind} title="Lung Cancer Detection" description="0.86 lung cancer accuracy score (out of 1.0). Clinically meaningful. Accuracy improves with each study cohort." />
+        <IconCard icon={Activity} title="Sepsis & COVID" description="Statistically significant disease signals across sepsis and COVID. Multiple diseases detected from a single breath." />
+        <IconCard icon={Heart} title="Pipeline Indications" description="Ovarian cancer, colorectal, and TBI studies in development with DoD interest. Additional indications under study." />
+        <IconCard icon={Microscope} title="Non-Invasive by Design" description="No blood draw, no radiation, no discomfort. Breathe into the device. Done. Scalable to home and point-of-care." />
       </div>
 
       <p className="mt-10 text-center text-brand-lavender/80 font-body font-light italic text-base max-w-3xl mx-auto">
-        All Vocxi Breathe signal products undergo the same evidence governance as Oncodea products — peer-reviewed validation, threshold-bound scoring, and clinician-reviewed outputs.
+        All MyBreathQ products undergo the same evidence governance as MyBloodQ — peer-reviewed validation, threshold-bound scoring, and clinician-reviewed outputs.
       </p>
 
       {/* Stat badges */}
       <div className="mt-14 flex flex-wrap items-center justify-center gap-12 lg:gap-20" role="list" aria-label="Key statistics">
-        <StatBadge value="40+" label="Patents granted" />
+        <StatBadge value="0.86" label="Lung accuracy score" />
         <StatBadge value="3,000+" label="Biomarkers" />
-        <StatBadge value="1 min" label="Breath test time" />
-        <StatBadge value="20+" label="Identified use cases" />
+        <StatBadge value="60 sec" label="Breath test time" />
+        <StatBadge value="P<0.05" label="Statistically significant" />
       </div>
 
     </SectionWrapper>
@@ -230,7 +230,7 @@ function EvidenceFAQ() {
           items={[
             {
               question: 'Are Person Health products FDA-cleared?',
-              answer: 'Person Health products are in various stages of clinical validation and regulatory engagement. Oncodea panels are being validated through IRB-approved, multi-site studies. Vocxi Breathe signal products are progressing through validation stages with published and in-progress data. Regulatory status is disclosed on a per-product basis — contact us for current status on specific products.',
+              answer: 'Person Health products are in various stages of clinical validation and regulatory engagement. MyBloodQ is being validated through IRB-approved, multi-site clinical studies, with data presented at major oncology conferences. MyBreathQ is progressing through validation stages with statistically significant results across lung, sepsis, and COVID, plus DoD-interest pipeline studies (ovarian, colorectal, TBI). FDA engagement is underway. Regulatory status is disclosed on a per-product basis — contact us for current status on specific products.',
             },
             {
               question: 'How is the evidence governed?',

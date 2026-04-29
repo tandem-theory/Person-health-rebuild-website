@@ -55,11 +55,11 @@ const audiences = [
     subtitle: 'Commercialization ladder and compounding',
     body: 'One integrated platform. Compounding intelligence. Multiple monetization layers.',
     sections: [
-      { title: 'Revenue infrastructure', desc: '2+ tests at launch · 100K+ tests/month capacity · 2 lab facilities · cost + 10% wholesale pricing.' },
-      { title: 'What Person Health books', desc: 'Projected DTC and B2B2B revenue streams · MyWellnessQ programs and workflow fees · Owned-product revenue anticipated as Oncodea and Vocxi Breathe reach market.' },
-      { title: 'Commercialization ladder', desc: 'MyWellnessQ front door → Paid programs + workflow fees → Oncodea specialty margin → Longitudinal data moat → Vocxi Breathe site economics.' },
+      { title: 'Three revenue streams, all growing together', desc: 'DTC ($349 avg, 77% gross margin) · Clinician-ordered specialty tests ($499) · Specialty diagnostics MyBloodQ ($499–$999, highest GM, owned IP).' },
+      { title: 'Financial trajectory', desc: 'Year 1: $14.3M · Year 2: $45.1M · Year 3: $91.8M · Year 5: $205M+. Conservative base case built from real unit economics.' },
+      { title: 'Commercialization ladder', desc: 'MyWellnessQ Front Door (live today) → Provider Ordering → MyBloodQ point-of-care detection → MyBreathQ population-scale detection. Each stage compounds the next.' },
     ],
-    closing: 'Legacy partner-lab revenue is real proof the infrastructure exists — but it is not consolidated into Person Health revenue.',
+    closing: 'We own the test economics, not just referrals. The moat is detection IP + action loop + outcome data — all owned.',
   },
   {
     id: 'patients',

@@ -23,11 +23,12 @@ const productImages = [
 ]
 
 const productLines = [
-  { name: 'MyWellnessQ', desc: 'Patient/member front door', color: '#6237A0' },
-  { name: 'MyWellnessQ Labs', desc: 'Immediate demand monetization and buyer-behavior data', color: '#9B71D6' },
-  { name: 'Oncodea / MMyeloma', desc: 'First owned specialty margin', color: '#D7CFE6' },
-  { name: 'Vocxi Breathe', desc: 'Acute-care workflow value and site economics', color: '#9B71D6' },
-  { name: 'TOMME', desc: 'Shared decision, routing, and learning layer across all of it', color: '#6237A0' },
+  { name: 'MyWellnessQ', desc: 'The consumer front door · 70+ DTC cash-pay tests live today', color: '#6237A0' },
+  { name: 'MyClinicQ', desc: 'Clinician-ordered specialty tests · provider portal lane', color: '#9B71D6' },
+  { name: 'MyBloodQ', desc: 'Blood-based early detection · proprietary Person Health IP', color: '#D7CFE6' },
+  { name: 'MyBreathQ', desc: 'Breath-based early detection · proprietary Person Health IP', color: '#9B71D6' },
+  { name: 'MyGeneticsQ', desc: 'Baseline genetic, hormonal, and metabolic panels', color: '#CCE7FF' },
+  { name: 'TOMME', desc: 'The behavior engine — translate, orient, motivate, monitor, evaluate', color: '#6237A0' },
 ]
 
 /* ═══════════════════════════════════════
@@ -111,20 +112,20 @@ export default function HomePage() {
           <h1
             className="text-[clamp(2.8rem,6vw,5rem)] font-bold text-white leading-[1.05] tracking-tight mb-8 font-heading"
           >
-            Earlier signals.<br />Safer next steps.
+            Before Symptoms.<br />Better Next Steps.
           </h1>
           <p className="max-w-3xl mx-auto mb-10 text-xl leading-relaxed font-light text-brand-lavender font-body">
-            Person Health is the multimodal health action platform for screening, early detection, and clinician-guided decision support. Powered by TOMME — the governed intelligence engine — Person Health turns breath, blood, labs, symptoms, claims, EHR, and behavior into a safer, clearer next step — and supports follow-through to completion.
+            Person Health is the early-detection action platform. We turn early signals — across breath, blood, labs, genetics, and behavior — into clear, actionable health decisions. Powered by TOMME, our behavior engine, the platform doesn&rsquo;t just detect — it moves the person to a completed next step, and proves the outcome.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button href="/platform#tomme">See how TOMME works</Button>
           </div>
           <div className="flex justify-center gap-8 text-sm text-brand-lavender/80 font-body">
-            <span>Multimodal evidence</span>
+            <span>Multimodal early detection</span>
             <span className="text-brand-medium" aria-hidden="true">·</span>
-            <span>Governed intelligence</span>
+            <span>Behavior engine</span>
             <span className="text-brand-medium" aria-hidden="true">·</span>
-            <span>Closed-loop action</span>
+            <span>Validated outcomes</span>
           </div>
         </Reveal>
       </section>
@@ -203,10 +204,10 @@ export default function HomePage() {
             The Platform
           </p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
-            One platform. One engine.<br />Multiple ways to&nbsp;enter.
+            Six product modules.<br />One pathway. One behavior engine.
           </h2>
           <p className="text-lg leading-relaxed font-light text-brand-lavender font-body max-w-2xl mb-16 text-center mx-auto">
-            MyWellnessQ stays the front door. Every product line shares one data layer, one intelligence engine, and one workflow surface.
+            MyWellnessQ is the front door. Every modality — MyBloodQ, MyBreathQ, MyGeneticsQ, MyClinicQ — shares one data layer and feeds one behavior engine: TOMME.
           </p>
 
           <div className="grid md:grid-cols-2 gap-10 mb-16 items-start">
@@ -262,10 +263,10 @@ export default function HomePage() {
             TOMME
           </p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading">
-            The engine behind all of it
+            The behavior engine
           </h2>
           <p className="text-lg leading-relaxed font-light text-brand-lavender font-body max-w-2xl mx-auto mb-10">
-            Every product line feeds TOMME. Every signal TOMME processes strengthens every product line. It is not a feature — it is the shared intelligence layer that makes the platform compound.
+            Translate. Orient. Motivate. Monitor. Evaluate. TOMME turns early detection into a completed next step — and proves the outcome. Detection finds the risk. Behavior change closes the gap.
           </p>
           <Button href="/platform#tomme">See how TOMME works</Button>
         </Reveal>
@@ -385,17 +386,17 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card">
-              <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Breast CED | Institutional Validation Study</p>
+              <p className="text-sm font-medium text-brand-primary mb-2 font-body">MyBloodQ — Breast Cancer | Top-10 US Hospital System</p>
               <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">94.5% / 96%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
-                In study data: sensitivity / specificity. AUC 0.99 across 437 blinded subjects. 94% Stage 0–I detection.
+                Sensitivity / specificity. Finds 94.5% of cancer cases at the earliest stages and correctly clears 96% of healthy people. 437-patient blinded study. 10–20× lower cost than the average competitor test.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card">
-              <p className="text-sm font-medium text-brand-primary mb-2 font-body">Oncodea — Multiple Myeloma | World-Renowned Hospital</p>
-              <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">90%</p>
+              <p className="text-sm font-medium text-brand-primary mb-2 font-body">MyBloodQ — Multiple Myeloma | World-Renowned Medical Center</p>
+              <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">90% / 92%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
-                In study data: finds 90% of progressing blood cancer cases. Blinded accuracy confirmed by independent review.
+                Sensitivity / specificity. Finds 90% of progressing blood cancer cases within two years and correctly clears 92% of people without it. Independent validation underway.
               </p>
             </div>
           </div>
@@ -403,9 +404,9 @@ export default function HomePage() {
           {/* Stat badges */}
           <div className="flex justify-center gap-16 mb-12" role="list" aria-label="Key statistics">
             {[
-              { num: '40+', label: 'issued patents' },
-              { num: '30+', label: 'pending' },
-              { num: '<1 min', label: 'test time' },
+              { num: '70+', label: 'tests in catalog' },
+              { num: '3,000+', label: 'biomarkers' },
+              { num: '77%', label: 'gross margin' },
             ].map((s, i) => (
               <div key={i} className="text-center" role="listitem">
                 <p className="text-4xl font-bold mb-1 stat-gradient font-heading" aria-hidden="true">{s.num}</p>
@@ -471,11 +472,11 @@ export default function HomePage() {
           <div className="mt-12">
             <FAQ
               q="What is TOMME?"
-              a="TOMME stands for Trusted Orchestrated Multimodal Markov Engine. It is the governed intelligence core inside Person Health. It fuses breath, blood, genetics, labs, claims, EHR, symptoms, and behavior into a single state picture — then surfaces a recommended next step, routes it into a real workflow, and measures whether it was completed."
+              a="TOMME is the behavior engine inside Person Health. It fuses breath, blood, genetics, clinical context, and behavior into a single state picture — then surfaces a recommended next step, routes it into a real workflow, and measures whether it was completed. Translate. Orient. Motivate. Monitor. Evaluate."
             />
             <FAQ
-              q="What is a multimodal health action platform?"
-              a="A multimodal health action platform combines multiple diagnostic and behavioral signal types into one decision layer. The difference from a traditional analytics tool is that the platform is accountable for action, not just insight. It routes recommendations into real workflows and tracks whether the action was completed."
+              q="What is the early-detection action platform?"
+              a="An early-detection action platform combines multiple modalities of early signal — breath, blood, genetics, clinical context, and behavior — and turns each signal into a completed action, not just an insight. Person Health owns the full data pathway: the early signal, the action loop, and the validated outcome."
             />
             <FAQ
               q="How do you increase screening completion?"
@@ -486,8 +487,8 @@ export default function HomePage() {
               a="Person Health treats abnormal findings as open cases that are tracked toward completion — not just notifications. The platform routes follow-up into navigator queues, clinician inboxes, or patient CTAs and tracks closure."
             />
             <FAQ
-              q="What is governed clinical AI in screening and diagnosis support?"
-              a="Governed clinical AI means every recommendation shows its provenance, exposes uncertainty, flags missing data, and defines the conditions under which human review is required. Person Health separates three care lanes with escalating governance requirements."
+              q="What is the 0-to-1 health window?"
+              a="The 0-to-1 health window is the pre-symptomatic period after biology changes but before the traditional system reliably detects or acts. It is the most consequential and under-served window in modern medicine — and it is where Person Health was built to operate."
             />
           </div>
 

@@ -6,7 +6,7 @@ const columns = [
     title: 'Platform',
     links: [
       { label: 'Overview', to: '/platform' },
-      { label: 'TOMME Engine', to: '/platform#tomme' },
+      { label: 'TOMME', to: '/platform#tomme' },
     ],
   },
   {
@@ -63,16 +63,21 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-brand-lavender/5 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-          <p className="text-brand-lavender text-sm">
-            &copy; {new Date().getFullYear()} Person Health, Inc. All rights reserved.
+        <div className="border-t border-brand-lavender/5 mt-12 pt-8">
+          <p className="text-brand-lavender text-sm uppercase tracking-wider mb-4 text-center sm:text-left">
+            MyWellnessQ &nbsp;|&nbsp; MyBreathQ &nbsp;|&nbsp; MyBloodQ &nbsp;|&nbsp; Powered by TOMME
           </p>
-          <Link
-            to="/privacy"
-            className="text-brand-lavender text-sm hover:text-white transition-colors duration-200"
-          >
-            Privacy Policy
-          </Link>
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <p className="text-brand-lavender text-sm">
+              &copy; {new Date().getFullYear()} Person Health, Inc. All rights reserved.
+            </p>
+            <Link
+              to="/privacy"
+              className="text-brand-lavender text-sm hover:text-white transition-colors duration-200"
+            >
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

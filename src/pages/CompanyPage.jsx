@@ -45,13 +45,13 @@ function AboutSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-lg">
-            Health systems generate signals every day — screening flags, lab anomalies, risk scores, behavioral indicators. But the distance between finding a signal and completing the right next step is where healthcare fails most people.
+            Healthcare catches disease too late — and loses patients even when test results appear. Detection is necessary but not sufficient. Behavior change is what closes the gap between a finding and a healthier outcome.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
-            Person Health is a multimodal health action platform that connects screening, early detection, and clinician-guided decision support into one governed workflow. The platform does not just detect — it completes.
+            Person Health is the early-detection action platform. We operate in the 0-to-1 health window — the period after biology changes but before symptoms appear. We own the full data pathway: proprietary detection IP across blood, breath, genetics, and clinical context; TOMME, the behavior engine that turns signals into action; and the validated outcome data that proves it worked.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
-            Every signal that enters Person Health is scored, routed to the appropriate care lane, reviewed by a clinician, and tracked to closure. The platform is designed so that no signal falls through the cracks.
+            Every signal that enters Person Health is scored, routed, reviewed, and tracked to a completed next step. Detection finds the risk. Behavior change closes the gap.
           </p>
         </div>
         <div className="rounded-2xl overflow-hidden shadow-card-hover">
@@ -87,23 +87,23 @@ function OriginsSection() {
       <div className="mt-12">
         <NumberedStack items={[
           {
-            title: 'Oncodea — Cancer signal science',
-            description: 'The clinical and scientific foundation. Oncodea developed multimodal biomarker panels designed to support cancer signal identification — combining advanced blood-based molecular analysis, AI-driven pattern recognition, proprietary cancer signal enhancement, and clinical risk models. This became the first product family inside Person Health.',
+            title: 'Blood-based detection science',
+            description: 'The clinical and scientific foundation for what is now MyBloodQ. Multimodal blood-based molecular analysis, AI-driven pattern recognition, and proprietary cancer signal enhancement — validated in IRB-approved clinical studies with leading academic medical centers. This became the first product family inside Person Health.',
             color: '#6237A0',
           },
           {
-            title: 'Vocxi Breathe — Respiratory signal science',
-            description: 'Real-time breath VOC analysis brought non-invasive signal analysis into the platform. Vocxi Breathe expanded Person Health\'s signal types beyond blood-based biomarkers.',
+            title: 'Breath-based detection science',
+            description: 'The scientific foundation for what is now MyBreathQ. Real-time breath VOC analysis brought non-invasive early detection into the platform — statistically significant disease signals across lung, sepsis, and COVID, with ovarian, colorectal, and TBI in the pipeline.',
             color: '#9B71D6',
           },
           {
-            title: 'MTL — Laboratory infrastructure',
-            description: 'CLIA-certified molecular testing labs provided the analytical backbone — sample processing, quality assurance, and result certification that gives every signal its clinical weight.',
+            title: 'Laboratory infrastructure',
+            description: 'CLIA-certified molecular testing labs provide the analytical backbone — sample processing, quality assurance, and result certification that gives every test its clinical weight.',
             color: '#CCE7FF',
           },
           {
-            title: 'Governed workflow architecture',
-            description: 'TOMME — the governed intelligence engine — was built to connect every signal type into a single completion workflow. This is the system that makes Person Health a platform, not a collection of tests.',
+            title: 'TOMME — the behavior engine',
+            description: 'TOMME was built to fuse every modality (genetics, clinical labs, blood, breath, behavior) into the action loop that closes the gap between signal and outcome. Translate. Orient. Motivate. Monitor. Evaluate.',
             color: '#D7CFE6',
           },
         ]} />
@@ -141,7 +141,7 @@ function LeadershipSection() {
     'Parm Kang': 'Strategic finance executive combining institutional discipline with startup agility. At Person Health, he leads finance, investor reporting, runway planning, and institutional readiness — building the financial infrastructure to support growth from innovation to scaled deployment.',
     'Greg Sherwood': 'Scientific founder of Person Health\'s breath-based diagnostic technology and former Senior Fellow at Boston Scientific. He holds 87 patents in sensing and applied diagnostics, producing a patented platform designed to identify disease-associated biomarkers from a single breath.',
     'Ali Khammanivong': 'Molecular scientist and AI expert with a PhD in Cancer Biology & Bioinformatics from the University of Minnesota. At Person Health, he leads the molecular diagnostics platform for cancer-associated signal research, integrating genomics, proteomics, and machine learning.',
-    'Dan Que Pham': 'Biotech operator and co-founder of Oncodea, where she led development of an AI-based platform for cancer signal analysis. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
+    'Dan Que Pham': 'Biotech operator and MyBloodQ co-founder, where she led development of an AI-based platform for early cancer detection through clinical validation at leading academic medical centers. At Person Health, she drives molecular diagnostics integration — bridging research, clinical validation, and commercialization.',
     'Raia Finc': 'Systems engineer with two decades of experience spanning DuPont and Boston Scientific. At Person Health, she leads electrical, mechanical, and software development of the breath-based diagnostic platform — translating innovation into production-ready systems.',
     'Thomas Sheehan': 'Visionary healthcare innovator and scientific founder driving Person Health\'s core technology strategy. As Chairman and Chief Innovation Officer, he leads the company\'s intellectual property portfolio and technology roadmap.',
     'Jennifer Schaumburg': 'Leads the systems that ensure Person Health operates with clear accountability, traceable execution, and controls that perform across regulated environments.',
@@ -177,9 +177,9 @@ function LeadershipSection() {
       title: 'Science & Platform',
       members: [
         { name: 'Randy Schiestl', role: 'Global Science & Operations' },
-        { name: 'Greg Sherwood', role: 'Breath Scientific Lead' },
+        { name: 'Greg Sherwood', role: 'MyBreathQ Scientific Lead' },
         { name: 'Raia Finc', role: 'VP of Volatile Diagnostics' },
-        { name: 'Ali Khammanivong', role: 'Oncodea Scientific Lead' },
+        { name: 'Ali Khammanivong', role: 'MyBloodQ Scientific Lead' },
         { name: 'Dan Que Pham', role: 'VP of Molecular Diagnostics' },
       ],
     },
@@ -358,7 +358,7 @@ function CompanyFAQ() {
           items={[
             {
               question: 'How is Person Health organized as a platform?',
-              answer: 'Person Health is a single platform with multiple product lines — MyWellnessQ, MyWellnessQ Labs, Oncodea / MMyeloma, and Vocxi Breathe — all sharing one governed intelligence engine (TOMME). Buyers experience one system, one trust architecture, and one completion workflow, regardless of which entry point they use.',
+              answer: 'Person Health is the early-detection action platform. The product family — MyWellnessQ (consumer front door), MyClinicQ (clinician-ordered tests), MyBloodQ (blood-based detection), MyBreathQ (breath-based detection), and MyGeneticsQ (baseline panels) — all feed TOMME, the behavior engine. One platform. One pathway. One outcome layer.',
             },
             {
               question: 'Is Person Health hiring?',
