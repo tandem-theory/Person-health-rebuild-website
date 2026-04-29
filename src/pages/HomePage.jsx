@@ -290,7 +290,7 @@ export default function HomePage() {
             {[
               { icon: TrendingUp, title: 'Increase screening completion' },
               { icon: RefreshCw, title: 'Recover abnormal-result follow-up' },
-              { icon: Clock, title: 'Reduce signal-to-action days' },
+              { icon: Clock, title: 'Reduce detection-to-action days' },
               { icon: Shield, title: 'Lower leakage and avoidable escalation' },
               { icon: Coins, title: 'Expand retained revenue and contribution margin' },
             ].map((item, i) => (

@@ -159,9 +159,9 @@ export default function PlatformPage() {
       {/* SIX-STEP WORKFLOW */}
       <section className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">Signal-to-Action Workflow</p>
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">Detection-to-Action Workflow</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
-            How one case moves through the OS
+            How one case moves through the pathway
           </h2>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-2xl mb-16 text-center mx-auto">
             Six steps. No gap left unaddressed. The platform is accountable for completion, not just recommendation generation.
@@ -201,15 +201,15 @@ export default function PlatformPage() {
         </Reveal>
       </section>
 
-      {/* SIGNAL FABRIC */}
+      {/* DETECTION FABRIC */}
       <section className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">Multimodal Signal Fabric</p>
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">Multimodal Detection Fabric</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
-            The signal fabric is multimodal by design
+            The detection fabric is multimodal by design
           </h2>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-2xl mb-16 text-center mx-auto">
-            Each modality contributes a different slice of truth. TOMME fuses them into one daily state picture.
+            Each modality contributes a different slice of truth. TOMME fuses them into one daily state picture and turns the picture into an action.
           </p>
 
           <div className="grid md:grid-cols-2 gap-4 mb-12">

@@ -121,8 +121,8 @@ function MissionSection() {
   return (
     <div id="mission">
       <CalloutBlock
-        headline="Earlier signals. Safer next steps."
-        body="The Person Health mission is to close the gap between health signal and health action — for every person who enters the platform, with continuity built into every step."
+        headline="Before Symptoms. Better Next Steps."
+        body="The Person Health mission is to close the gap between early detection and completed action — for every person who enters the platform, with continuity built into every step. Detection finds the risk. Behavior change closes the gap."
         italic="The operational design goal: the smallest safe next step, governed by evidence, reviewed by clinicians, and tracked to completion."
       />
     </div>
