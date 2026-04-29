@@ -109,7 +109,7 @@ function OriginsSection() {
         ]} />
       </div>
 
-      <p className="mt-8 text-brand-lavender/80 font-body font-light italic text-[17px] max-w-3xl">
+      <p className="mt-8 text-brand-lavender/80 font-body font-light italic text-[17px] max-w-5xl">
         These represent enabling lineage — not co-equal brands. Person Health is the platform. Everything else feeds&nbsp;into&nbsp;it.
       </p>
     </SectionWrapper>

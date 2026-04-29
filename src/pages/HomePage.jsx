@@ -353,7 +353,7 @@ export default function HomePage() {
                   <item.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-base font-semibold text-white mb-2 md:mb-3 font-heading">{item.title}</h3>
+                  <h3 className="text-base font-semibold text-white mb-2 md:mb-3 font-heading md:min-h-[3.25rem]">{item.title}</h3>
                   <p className="text-brand-lavender text-sm leading-relaxed font-light font-body">{item.q}</p>
                 </div>
               </div>
@@ -386,14 +386,14 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card">
-              <p className="text-sm font-medium text-brand-primary mb-2 font-body">MyBloodQ — Breast Cancer | Top-10 US Hospital System</p>
+              <p className="text-sm font-medium text-brand-primary mb-2 font-body">MyBloodQ — Breast Cancer<br/>Top-10 US Hospital System</p>
               <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">94.5% / 96%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
                 Sensitivity / specificity. Finds 94.5% of cancer cases at the earliest stages and correctly clears 96% of healthy people. 437-patient blinded study. 10–20× lower cost than the average competitor test.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 border border-brand-lavender/30 shadow-card">
-              <p className="text-sm font-medium text-brand-primary mb-2 font-body">MyBloodQ — Multiple Myeloma | World-Renowned Medical Center</p>
+              <p className="text-sm font-medium text-brand-primary mb-2 font-body">MyBloodQ — Multiple Myeloma<br/>World-Renowned Medical Center</p>
               <p className="text-3xl font-bold text-brand-deep mb-3 font-heading">90% / 92%</p>
               <p className="text-gray-600 text-sm leading-relaxed font-light font-body">
                 Sensitivity / specificity. Finds 90% of progressing blood cancer cases within two years and correctly clears 92% of people without it. Independent validation underway.
@@ -404,9 +404,9 @@ export default function HomePage() {
           {/* Stat badges */}
           <div className="flex justify-center gap-16 mb-12" role="list" aria-label="Key statistics">
             {[
-              { num: '70+', label: 'tests in catalog' },
-              { num: '3,000+', label: 'biomarkers' },
-              { num: '60 sec', label: 'breath sample' },
+              { num: '40+', label: 'issued patents' },
+              { num: '30+', label: 'pending' },
+              { num: '<1 min', label: 'test time' },
             ].map((s, i) => (
               <div key={i} className="text-center" role="listitem">
                 <p className="text-4xl font-bold mb-1 stat-gradient font-heading" aria-hidden="true">{s.num}</p>
