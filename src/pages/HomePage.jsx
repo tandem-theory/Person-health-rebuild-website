@@ -343,10 +343,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mb-16">
             {[
-              { icon: FileText, title: 'Source attributes', q: 'What is this model? Who owns it? What population is it for?' },
+              { icon: FileText, title: <>Source<br />attributes</>, q: 'What is this model? Who owns it? What population is it for?' },
               { icon: Database, title: 'Provenance + recency', q: 'What data triggered this? How current? What is missing?' },
               { icon: Scale, title: 'Uncertainty + fairness', q: 'How sure is the system? Which subgroups need monitoring?' },
-              { icon: User, title: 'Human control', q: 'When does the case stop and require clinician review?' },
+              { icon: User, title: <>Human<br />control</>, q: 'When does the case stop and require clinician review?' },
             ].map((item, i) => (
               <div key={i} className="bg-gradient-to-br from-[#351566]/60 to-brand-deep/90 border border-white/10 rounded-2xl p-5 md:p-7 hover:border-brand-medium/30 transition-all duration-300 flex items-start gap-4 md:flex-col">
                 <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
