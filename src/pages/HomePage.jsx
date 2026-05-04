@@ -15,11 +15,12 @@ import Button from '../components/ui/Button'
    ═══════════════════════════════════════ */
 
 const productImages = [
-  '/images/mywellnessq-new.png',
-  '/images/mywellnessq-labs.png',
-  '/images/oncodea.png',
-  '/images/breathe.jpeg',
-  '/images/tomme.png',
+  '/images/mywellnessq-new.png',  // MyWellnessQ
+  '/images/mywellnessq-labs.png', // MyClinicQ (repurposed — clinician-ordered tests)
+  '/images/oncodea.png',          // MyBloodQ (repurposed)
+  '/images/breathe.jpeg',         // MyBreathQ (repurposed)
+  '/images/mwq-dashboard.png',    // MyGeneticsQ (placeholder — uses MWQ dashboard)
+  '/images/tomme.png',            // TOMME
 ]
 
 const productLines = [
