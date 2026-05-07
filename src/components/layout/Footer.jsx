@@ -20,13 +20,6 @@ const columns = [
     title: 'Company',
     links: [
       { label: 'About', to: '/company' },
-      { label: 'Contact', to: '/contact' },
-    ],
-  },
-  {
-    title: 'Connect',
-    links: [
-      { label: 'Request a Demo', to: '/contact' },
     ],
   },
 ]
@@ -39,7 +32,7 @@ export default function Footer() {
           <img src={images.logos.main} alt="Person Health" className="h-8 mb-8" />
         </Link>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {columns.map((col) => (
             <div key={col.title}>
               <h4 className="text-white font-heading font-semibold text-sm uppercase tracking-wide mb-4">

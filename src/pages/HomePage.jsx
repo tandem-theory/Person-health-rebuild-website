@@ -226,7 +226,7 @@ export default function HomePage() {
                 body: 'Use Person Health to extend screening, simplify patient education, and track next-step completion.',
                 bullets: ['Request provider access', 'Order supported test pathways', 'Receive structured results and patient-friendly guidance'],
                 cta: 'Request provider access',
-                href: '/contact',
+                href: 'https://mywellnessq.com',
                 anchorId: 'clinicians',
               },
               {
@@ -235,8 +235,8 @@ export default function HomePage() {
                 title: 'Build an early-detection program.',
                 body: 'Work with Person Health on pilots for health systems, labs, employers, payers, and research partners.',
                 bullets: ['Define a population or disease pathway', 'Use blood, breath, lab, or behavior workflows', 'Measure follow-up, engagement, and outcomes'],
-                cta: 'Discuss a partnership',
-                href: '/contact',
+                cta: null,
+                href: null,
                 anchorId: 'partners',
               },
             ].map((card, i) => (
@@ -274,27 +274,29 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                {/* CTA pinned to bottom for horizontal alignment across cards */}
-                {card.href.startsWith('http') ? (
-                  <a
-                    href={card.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-auto pt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary group-hover:text-brand-deep transition font-body"
-                  >
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-4 py-2 group-hover:bg-brand-lavender/60 transition">
-                      {card.cta} <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
-                    </span>
-                  </a>
-                ) : (
-                  <Link
-                    to={card.href}
-                    className="mt-auto pt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary group-hover:text-brand-deep transition font-body"
-                  >
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-4 py-2 group-hover:bg-brand-lavender/60 transition">
-                      {card.cta} <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
-                    </span>
-                  </Link>
+                {/* CTA pinned to bottom for horizontal alignment across cards (omitted when card has no destination) */}
+                {card.href && card.cta && (
+                  card.href.startsWith('http') ? (
+                    <a
+                      href={card.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-auto pt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary group-hover:text-brand-deep transition font-body"
+                    >
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-4 py-2 group-hover:bg-brand-lavender/60 transition">
+                        {card.cta} <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                      </span>
+                    </a>
+                  ) : (
+                    <Link
+                      to={card.href}
+                      className="mt-auto pt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-primary group-hover:text-brand-deep transition font-body"
+                    >
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-light px-4 py-2 group-hover:bg-brand-lavender/60 transition">
+                        {card.cta} <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                      </span>
+                    </Link>
+                  )
                 )}
               </article>
             ))}
@@ -659,23 +661,11 @@ export default function HomePage() {
             className="mt-10 rounded-2xl p-7 lg:p-10 text-white"
             style={{ background: 'linear-gradient(135deg, #9B71D6 0%, #6237A0 100%)' }}
           >
-            <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 items-center">
-              <div className="lg:col-span-9">
-                <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/85 font-body">Person Health</p>
-                <p className="mt-3 font-heading font-semibold text-xl lg:text-[1.625rem] leading-[1.25]">Clear results. Better next steps.</p>
-                <p className="mt-3 text-white/85 leading-relaxed text-[0.95rem] lg:text-base font-body font-light max-w-3xl">
-                  Our goal is to replace confusion with sequence: what was found, why it matters, and what to do next.
-                </p>
-              </div>
-              <div className="lg:col-span-3 flex lg:justify-end">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 bg-white text-brand-deep font-semibold rounded-full px-6 py-3 text-sm hover:bg-brand-light transition font-body shadow-md"
-                >
-                  Talk to Person Health <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                </Link>
-              </div>
-            </div>
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/85 font-body">Person Health</p>
+            <p className="mt-3 font-heading font-semibold text-xl lg:text-[1.625rem] leading-[1.25]">Clear results. Better next steps.</p>
+            <p className="mt-3 text-white/85 leading-relaxed text-[0.95rem] lg:text-base font-body font-light max-w-3xl">
+              Our goal is to replace confusion with sequence: what was found, why it matters, and what to do next.
+            </p>
           </div>
         </Reveal>
       </section>
@@ -758,7 +748,7 @@ export default function HomePage() {
 
 
       {/* ─── SECTION 8: CTA ─── */}
-      <section id="contact" className="relative">
+      <section id="cta" className="relative">
         <div style={{ background: 'linear-gradient(135deg, #28104E 0%, #6237A0 100%)' }}>
           <Reveal className="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             <div className="lg:col-span-7 text-white">
@@ -774,17 +764,11 @@ export default function HomePage() {
                 </span>
               </h2>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 bg-white text-brand-deep font-semibold rounded-full px-8 py-4 text-base hover:bg-brand-light transition font-body shadow-md"
-                >
-                  Contact us <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                </Link>
                 <a
                   href="https://mywellnessq.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border-2 border-white/40 text-white font-semibold rounded-full px-8 py-4 text-base hover:bg-white/10 transition font-body"
+                  className="inline-flex items-center gap-2 bg-white text-brand-deep font-semibold rounded-full px-8 py-4 text-base hover:bg-brand-light transition font-body shadow-md"
                 >
                   Browse tests <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </a>

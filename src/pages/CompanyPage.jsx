@@ -273,9 +273,6 @@ function LeadershipSection() {
         </div>
       ))}
 
-      <div className="mt-10 text-center">
-        <Button href="/contact" variant="ghost">Connect with the team</Button>
-      </div>
     </SectionWrapper>
   )
 }

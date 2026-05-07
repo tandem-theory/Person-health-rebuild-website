@@ -133,10 +133,7 @@ export default function SolutionsPage() {
                         {audience.title}
                       </h2>
                       <p className="text-[15px] font-medium text-brand-primary mb-4 font-body">{audience.subtitle}</p>
-                      <p className="text-lg text-gray-600 font-light leading-relaxed font-body mb-4">{audience.body}</p>
-                      <a href="/contact" className="text-sm font-medium text-brand-primary hover:text-brand-deep inline-flex items-center gap-1 transition-colors font-body">
-                        Request a meeting to find out more <span aria-hidden="true">&rarr;</span>
-                      </a>
+                      <p className="text-lg text-gray-600 font-light leading-relaxed font-body">{audience.body}</p>
                     </div>
                   </div>
                   <div>
