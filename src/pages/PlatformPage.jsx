@@ -13,7 +13,7 @@ import Accordion from '../components/ui/Accordion'
 const productImages = [
   '/images/mywellnessq-new.png',  // MyWellnessQ
   '/images/mywellnessq-labs.png', // MyClinicQ (repurposed — clinician-ordered tests)
-  '/images/oncodea.png',          // MyBloodQ (repurposed)
+  '/images/mybloodq.png',         // MyBloodQ
   '/images/breathe.jpeg',         // MyBreathQ (repurposed)
   '/images/mwq-dashboard.png',    // MyGeneticsQ (placeholder — uses MWQ dashboard)
   '/images/tomme.png',            // TOMME
