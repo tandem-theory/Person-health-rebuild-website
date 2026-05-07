@@ -194,12 +194,9 @@ export default function PlatformPage() {
             ))}
           </div>
 
-          <p className="text-center text-brand-lavender/70 text-sm italic mb-10 font-body">
+          <p className="text-center text-brand-lavender/70 text-sm italic font-body">
             The output is not another static risk score. It is a governed action system for getting the right person to a safer next step earlier.
           </p>
-          <div className="text-center">
-            <Button href="/contact?audience=platform">Request a platform walkthrough</Button>
-          </div>
         </Reveal>
       </section>
 
@@ -265,10 +262,6 @@ export default function PlatformPage() {
                 },
               ]}
             />
-          </div>
-
-          <div className="text-center mt-12">
-            <Button href="/contact?audience=platform">Request a platform walkthrough</Button>
           </div>
         </Reveal>
       </section>

@@ -5,7 +5,6 @@ import {
 } from 'lucide-react'
 import SectionWrapper from '../components/layout/SectionWrapper'
 import SectionLabel from '../components/ui/SectionLabel'
-import Button from '../components/ui/Button'
 import Card from '../components/ui/Card'
 import IconCard from '../components/ui/IconCard'
 import StatBadge from '../components/ui/StatBadge'
@@ -199,17 +198,6 @@ function Methodology() {
   )
 }
 
-/* ─────────── EVIDENCE CTA ─────────── */
-function EvidenceCTA() {
-  return (
-    <SectionWrapper bg="dark">
-      <div className="text-center">
-        <Button href="/contact">Request evidence materials</Button>
-      </div>
-    </SectionWrapper>
-  )
-}
-
 /* ─────────── FAQ ─────────── */
 function EvidenceFAQ() {
   return (
@@ -252,7 +240,6 @@ export default function EvidencePage() {
       <ValidationLibrary />
       <BreatheSignals />
       <Methodology />
-      <EvidenceCTA />
       <EvidenceFAQ />
     </>
   )

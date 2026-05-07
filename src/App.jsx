@@ -7,7 +7,6 @@ import PlatformPage from './pages/PlatformPage'
 import SolutionsPage from './pages/SolutionsPage'
 import EvidencePage from './pages/EvidencePage'
 import CompanyPage from './pages/CompanyPage'
-import ContactPage from './pages/ContactPage'
 import PrivacyPage from './pages/PrivacyPage'
 
 function ScrollToHashOrTop() {
@@ -50,7 +49,6 @@ export default function App() {
           <Route path="/solutions" element={<SolutionsPage />} />
           <Route path="/evidence" element={<EvidencePage />} />
           <Route path="/company" element={<CompanyPage />} />
-          <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
         </Routes>
       </main>
