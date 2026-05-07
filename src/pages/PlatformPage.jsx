@@ -25,7 +25,7 @@ const productLines = [
   { name: 'MyBloodQ', role: 'Blood-based early detection (Person Health IP)', detail: 'Validated cancer detection from a simple blood draw. 94.5% sensitivity and 96% specificity on breast cancer (437-patient blinded study at a top-10 US hospital system). 90% sensitivity and 92% specificity on multiple myeloma (independent validation underway). 10–20× lower cost than the average competitor test.', color: '#D7CFE6' },
   { name: 'MyBreathQ', role: 'Breath-based early detection (Person Health IP)', detail: 'Non-invasive breath analysis. Statistically significant disease signals across lung, sepsis, and COVID (P-value <0.05). 60-second sample at home or point of care. Ovarian, colorectal, and TBI in pipeline with DoD interest.', color: '#9B71D6' },
   { name: 'MyGeneticsQ', role: 'Baseline genetic, hormonal, and metabolic panels', detail: 'Germline risk, pharmacogenomics, hormonal and metabolic baseline. The foundation context that makes every breath, blood, and clinical signal more actionable.', color: '#CCE7FF' },
-  { name: 'TOMME', role: 'The behavior engine', detail: 'Translate. Orient. Motivate. Monitor. Evaluate. TOMME turns early detection into a completed next step — and proves the outcome. Not a chatbot — the action loop and behavior data engine no one else has.', color: '#6237A0' },
+  { name: 'TOMME', role: 'The guided action engine', detail: 'TOMME is the Governed Behavior Engine that helps people understand their results, take the right next step, and stay supported all the way through to a completed action. Signals flow into completed action.', color: '#6237A0' },
 ]
 
 function Reveal({ children, className = '' }) {
@@ -65,7 +65,7 @@ export default function PlatformPage() {
             The early-detection<br />action platform.
           </h1>
           <p className="text-lg text-brand-lavender font-light max-w-2xl leading-relaxed font-body">
-            Multimodal early detection — breath, blood, labs, genetics, and behavior — feeds TOMME, the behavior engine that closes the gap between signal and outcome. Detection finds the risk. Behavior change closes the gap.
+            Multimodal early detection — breath, blood, labs, genetics, and behavior — feeds TOMME, the guided action engine that turns signals into completed next steps.
           </p>
         </Reveal>
       </section>
@@ -75,7 +75,7 @@ export default function PlatformPage() {
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-primary font-body mb-4 text-center">Product Families</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-brand-deep font-heading text-center">
-            Six product modules. One pathway. One behavior engine.
+            Six product modules. One pathway. One guided action engine.
           </h2>
           <p className="text-lg leading-relaxed font-light text-gray-600 font-body max-w-2xl mb-16 text-center mx-auto">
             Each module serves a different entry point, buyer, and modality — but all feed one pathway: the early signal, the action loop, and the validated outcome.
@@ -126,22 +126,23 @@ export default function PlatformPage() {
       <section id="tomme" className="py-10 lg:py-14" style={{ background: 'linear-gradient(180deg, #28104E 0%, #351566 50%, #28104E 100%)' }}>
         <Reveal className="max-w-5xl mx-auto px-6 lg:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-brand-lavender font-body mb-4 text-center">TOMME</p>
+          <p className="text-[0.625rem] uppercase tracking-[0.18em] text-brand-medium font-medium mb-4 text-center font-body">Governed Behavior Engine</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-[1.1] tracking-tight mb-6 text-white font-heading text-center">
-            TOMME — The behavior engine that turns early detection into measurable action
+            TOMME — The guided action engine
           </h2>
           <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-6 text-center mx-auto">
-            Translate. Orient. Motivate. Monitor. Evaluate. TOMME is the action loop inside Person Health — the engine that turns multimodal early signals into a completed next step, routed to the right person, tracked to closure, and proven against outcomes.
+            TOMME helps people understand their results, take the right next step, and stay supported all the way through to a completed action. Signals flow into completed action.
           </p>
-          <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-16 text-center mx-auto">
-            Data → Understand → Act → Track → Validate → Learn. The loop keeps going until the outcome is known.
+          <p className="text-lg text-brand-lavender font-light leading-relaxed font-body max-w-3xl mb-16 text-center mx-auto italic">
+            Detection finds the risk. Guided action closes the gap.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: 'Closes the loop', Icon: RefreshCw, desc: 'Most systems recommend. TOMME tracks whether the action was taken, completed, or abandoned — and adjusts.' },
-              { title: 'Governed by design', Icon: ShieldCheck, desc: 'Safety gates, human-review thresholds, and transparency are built into the architecture, not added later.' },
-              { title: 'Reads behavior', Icon: ScanEye, desc: 'Models readiness, trust, and friction alongside clinical signals — because detection without activation is waste.' },
-              { title: 'Gets smarter', Icon: Zap, desc: 'Every completed action, every override, every drop-off improves the next recommendation.' },
+              { title: 'Closes the loop', Icon: RefreshCw, desc: 'Most systems stop at a recommendation. TOMME tracks whether the next step was taken, completed, or stalled — and adjusts to keep the person moving forward.' },
+              { title: 'Governed by design', Icon: ShieldCheck, desc: 'Safety, clinical oversight, and transparency are built into the architecture from the start — not added later.' },
+              { title: 'Reads behavior', Icon: ScanEye, desc: 'TOMME models readiness, trust, and friction alongside clinical signals so the next step feels safer, smaller, and more worth doing.' },
+              { title: 'Learns from every step', Icon: Zap, desc: 'Every completed action, every override, every drop-off makes the next recommendation more relevant for the person on the other side of the screen.' },
             ].map((item, i) => (
               <div key={i} className="bg-dark-card backdrop-blur-xl border border-brand-lavender/10 rounded-2xl p-6 hover:border-brand-medium/30 transition-all duration-300 flex items-start gap-5">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #6237A0, #28104E)' }} aria-hidden="true">
@@ -256,11 +257,11 @@ export default function PlatformPage() {
               items={[
                 {
                   question: 'What is TOMME?',
-                  answer: 'TOMME is the behavior engine inside Person Health. It fuses breath, blood, genetics, clinical context, and behavior into a single state picture — then surfaces a recommended next step, routes it into a real workflow, and measures whether it was completed. Translate. Orient. Motivate. Monitor. Evaluate.',
+                  answer: 'TOMME is the guided action engine inside Person Health — the Governed Behavior Engine that helps people understand their results, take the right next step, and stay supported all the way through to a completed action. It brings together signals from breath, blood, genetics, and clinical context, then guides the person to what comes next.',
                 },
                 {
                   question: 'What is the early-detection action platform?',
-                  answer: 'An early-detection action platform combines multiple modalities of early signal — breath, blood, genetics, clinical context, and behavior — and turns each signal into a completed action, not just an insight. Person Health owns the full data pathway: the early signal, the action loop, and the validated outcome.',
+                  answer: 'Person Health combines multiple ways of finding earlier signals — breath, blood, labs, genetics, and behavior — and turns each signal into a completed next step, not just an insight. The platform covers the full pathway: the early signal, the guided action, and the outcome data that proves it worked.',
                 },
               ]}
             />

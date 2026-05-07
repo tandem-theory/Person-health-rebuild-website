@@ -19,10 +19,10 @@ function CompanyHero() {
           className="mt-4 font-heading font-bold text-white leading-[1.05] tracking-[-0.02em]"
           style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}
         >
-          Healthcare organized<br />around people.
+          Find health risks earlier.<br />Know what to do next.
         </h1>
         <p className="mt-6 text-lg lg:text-xl text-brand-lavender font-body font-light leading-relaxed max-w-3xl mx-auto">
-          Person Health exists because the gap between finding a health signal and acting on it should not exist. Person Health is the governed infrastructure built to close it.
+          Person Health helps people screen earlier, understand their results, and take the right next step. We exist to close the gap between finding a health signal and acting on it.
         </p>
       </div>
     </section>
@@ -45,13 +45,13 @@ function AboutSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div>
           <p className="text-gray-600 font-body font-light leading-relaxed text-lg">
-            Healthcare catches disease too late — and loses patients even when test results appear. Detection is necessary but not sufficient. Behavior change is what closes the gap between a finding and a healthier outcome.
+            Most testing experiences end with a PDF or a portal notification — and people get stuck. Detection is necessary, but not enough on its own. What closes the gap between a finding and a healthier outcome is guided action.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
-            Person Health is the early-detection action platform. We operate in the 0-to-1 health window — the period after biology changes but before symptoms appear. We own the full data pathway: proprietary detection IP across blood, breath, genetics, and clinical context; TOMME, the behavior engine that turns signals into action; and the validated outcome data that proves it worked.
+            Person Health is built to keep going. We combine lab testing, genetics, blood and breath detection, and guided support on one platform — so people can find health risks earlier, understand what their results mean, and take the right next step. TOMME, our guided action engine, helps every signal flow into a completed action.
           </p>
           <p className="mt-4 text-gray-600 font-body font-light leading-relaxed text-lg">
-            Every signal that enters Person Health is scored, routed, reviewed, and tracked to a completed next step. Detection finds the risk. Behavior change closes the gap.
+            Detection finds the risk. Guided action closes the gap.
           </p>
         </div>
         <div className="rounded-2xl overflow-hidden shadow-card-hover">
@@ -102,8 +102,8 @@ function OriginsSection() {
             color: '#CCE7FF',
           },
           {
-            title: 'TOMME — the behavior engine',
-            description: 'TOMME was built to fuse every modality (genetics, clinical labs, blood, breath, behavior) into the action loop that closes the gap between signal and outcome. Translate. Orient. Motivate. Monitor. Evaluate.',
+            title: 'TOMME — the guided action engine',
+            description: 'TOMME is the Governed Behavior Engine that fuses every modality — genetics, clinical labs, blood, breath, behavior — into a single picture of the person, then helps them understand their results, take the right next step, and stay supported all the way through to a completed action.',
             color: '#D7CFE6',
           },
         ]} />
@@ -121,9 +121,9 @@ function MissionSection() {
   return (
     <div id="mission">
       <CalloutBlock
-        headline="Before Symptoms. Better Next Steps."
-        body="The Person Health mission is to close the gap between early detection and completed action — for every person who enters the platform, with continuity built into every step. Detection finds the risk. Behavior change closes the gap."
-        italic="The operational design goal: the smallest safe next step, governed by evidence, reviewed by clinicians, and tracked to completion."
+        headline="Find health risks earlier. Know what to do next."
+        body="The Person Health mission is to help people find health risks earlier, understand what their results mean, and take the right next step — supported all the way through to a completed action."
+        italic="The smallest safe next step, grounded in evidence, reviewed by clinicians, and tracked to completion."
       />
     </div>
   )
@@ -294,7 +294,7 @@ function LessonsSection() {
         What healthcare can learn
       </h2>
       <p className="mt-4 text-brand-lavender font-body font-light leading-relaxed text-lg max-w-3xl text-center mx-auto">
-        The problems Person Health solves are not new. But the approach — governed completion infrastructure — requires a different way of thinking about health technology.
+        The problems Person Health solves are not new. But the answer — guided action that doesn&rsquo;t end at a PDF — requires a different way of thinking about health technology.
       </p>
 
       <div className="mt-12">
@@ -328,7 +328,7 @@ function LessonsSection() {
       </div>
 
       <p className="mt-10 text-center text-brand-lavender/80 font-body font-light italic text-base max-w-3xl mx-auto">
-        The healthcare system does not need more signals. It needs a way to finish what it already started.
+        The healthcare system does not need more signals. It needs a way to help people finish what they already started.
       </p>
 
       <div className="mt-10 text-center">
@@ -358,7 +358,7 @@ function CompanyFAQ() {
           items={[
             {
               question: 'How is Person Health organized as a platform?',
-              answer: 'Person Health is the early-detection action platform. The product family — MyWellnessQ (consumer front door), MyClinicQ (clinician-ordered tests), MyBloodQ (blood-based detection), MyBreathQ (breath-based detection), and MyGeneticsQ (baseline panels) — all feed TOMME, the behavior engine. One platform. One pathway. One outcome layer.',
+              answer: 'Person Health is one platform with multiple ways to find earlier signals. The product family — MyWellnessQ (the consumer front door), MyClinicQ (clinician-ordered tests), MyBloodQ (blood-based detection), MyBreathQ (breath-based detection), and MyGeneticsQ (baseline panels) — all feed TOMME, our guided action engine. One platform. One pathway. One outcome.',
             },
             {
               question: 'Is Person Health hiring?',
