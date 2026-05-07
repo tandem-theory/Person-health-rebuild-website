@@ -64,7 +64,7 @@ const audiences = [
   {
     id: 'patients',
     icon: Users,
-    title: 'Patients + Members',
+    title: 'Individuals',
     subtitle: 'Clarity, confidence, and next steps',
     body: 'Clearer access, less confusion, better odds of acting early.',
     sections: [

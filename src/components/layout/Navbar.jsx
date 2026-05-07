@@ -28,7 +28,7 @@ export default function Navbar() {
           : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-8 flex items-center justify-between h-full">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-full">
         <Link to="/" className="flex items-center" aria-label="Person Health home">
           <img src={images.logos.main} alt="Person Health" className="h-8" />
         </Link>
