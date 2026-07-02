@@ -112,8 +112,7 @@ export default function HomePage() {
               Early detection + guided next steps
             </p>
             <h1 className="font-heading font-semibold leading-[1.05] tracking-tight text-[clamp(2.5rem,5vw,3.5rem)]">
-              <span className="text-white">Find health risks earlier.</span>
-              <span className="block text-brand-medium">Know what to do next.</span>
+              <span className="text-white font-bold">Disease should never be a surprise.</span>
             </h1>
             <p className="mt-7 text-lg lg:text-xl text-brand-lavender leading-relaxed font-light font-body max-w-xl">
               Person Health helps people screen earlier, understand their results, and take the right next step — through lab testing, genetics, blood and breath detection, and guided support that doesn&rsquo;t end at a PDF.
